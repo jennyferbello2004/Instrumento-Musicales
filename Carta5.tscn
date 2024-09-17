@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://jt6fus4qptd7"]
+
+[ext_resource type="Script" path="res://Carta5.gd" id="1_5v61b"]
+[ext_resource type="AudioStream" uid="uid://dpj156lfjx2a0" path="res://Sonidos/Instrumentos/Tambor.mp3" id="2_yaytg"]
+
+[node name="TextureButton" type="TextureButton"]
+offset_right = 83.0
+offset_bottom = 73.0
+pivot_offset = Vector2(42, 37)
+stretch_mode = 0
+script = ExtResource("1_5v61b")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_yaytg")

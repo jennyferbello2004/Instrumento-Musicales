@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c2srx45wgxx2"
+path="res://.godot/imported/Sonido Guitarra.mp3-41f4bce96b38880751697c499b7ab829.mp3str"
+
+[deps]
+
+source_file="res://Sonidos/Instrumentos/Sonido Guitarra.mp3"
+dest_files=["res://.godot/imported/Sonido Guitarra.mp3-41f4bce96b38880751697c499b7ab829.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

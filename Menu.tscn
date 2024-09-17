@@ -1,0 +1,196 @@
+[gd_scene load_steps=15 format=3 uid="uid://d3v5kj13eg6ei"]
+
+[ext_resource type="Texture2D" uid="uid://bhr1oma5khxs2" path="res://Assets/Imagenes/Fondos/Fondo-inicio.png" id="1_51j1b"]
+[ext_resource type="Script" path="res://Menu.gd" id="1_or2g7"]
+[ext_resource type="Texture2D" uid="uid://cqvb3oht7e4i0" path="res://Assets/Imagenes/Arpa.png" id="2_bcldk"]
+[ext_resource type="Texture2D" uid="uid://d26xkuhura5dc" path="res://Assets/Imagenes/Guitarra.png" id="3_4740c"]
+[ext_resource type="Texture2D" uid="uid://dvu1cbm6cabq" path="res://Assets/Imagenes/Maracas.png" id="4_gy6qk"]
+
+[sub_resource type="Animation" id="Animation_rwaad"]
+resource_name = "Arpa"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("arpa:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 2,
+"values": [Vector2(1, 1), Vector2(1.2, 1.2)]
+}
+
+[sub_resource type="Animation" id="Animation_g4c5f"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("arpa:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_vmuqy"]
+_data = {
+"Arpa": SubResource("Animation_rwaad"),
+"RESET": SubResource("Animation_g4c5f")
+}
+
+[sub_resource type="Animation" id="Animation_6g1rs"]
+resource_name = "Animation-guitarra"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Guitarra:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0.0100001, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 2,
+"values": [Vector2(1, 1), Vector2(1.2, 1.2)]
+}
+
+[sub_resource type="Animation" id="Animation_c17yy"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Guitarra:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_k354h"]
+_data = {
+"Animation-guitarra": SubResource("Animation_6g1rs"),
+"RESET": SubResource("Animation_c17yy")
+}
+
+[sub_resource type="Animation" id="Animation_djv6n"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Maraca:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(0.73, 0.73)]
+}
+
+[sub_resource type="Animation" id="Animation_qp8v8"]
+resource_name = "animation-maracas"
+length = 1.5
+loop_mode = 2
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Maraca:scale")
+tracks/0/interp = 2
+tracks/0/loop_wrap = false
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 1.5),
+"transitions": PackedFloat32Array(1, 1),
+"update": 2,
+"values": [Vector2(0.73, 0.73), Vector2(0.89, 0.89)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_2dgv7"]
+_data = {
+"RESET": SubResource("Animation_djv6n"),
+"animation-maracas": SubResource("Animation_qp8v8")
+}
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_or2g7")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_51j1b")
+
+[node name="arpa" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 335.169
+offset_top = 451.296
+offset_right = 463.169
+offset_bottom = 579.296
+pivot_offset = Vector2(64, 64)
+texture_normal = ExtResource("2_bcldk")
+
+[node name="Guitarra" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_left = 512.597
+offset_top = 451.296
+offset_right = 640.597
+offset_bottom = 579.296
+pivot_offset = Vector2(64, 64)
+texture_normal = ExtResource("3_4740c")
+
+[node name="Maraca" type="TextureButton" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = -1
+anchor_left = 0.597
+anchor_top = 0.719
+anchor_right = 0.679
+anchor_bottom = 0.865
+offset_left = -17.3111
+offset_top = -16.9052
+offset_right = 16.2249
+offset_bottom = 16.4868
+scale = Vector2(0.73, 0.73)
+pivot_offset = Vector2(64.0001, 64)
+texture_normal = ExtResource("4_gy6qk")
+metadata/_edit_use_anchors_ = true
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_vmuqy")
+}
+
+[node name="AnimationPlayer2" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_k354h")
+}
+
+[node name="AnimationPlayer3" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_2dgv7")
+}
+
+[connection signal="pressed" from="arpa" to="." method="_on_arpa_pressed"]
+[connection signal="pressed" from="Guitarra" to="." method="_on_guitarra_pressed"]
+[connection signal="pressed" from="Maraca" to="." method="_on_maraca_pressed"]

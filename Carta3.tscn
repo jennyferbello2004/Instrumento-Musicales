@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://dx8o7he825de1"]
+
+[ext_resource type="Script" path="res://Carta3.gd" id="1_kiwta"]
+[ext_resource type="AudioStream" uid="uid://crxj6gcc7pagh" path="res://Sonidos/Instrumentos/Maraca.mp3" id="2_0q1vg"]
+
+[node name="TextureButton" type="TextureButton"]
+offset_right = 95.0
+offset_bottom = 74.0
+pivot_offset = Vector2(48, 37)
+script = ExtResource("1_kiwta")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_0q1vg")

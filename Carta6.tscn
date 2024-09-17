@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://d2u1hdlrcghhp"]
+
+[ext_resource type="Script" path="res://Carta6.gd" id="1_kp77w"]
+[ext_resource type="AudioStream" uid="uid://cqgkvt1vsr3hv" path="res://Sonidos/Instrumentos/Violin.mp3" id="2_5p7dm"]
+
+[node name="TextureButton" type="TextureButton"]
+offset_right = 123.0
+offset_bottom = 98.0
+pivot_offset = Vector2(62, 49)
+script = ExtResource("1_kp77w")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_5p7dm")

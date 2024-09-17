@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://jfyq667xh41y"]
+
+[ext_resource type="Script" path="res://Carta1.gd" id="1_jllq1"]
+[ext_resource type="AudioStream" uid="uid://yhsebsln67cb" path="res://Sonidos/Instrumentos/Flauta.mp3" id="2_6a3en"]
+
+[node name="TextureButton" type="TextureButton"]
+offset_right = 70.0
+offset_bottom = 55.0
+pivot_offset = Vector2(35, 28)
+script = ExtResource("1_jllq1")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_6a3en")

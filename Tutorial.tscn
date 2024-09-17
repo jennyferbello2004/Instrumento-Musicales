@@ -1,0 +1,76 @@
+[gd_scene load_steps=9 format=3 uid="uid://cxnbq6fku74w8"]
+
+[ext_resource type="Texture2D" uid="uid://bhr1oma5khxs2" path="res://Assets/Imagenes/Fondos/Fondo-inicio.png" id="1_5qce7"]
+[ext_resource type="Texture2D" uid="uid://bvpng8xhsgokl" path="res://Assets/Imagenes/Marco sin fondo.png" id="2_vgdrs"]
+[ext_resource type="Texture2D" uid="uid://bxiw0cb613agu" path="res://Assets/Mouse/pixil-frame-0.png" id="3_gc758"]
+[ext_resource type="Texture2D" uid="uid://nyuqkgqwxtkr" path="res://Assets/Mouse/pixil-frame-1.png" id="4_voaxp"]
+[ext_resource type="Texture2D" uid="uid://cxkedny3mpyy8" path="res://Assets/Mouse/pixil-frame-2.png" id="5_rrdxo"]
+[ext_resource type="Texture2D" uid="uid://bho5fbclg8vb" path="res://Assets/Mouse/pixil-frame-3.png" id="6_8w5pf"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ac3uh"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("3_gc758")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_voaxp")
+}],
+"loop": true,
+"name": &"Mouse",
+"speed": 5.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_ba0cy"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("5_rrdxo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_8w5pf")
+}],
+"loop": true,
+"name": &"Mouse-Click",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_5qce7")
+
+[node name="TextureRect2" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 118.775
+offset_top = 54.7551
+offset_right = 1040.78
+offset_bottom = 605.755
+texture = ExtResource("2_vgdrs")
+expand_mode = 1
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(328.733, 224.575)
+scale = Vector2(0.0931277, 0.0715895)
+sprite_frames = SubResource("SpriteFrames_ac3uh")
+animation = &"Mouse"
+frame_progress = 0.985209
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(335.562, 424.97)
+scale = Vector2(0.0728361, 0.0715117)
+sprite_frames = SubResource("SpriteFrames_ba0cy")
+animation = &"Mouse-Click"

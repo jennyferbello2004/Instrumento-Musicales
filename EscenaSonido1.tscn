@@ -1,0 +1,171 @@
+[gd_scene load_steps=28 format=3 uid="uid://vp0eca7rl4pe"]
+
+[ext_resource type="Script" path="res://Scripts/Escena-adivinarsonido1.gd" id="1_uu2ep"]
+[ext_resource type="Texture2D" uid="uid://cb83ap3n76jjh" path="res://Assets/Imagenes/Fondos/Fondo-minijuegos.png" id="2_cv2dm"]
+[ext_resource type="Script" path="res://Scripts/Sonido1.gd" id="2_wd1w7"]
+[ext_resource type="Texture2D" uid="uid://bvpng8xhsgokl" path="res://Assets/Imagenes/Marco sin fondo.png" id="3_det3b"]
+[ext_resource type="AudioStream" uid="uid://c2srx45wgxx2" path="res://Sonidos/Instrumentos/Sonido Guitarra.mp3" id="4_oplsi"]
+[ext_resource type="Texture2D" uid="uid://c2c2sn7mfbk64" path="res://Assets/Imagenes/Icono cuatro .png" id="5_gn1jy"]
+[ext_resource type="Script" path="res://Sonido2.gd" id="5_yg0k8"]
+[ext_resource type="AudioStream" uid="uid://dpj156lfjx2a0" path="res://Sonidos/Instrumentos/Tambor.mp3" id="6_ls1ib"]
+[ext_resource type="Script" path="res://Sonido3.gd" id="7_88anx"]
+[ext_resource type="AudioStream" uid="uid://yhsebsln67cb" path="res://Sonidos/Instrumentos/Flauta.mp3" id="8_h8c86"]
+[ext_resource type="Texture2D" uid="uid://dg7bcyrefnn7n" path="res://Assets/Imagenes/Icono tambor .png" id="8_noour"]
+[ext_resource type="Script" path="res://Sonido4.gd" id="9_hkkph"]
+[ext_resource type="AudioStream" uid="uid://crxj6gcc7pagh" path="res://Sonidos/Instrumentos/Maraca.mp3" id="10_07mdd"]
+[ext_resource type="Texture2D" uid="uid://xbtr0axu5j8q" path="res://Assets/Imagenes/Ícono flauta.png" id="11_eievw"]
+[ext_resource type="Script" path="res://Sonido5.gd" id="11_luhoh"]
+[ext_resource type="AudioStream" uid="uid://cqgkvt1vsr3hv" path="res://Sonidos/Instrumentos/Violin.mp3" id="11_teegx"]
+[ext_resource type="AudioStream" uid="uid://2qsbckclgdla" path="res://Sonidos/Instrumentos/ARpa.mp3" id="12_1p1k0"]
+[ext_resource type="Script" path="res://Sonido6.gd" id="13_7kkj2"]
+[ext_resource type="Texture2D" uid="uid://c47vkmwgvdft3" path="res://Assets/Imagenes/Ícono maracas.png" id="14_0hny8"]
+[ext_resource type="Texture2D" uid="uid://bsi8l43dfgfhd" path="res://Assets/Imagenes/Ícono violín .png" id="17_152cd"]
+[ext_resource type="Texture2D" uid="uid://bxc7gr1skfijq" path="res://Assets/Imagenes/Ícono arpa.png" id="20_cupwf"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0wuy6"]
+size = Vector2(122, 77)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1mx21"]
+size = Vector2(120, 80)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_7bo0p"]
+size = Vector2(116, 69)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8ar5x"]
+size = Vector2(120, 70)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_xpgbx"]
+size = Vector2(116, 71)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yi26r"]
+size = Vector2(122, 69)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_uu2ep")
+
+[node name="FondoMesa" type="Sprite2D" parent="."]
+position = Vector2(577, 327.118)
+scale = Vector2(1.92333, 2.18079)
+texture = ExtResource("2_cv2dm")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(573, 269)
+rotation = -3.14159
+scale = Vector2(-0.443, -0.41)
+texture = ExtResource("3_det3b")
+
+[node name="Area2D" type="Area2D" parent="."]
+position = Vector2(463, 194)
+script = ExtResource("2_wd1w7")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D"]
+texture_filter = 1
+position = Vector2(-2.99999, 14)
+scale = Vector2(0.0708333, 0.0500522)
+texture = ExtResource("5_gn1jy")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2(-4, 15.5)
+shape = SubResource("RectangleShape2D_0wuy6")
+
+[node name="Sonido1" type="AudioStreamPlayer" parent="Area2D"]
+stream = ExtResource("4_oplsi")
+
+[node name="Area2D2" type="Area2D" parent="."]
+position = Vector2(642, 208)
+script = ExtResource("5_yg0k8")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D2"]
+position = Vector2(2.00003, -1.2517e-05)
+scale = Vector2(0.0708333, 0.0506263)
+texture = ExtResource("8_noour")
+
+[node name="Sonido2" type="AudioStreamPlayer" parent="Area2D2"]
+stream = ExtResource("6_ls1ib")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2(2, 0)
+shape = SubResource("RectangleShape2D_1mx21")
+
+[node name="Area2D3" type="Area2D" parent="."]
+position = Vector2(338, 308)
+script = ExtResource("7_88anx")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D3"]
+position = Vector2(-16, 3.50001)
+scale = Vector2(0.0708333, 0.0495825)
+texture = ExtResource("11_eievw")
+
+[node name="Sonido3" type="AudioStreamPlayer" parent="Area2D3"]
+stream = ExtResource("8_h8c86")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
+position = Vector2(-15, 6)
+shape = SubResource("RectangleShape2D_7bo0p")
+
+[node name="Area2D4" type="Area2D" parent="."]
+position = Vector2(463, 314)
+script = ExtResource("9_hkkph")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D4"]
+position = Vector2(27, -1)
+scale = Vector2(0.0708333, 0.0495825)
+texture = ExtResource("14_0hny8")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
+position = Vector2(20, 0)
+shape = SubResource("RectangleShape2D_8ar5x")
+
+[node name="sonido4" type="AudioStreamPlayer" parent="Area2D4"]
+stream = ExtResource("10_07mdd")
+
+[node name="Area2D5" type="Area2D" parent="."]
+position = Vector2(663, 298)
+script = ExtResource("11_luhoh")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D5"]
+texture_filter = 1
+position = Vector2(11, 11)
+scale = Vector2(0.0699375, 0.0480167)
+texture = ExtResource("17_152cd")
+
+[node name="sonido5" type="AudioStreamPlayer" parent="Area2D5"]
+stream = ExtResource("11_teegx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
+position = Vector2(7, 10.5)
+shape = SubResource("RectangleShape2D_xpgbx")
+
+[node name="Area2D6" type="Area2D" parent="."]
+position = Vector2(854, 298)
+script = ExtResource("13_7kkj2")
+
+[node name="Sprite2D" type="Sprite2D" parent="Area2D6"]
+position = Vector2(1.99997, 14)
+scale = Vector2(0.0704375, 0.0480167)
+texture = ExtResource("20_cupwf")
+
+[node name="sonido6" type="AudioStreamPlayer" parent="Area2D6"]
+stream = ExtResource("12_1p1k0")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
+position = Vector2(2, 13.5)
+shape = SubResource("RectangleShape2D_yi26r")
+
+[node name="Button" type="Button" parent="."]
+visible = false
+offset_right = 8.0
+offset_bottom = 8.0
+text = "COrrecto
+"
+
+[node name="Button2" type="Button" parent="."]
+visible = false
+offset_left = 727.0
+offset_top = 18.0
+offset_right = 818.0
+offset_bottom = 49.0
+text = "INcorrecto"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]

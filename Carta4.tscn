@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://bos62hrrbxi0r"]
+
+[ext_resource type="Script" path="res://Carta4.gd" id="1_x1qb7"]
+[ext_resource type="AudioStream" uid="uid://c2srx45wgxx2" path="res://Sonidos/Instrumentos/Sonido Guitarra.mp3" id="2_gq673"]
+
+[node name="TextureButton" type="TextureButton"]
+offset_right = 182.0
+offset_bottom = 149.0
+pivot_offset = Vector2(91, 75)
+script = ExtResource("1_x1qb7")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_gq673")
