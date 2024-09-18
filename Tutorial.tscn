@@ -1,11 +1,19 @@
-[gd_scene load_steps=9 format=3 uid="uid://cxnbq6fku74w8"]
+[gd_scene load_steps=18 format=3 uid="uid://cxnbq6fku74w8"]
 
-[ext_resource type="Texture2D" uid="uid://bhr1oma5khxs2" path="res://Assets/Imagenes/Fondos/Fondo-inicio.png" id="1_5qce7"]
-[ext_resource type="Texture2D" uid="uid://bvpng8xhsgokl" path="res://Assets/Imagenes/Marco sin fondo.png" id="2_vgdrs"]
+[ext_resource type="Texture2D" uid="uid://cb83ap3n76jjh" path="res://Assets/Imagenes/Fondos/Fondo-minijuegos.png" id="1_00eoa"]
+[ext_resource type="Texture2D" uid="uid://c1is8winngq4a" path="res://Assets/Imagenes/Fondos/marco horizontal v6.png" id="2_6hfvo"]
 [ext_resource type="Texture2D" uid="uid://bxiw0cb613agu" path="res://Assets/Mouse/pixil-frame-0.png" id="3_gc758"]
 [ext_resource type="Texture2D" uid="uid://nyuqkgqwxtkr" path="res://Assets/Mouse/pixil-frame-1.png" id="4_voaxp"]
 [ext_resource type="Texture2D" uid="uid://cxkedny3mpyy8" path="res://Assets/Mouse/pixil-frame-2.png" id="5_rrdxo"]
 [ext_resource type="Texture2D" uid="uid://bho5fbclg8vb" path="res://Assets/Mouse/pixil-frame-3.png" id="6_8w5pf"]
+[ext_resource type="Texture2D" uid="uid://cwmxyuisbagvl" path="res://Assets/Táctil/pixil-frame-00.png" id="7_2wn5t"]
+[ext_resource type="Texture2D" uid="uid://cddwfsnu0ane" path="res://Assets/Táctil/pixil-frame-11.png" id="8_721xe"]
+[ext_resource type="FontFile" uid="uid://dkgggnsfq83cw" path="res://Assets/Fuente Letras/Lato-Bold.ttf" id="9_fsadf"]
+[ext_resource type="Texture2D" uid="uid://cpjpjslac0usp" path="res://Assets/Imagenes/bordearpa.png" id="11_js2lu"]
+[ext_resource type="Texture2D" uid="uid://bqks4213rqxu6" path="res://Assets/Imagenes/estrellas.png" id="11_t1qbk"]
+[ext_resource type="Texture2D" uid="uid://cfqclmv0amrvj" path="res://Assets/Imagenes/bordeguitarra.png" id="12_ekt8j"]
+[ext_resource type="Texture2D" uid="uid://lak48qu3w700" path="res://Assets/Imagenes/bordemaracas.png" id="13_3p5ro"]
+[ext_resource type="Texture2D" uid="uid://ifsuxmatlbfs" path="res://Assets/Imagenes/bordenotas.png" id="14_eetw1"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ac3uh"]
 animations = [{
@@ -35,6 +43,20 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_tbkve"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_2wn5t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_721xe")
+}],
+"loop": true,
+"name": &"manito",
+"speed": 5.0
+}]
+
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -43,7 +65,7 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="Fondo1" type="TextureRect" parent="."]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = 15
@@ -51,26 +73,111 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_5qce7")
+texture = ExtResource("1_00eoa")
 
-[node name="TextureRect2" type="TextureRect" parent="."]
-layout_mode = 0
-offset_left = 118.775
-offset_top = 54.7551
-offset_right = 1040.78
-offset_bottom = 605.755
-texture = ExtResource("2_vgdrs")
-expand_mode = 1
+[node name="Pizarra" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -427.0
+offset_top = -265.0
+offset_right = 428.0
+offset_bottom = 170.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_6hfvo")
+expand_mode = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(328.733, 224.575)
-scale = Vector2(0.0931277, 0.0715895)
+position = Vector2(302.026, 381.511)
+scale = Vector2(0.128, 0.1)
 sprite_frames = SubResource("SpriteFrames_ac3uh")
 animation = &"Mouse"
-frame_progress = 0.985209
+autoplay = "Mouse"
+frame_progress = 0.468809
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(335.562, 424.97)
-scale = Vector2(0.0728361, 0.0715117)
+position = Vector2(412.185, 360.533)
+scale = Vector2(0.101, 0.1)
 sprite_frames = SubResource("SpriteFrames_ba0cy")
 animation = &"Mouse-Click"
+autoplay = "Mouse-Click"
+frame_progress = 0.0648808
+
+[node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
+position = Vector2(808.319, 356.769)
+scale = Vector2(0.1, 0.1)
+sprite_frames = SubResource("SpriteFrames_tbkve")
+animation = &"manito"
+autoplay = "manito"
+frame_progress = 0.710318
+
+[node name="Titulo" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -148.5
+offset_top = 91.6344
+offset_right = 148.5
+offset_bottom = 195.634
+grow_horizontal = 2
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("9_fsadf")
+theme_override_font_sizes/font_size = 40
+text = "¿Cómo jugar?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="tutomouse" type="Label" parent="."]
+layout_mode = 0
+offset_left = 215.436
+offset_top = 205.402
+offset_right = 553.436
+offset_bottom = 295.402
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+text = "Presiona el click derecho de tu mouse para arrastar o seleccionar los objetos."
+autowrap_mode = 3
+
+[node name="tutotactil" type="Label" parent="."]
+layout_mode = 0
+offset_left = 658.0
+offset_top = 208.0
+offset_right = 930.0
+offset_bottom = 298.0
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 10
+theme_override_font_sizes/font_size = 20
+text = "Presiona la pantalla para para interactuar con los objetos"
+autowrap_mode = 3
+
+[node name="Estrellas" type="Sprite2D" parent="."]
+position = Vector2(972.005, 295.888)
+scale = Vector2(0.0119829, 0.0119829)
+texture = ExtResource("11_t1qbk")
+
+[node name="Bordearpa" type="Sprite2D" parent="."]
+position = Vector2(972.995, 103.248)
+scale = Vector2(0.046378, 0.046378)
+texture = ExtResource("11_js2lu")
+
+[node name="Bordeguitarra" type="Sprite2D" parent="."]
+position = Vector2(184.177, 111.353)
+scale = Vector2(0.0491818, 0.0491817)
+texture = ExtResource("12_ekt8j")
+
+[node name="Bordemaracas" type="Sprite2D" parent="."]
+position = Vector2(957.473, 443.954)
+scale = Vector2(0.0522191, 0.0522191)
+texture = ExtResource("13_3p5ro")
+
+[node name="Bordenotas" type="Sprite2D" parent="."]
+position = Vector2(193.211, 436.888)
+scale = Vector2(0.0490912, 0.0490912)
+texture = ExtResource("14_eetw1")
