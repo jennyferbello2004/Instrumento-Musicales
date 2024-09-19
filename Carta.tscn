@@ -1,10 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://ue6nvwc3k71h"]
+[gd_scene load_steps=10 format=3 uid="uid://ue6nvwc3k71h"]
 
 [ext_resource type="Script" path="res://CartasMenu.gd" id="1_jgxtx"]
 [ext_resource type="Texture2D" uid="uid://cb83ap3n76jjh" path="res://Assets/Imagenes/Fondos/Fondo-minijuegos.png" id="2_8rxib"]
-[ext_resource type="Texture2D" uid="uid://bvpng8xhsgokl" path="res://Assets/Imagenes/Marco sin fondo.png" id="3_3tbdv"]
+[ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="3_4fv7e"]
 [ext_resource type="FontFile" uid="uid://cboxbr3bx4363" path="res://Assets/Fuentes/Lemon Shake Shake.ttf" id="4_qdw1d"]
-[ext_resource type="Texture2D" uid="uid://ccamssf1guwgi" path="res://Assets/Imagenes/manzana.png" id="5_11wri"]
+[ext_resource type="Texture2D" uid="uid://kesqmidb2qry" path="res://Assets/Imagenes/estrella premio png.png" id="5_uoxnk"]
+[ext_resource type="FontFile" uid="uid://csigu2654ysbp" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="6_2fa1p"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dxxs8"]
 
@@ -34,12 +35,15 @@ texture = ExtResource("2_8rxib")
 
 [node name="Fondo, cartas" type="TextureRect" parent="."]
 texture_filter = 1
-offset_left = 189.0
-offset_top = 59.0
-offset_right = 993.0
-offset_bottom = 571.0
-texture = ExtResource("3_3tbdv")
-expand_mode = 1
+offset_left = 132.392
+offset_top = 55.4562
+offset_right = 932.392
+offset_bottom = 455.501
+scale = Vector2(1.1, 1.1)
+size_flags_horizontal = 4
+texture = ExtResource("3_4fv7e")
+expand_mode = 2
+metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="."]
 visible = false
@@ -51,58 +55,66 @@ theme = SubResource("Theme_8ttdm")
 text = "Puntaje"
 
 [node name="GridContainer" type="GridContainer" parent="."]
-offset_left = 376.0
-offset_top = 147.0
-offset_right = 740.0
-offset_bottom = 406.0
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 399.19
+offset_top = 147.296
+offset_right = 763.19
+offset_bottom = 406.296
+grow_horizontal = 2
+grow_vertical = 2
 pivot_offset = Vector2(182, 130)
 columns = 4
 
-[node name="FPSlabel" type="Label" parent="."]
-offset_right = 45.0
-offset_bottom = 23.0
-
 [node name="Manzana" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(53, 32)
-scale = Vector2(5.6, 4)
-texture = ExtResource("5_11wri")
+position = Vector2(109.61, 30.9294)
+scale = Vector2(0.118232, 0.110646)
+texture = ExtResource("5_uoxnk")
 
 [node name="Manzana2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(120, 32)
-scale = Vector2(5.6, 4)
-texture = ExtResource("5_11wri")
+position = Vector2(169.062, 30.8422)
+scale = Vector2(0.120266, 0.111)
+texture = ExtResource("5_uoxnk")
 
 [node name="Manzana3" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(189, 32)
-scale = Vector2(5.6, 4)
-texture = ExtResource("5_11wri")
+position = Vector2(230.25, 30.6639)
+scale = Vector2(0.125182, 0.11021)
+texture = ExtResource("5_uoxnk")
 
 [node name="Manzana4" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(259, 32)
-scale = Vector2(5.6, 4)
-texture = ExtResource("5_11wri")
+position = Vector2(293.65, 30.4126)
+scale = Vector2(0.128, 0.111)
+texture = ExtResource("5_uoxnk")
 
 [node name="Manzana5" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(330, 32)
-scale = Vector2(5.6, 4)
-texture = ExtResource("5_11wri")
+position = Vector2(357.443, 30.3315)
+scale = Vector2(0.128, 0.111)
+texture = ExtResource("5_uoxnk")
 
 [node name="Manzana6" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(400, 32)
-scale = Vector2(5.6, 4)
-texture = ExtResource("5_11wri")
+position = Vector2(423.558, 30.6464)
+scale = Vector2(0.132957, 0.111)
+texture = ExtResource("5_uoxnk")
 
 [node name="ClickCounter" type="Label" parent="."]
-offset_left = 919.407
-offset_top = 35.636
-offset_right = 959.407
-offset_bottom = 58.636
+offset_left = 919.646
+offset_top = 21.359
+offset_right = 1055.65
+offset_bottom = 47.359
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("6_2fa1p")
+theme_override_font_sizes/font_size = 20
+text = "Movimientos"
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 position = Vector2(-335.139, 352.778)

@@ -73,9 +73,6 @@ func _ready():
 		card_grid.add_child(card)
 		card.connect("card_flipped", _on_card_flipped)
 
-func _process(delta):
-	$FPSlabel.text = "FPS: " + str(Engine.get_frames_per_second())
-
 func _on_card_flipped(card):
 	if can_flip and card not in matched_cards:
 		if first_card == null:
@@ -142,6 +139,6 @@ func set_cards_interactive(active):
 		card.set_process_input(active) 
 	can_flip = true
 func update_action_label():
-	action_label.text = "Acciones: %d" % action_counter
+	action_label.text = "Movimientos: %d" % action_counter
 func update_score_label():
 	score_label.text = "Puntaje: %d"
