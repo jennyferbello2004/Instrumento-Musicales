@@ -1,7 +1,9 @@
-[gd_scene load_steps=3 format=3 uid="uid://c2gdtql6586p0"]
+[gd_scene load_steps=5 format=3 uid="uid://c2gdtql6586p0"]
 
 [ext_resource type="Texture2D" uid="uid://02bheprru6f8" path="res://Assets/Imagenes/Fondos/Créditos de Videojuego Aventura Musical.png" id="1_5428m"]
 [ext_resource type="FontFile" uid="uid://dkgggnsfq83cw" path="res://Assets/Fuente Letras/Lato-Bold.ttf" id="2_6to5k"]
+[ext_resource type="FontFile" uid="uid://l3sg0c74mhe6" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="3_1lt82"]
+[ext_resource type="FontFile" uid="uid://dgv0bqqgsj3hi" path="res://Assets/Fuente Letras/Montserrat-Medium.ttf" id="4_y41rq"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -22,17 +24,12 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("1_5428m")
 
-[node name="MarginContainer" type="MarginContainer" parent="."]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_constants/margin_left = 0
-
-[node name="creditos titulo" type="Label" parent="MarginContainer"]
+[node name="creditos titulo" type="Label" parent="."]
 layout_mode = 2
+offset_left = 479.0
+offset_top = 10.6908
+offset_right = 672.0
+offset_bottom = 71.6908
 size_flags_horizontal = 4
 size_flags_vertical = 0
 theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
@@ -41,11 +38,17 @@ theme_override_fonts/font = ExtResource("2_6to5k")
 theme_override_font_sizes/font_size = 50
 text = "Créditos"
 
-[node name="especificaciones" type="Label" parent="MarginContainer"]
+[node name="nombres" type="Label" parent="."]
 layout_mode = 2
+offset_left = 450.95
+offset_top = 96.7241
+offset_right = 713.95
+offset_bottom = 412.724
 size_flags_horizontal = 4
 theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
-theme_override_constants/outline_size = 16
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_1lt82")
+theme_override_font_sizes/font_size = 18
 text = "Yelitze Santaella Hernández
 
 Vicente Carvajal
@@ -57,4 +60,78 @@ Dubraska Rivas
 Glorena Contreras
 
 Jerson Rubín"
+horizontal_alignment = 1
+
+[node name="ministro" type="Label" parent="."]
+layout_mode = 2
+offset_left = 402.0
+offset_top = 118.955
+offset_right = 750.0
+offset_bottom = 141.955
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Ministro del Poder Popular para la Educación"
+horizontal_alignment = 1
+
+[node name="viceministro" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -154.0
+offset_top = -153.17
+offset_right = 154.0
+offset_bottom = -130.17
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Viceministro del Poder Popular para la Educación"
+horizontal_alignment = 1
+
+[node name="directora" type="Label" parent="."]
+layout_mode = 0
+offset_left = 414.808
+offset_top = 223.856
+offset_right = 748.808
+offset_bottom = 246.856
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Directora General de Edúcate en Venezuela"
+horizontal_alignment = 1
+
+[node name="productora" type="Label" parent="."]
+layout_mode = 0
+offset_left = 399.768
+offset_top = 275.469
+offset_right = 771.768
+offset_bottom = 298.469
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Productora General de Edúcate en Venezuela "
+horizontal_alignment = 1
+
+[node name="coordinadora" type="Label" parent="."]
+layout_mode = 0
+offset_left = 420.199
+offset_top = 327.099
+offset_right = 748.199
+offset_bottom = 350.099
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Coordinadora de Proyectos Digitales e Innovación"
+horizontal_alignment = 1
+
+[node name="coordinador" type="Label" parent="."]
+layout_mode = 0
+offset_left = 445.176
+offset_top = 379.425
+offset_right = 725.176
+offset_bottom = 402.425
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Coordinador de Desarrollo de Videojuegos"
 horizontal_alignment = 1
