@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://02bheprru6f8"
-path="res://.godot/imported/Créditos de Videojuego Aventura Musical.png-329dc23772c443d1ffd4db4c06176ffc.ctex"
+uid="uid://bre6avcyfuo54"
+path="res://.godot/imported/LogoEducate.png-1b031bc7788fe9779db59edca7ade9e0.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Fondos/Créditos de Videojuego Aventura Musical.png"
-dest_files=["res://.godot/imported/Créditos de Videojuego Aventura Musical.png-329dc23772c443d1ffd4db4c06176ffc.ctex"]
+source_file="res://Assets/Imagenes/LogoEducate.png"
+dest_files=["res://.godot/imported/LogoEducate.png-1b031bc7788fe9779db59edca7ade9e0.ctex"]
 
 [params]
 
