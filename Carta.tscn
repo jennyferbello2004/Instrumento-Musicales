@@ -119,3 +119,7 @@ text = "Movimientos"
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
 position = Vector2(-335.139, 352.778)
 process_material = SubResource("ParticleProcessMaterial_aqg81")
+
+[node name="EstrellaPremioPng" type="Sprite2D" parent="."]
+position = Vector2(631.291, 337.752)
+texture = ExtResource("5_uoxnk")
