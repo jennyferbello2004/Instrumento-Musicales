@@ -35,15 +35,14 @@ texture = ExtResource("2_8rxib")
 
 [node name="Fondo, cartas" type="TextureRect" parent="."]
 texture_filter = 1
-offset_left = 132.392
-offset_top = 55.4562
-offset_right = 932.392
-offset_bottom = 455.501
-scale = Vector2(1.1, 1.1)
+offset_left = 122.868
+offset_top = 44.3444
+offset_right = 922.868
+offset_bottom = 444.389
+scale = Vector2(1.12, 1.12)
 size_flags_horizontal = 4
 texture = ExtResource("3_4fv7e")
 expand_mode = 2
-metadata/_edit_use_anchors_ = true
 
 [node name="Label" type="Label" parent="."]
 visible = false
@@ -60,13 +59,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = 399.19
-offset_top = 147.296
-offset_right = 763.19
-offset_bottom = 406.296
+offset_left = 395.41
+offset_top = 139.902
+offset_right = 759.41
+offset_bottom = 398.902
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(182, 130)
+theme_override_constants/h_separation = 45
+theme_override_constants/v_separation = 6
 columns = 4
 
 [node name="Manzana" type="Sprite2D" parent="."]
