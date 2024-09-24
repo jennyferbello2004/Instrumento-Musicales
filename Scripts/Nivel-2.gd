@@ -17,8 +17,7 @@ func Presentation():
 		$Guitarra.visible = true
 		hide_all_buttons()  
 		await get_tree().create_timer(2.5).timeout
-		$AnimationPlayer.play("Words")
-
+		$Cuatro.visible = true
 
 func hide_all_buttons():
 	var buttons = ["Button", "Button2", "Button3", "Button4", "Button5", "Button6", "Button7", "Button8"]
