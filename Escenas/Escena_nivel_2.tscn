@@ -23,7 +23,7 @@ length = 1.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Button/pieza 1:scale")
+tracks/0/path = NodePath("Button/TextureRect:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -86,7 +86,7 @@ tracks/3/keys = {
 tracks/4/type = "value"
 tracks/4/imported = false
 tracks/4/enabled = true
-tracks/4/path = NodePath("Button/pieza 1:scale")
+tracks/4/path = NodePath("Button/TextureRect:scale")
 tracks/4/interp = 1
 tracks/4/loop_wrap = true
 tracks/4/keys = {
@@ -310,7 +310,7 @@ texture = ExtResource("5_g8uvi")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
-[node name="pieza 1" type="TextureRect" parent="Button"]
+[node name="TextureRect2" type="TextureRect" parent="Button"]
 visible = false
 texture_filter = 1
 layout_mode = 0
@@ -349,7 +349,7 @@ offset_bottom = -2.0
 texture = ExtResource("4_6s0ht")
 metadata/_edit_use_anchors_ = true
 
-[node name="pieza 2" type="TextureRect" parent="Button2"]
+[node name="TextureRect2" type="TextureRect" parent="Button2"]
 visible = false
 texture_filter = 1
 layout_mode = 0
@@ -388,7 +388,7 @@ offset_bottom = -5.99997
 texture = ExtResource("8_h5qa3")
 metadata/_edit_use_anchors_ = true
 
-[node name="pieza 3" type="TextureRect" parent="Button3"]
+[node name="TextureRect2" type="TextureRect" parent="Button3"]
 visible = false
 texture_filter = 1
 layout_mode = 0
@@ -425,7 +425,7 @@ grow_horizontal = 2
 grow_vertical = 2
 texture = ExtResource("10_u22u8")
 
-[node name="pieza 4" type="TextureRect" parent="Button4"]
+[node name="TextureRect2" type="TextureRect" parent="Button4"]
 visible = false
 texture_filter = 1
 layout_mode = 0
@@ -467,7 +467,7 @@ rotation = 1.51947
 texture = ExtResource("8_1ra4s")
 metadata/_edit_use_anchors_ = true
 
-[node name="pieza 5" type="TextureRect" parent="Button5"]
+[node name="TextureRect2" type="TextureRect" parent="Button5"]
 visible = false
 texture_filter = 1
 layout_mode = 0
@@ -508,7 +508,7 @@ rotation = 1.51728
 texture = ExtResource("9_74pkq")
 metadata/_edit_use_anchors_ = true
 
-[node name="pieza 6" type="TextureRect" parent="Button6"]
+[node name="TextureRect2" type="TextureRect" parent="Button6"]
 visible = false
 texture_filter = 1
 layout_mode = 0
@@ -548,7 +548,7 @@ offset_bottom = 354.509
 rotation = 1.52335
 texture = ExtResource("10_6vm2p")
 
-[node name="pieza 7" type="TextureRect" parent="Button7"]
+[node name="TextureRect2" type="TextureRect" parent="Button7"]
 visible = false
 texture_filter = 1
 layout_mode = 0
@@ -587,7 +587,7 @@ offset_bottom = -1.0
 texture = ExtResource("11_ntv08")
 metadata/_edit_use_anchors_ = true
 
-[node name="pieza 8" type="TextureRect" parent="Button8"]
+[node name="TextureRect2" type="TextureRect" parent="Button8"]
 visible = false
 texture_filter = 1
 layout_mode = 0

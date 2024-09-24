@@ -1,26 +1,33 @@
-[gd_scene load_steps=28 format=3 uid="uid://vp0eca7rl4pe"]
+[gd_scene load_steps=35 format=3 uid="uid://vp0eca7rl4pe"]
 
 [ext_resource type="Script" path="res://Scripts/Escena-adivinarsonido1.gd" id="1_uu2ep"]
 [ext_resource type="Texture2D" uid="uid://cb83ap3n76jjh" path="res://Assets/Imagenes/Fondos/Fondo-minijuegos.png" id="2_cv2dm"]
 [ext_resource type="Script" path="res://Scripts/Sonido1.gd" id="2_wd1w7"]
-[ext_resource type="Texture2D" uid="uid://bvpng8xhsgokl" path="res://Assets/Imagenes/Marco sin fondo.png" id="3_det3b"]
+[ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="3_al6wf"]
 [ext_resource type="AudioStream" uid="uid://c2srx45wgxx2" path="res://Sonidos/Instrumentos/Sonido Guitarra.mp3" id="4_oplsi"]
 [ext_resource type="Texture2D" uid="uid://c2c2sn7mfbk64" path="res://Assets/Imagenes/Icono cuatro .png" id="5_gn1jy"]
 [ext_resource type="Script" path="res://Sonido2.gd" id="5_yg0k8"]
-[ext_resource type="AudioStream" uid="uid://dpj156lfjx2a0" path="res://Sonidos/Instrumentos/Tambor.mp3" id="6_ls1ib"]
+[ext_resource type="AudioStream" uid="uid://c27evsblmfj7s" path="res://Sonidos/Voces/1.mp3" id="6_tr776"]
 [ext_resource type="Script" path="res://Sonido3.gd" id="7_88anx"]
-[ext_resource type="AudioStream" uid="uid://yhsebsln67cb" path="res://Sonidos/Instrumentos/Flauta.mp3" id="8_h8c86"]
 [ext_resource type="Texture2D" uid="uid://dg7bcyrefnn7n" path="res://Assets/Imagenes/Icono tambor .png" id="8_noour"]
 [ext_resource type="Script" path="res://Sonido4.gd" id="9_hkkph"]
-[ext_resource type="AudioStream" uid="uid://crxj6gcc7pagh" path="res://Sonidos/Instrumentos/Maraca.mp3" id="10_07mdd"]
+[ext_resource type="AudioStream" uid="uid://dcfhkae675b1n" path="res://Sonidos/Voces/6.mp3" id="9_tkwke"]
 [ext_resource type="Texture2D" uid="uid://xbtr0axu5j8q" path="res://Assets/Imagenes/Ícono flauta.png" id="11_eievw"]
 [ext_resource type="Script" path="res://Sonido5.gd" id="11_luhoh"]
-[ext_resource type="AudioStream" uid="uid://cqgkvt1vsr3hv" path="res://Sonidos/Instrumentos/Violin.mp3" id="11_teegx"]
-[ext_resource type="AudioStream" uid="uid://2qsbckclgdla" path="res://Sonidos/Instrumentos/ARpa.mp3" id="12_1p1k0"]
+[ext_resource type="AudioStream" uid="uid://3jaghq31l1ww" path="res://Sonidos/Voces/4.mp3" id="12_k8fy1"]
 [ext_resource type="Script" path="res://Sonido6.gd" id="13_7kkj2"]
 [ext_resource type="Texture2D" uid="uid://c47vkmwgvdft3" path="res://Assets/Imagenes/Ícono maracas.png" id="14_0hny8"]
+[ext_resource type="AudioStream" uid="uid://dd4venao76co1" path="res://Sonidos/Voces/3.mp3" id="15_bx8v8"]
 [ext_resource type="Texture2D" uid="uid://bsi8l43dfgfhd" path="res://Assets/Imagenes/Ícono violín .png" id="17_152cd"]
+[ext_resource type="AudioStream" uid="uid://bbfm50yxm7764" path="res://Sonidos/Voces/5.mp3" id="18_ruhfm"]
 [ext_resource type="Texture2D" uid="uid://bxc7gr1skfijq" path="res://Assets/Imagenes/Ícono arpa.png" id="20_cupwf"]
+[ext_resource type="AudioStream" uid="uid://cbql2usfjyl8l" path="res://Sonidos/Voces/2.mp3" id="21_diehf"]
+[ext_resource type="Texture2D" uid="uid://r2245426f47g" path="res://Assets/Imagenes/boton correcto png.png" id="22_y2f0r"]
+[ext_resource type="Texture2D" uid="uid://cl68shjhu7dkw" path="res://Assets/Imagenes/boton incorrecto png.png" id="23_wsfl8"]
+[ext_resource type="AudioStream" uid="uid://duf06wfmj571i" path="res://Sonidos/Voces/0923 (online-audio-converter.com).mp3" id="24_qhpbm"]
+[ext_resource type="AudioStream" uid="uid://d0wpks4qhyluv" path="res://Sonidos/Voces/error-3-125761.mp3" id="25_q8gtb"]
+[ext_resource type="AudioStream" uid="uid://nk7rhbvs131t" path="res://Sonidos/Voces/8 (online-audio-converter.com).mp3" id="26_dmeqy"]
+[ext_resource type="AudioStream" uid="uid://dn8l6708cw3go" path="res://Sonidos/Efectos-Sonidos/new-level-142995.mp3" id="27_ewkwx"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wuy6"]
 size = Vector2(122, 77)
@@ -49,13 +56,13 @@ scale = Vector2(1.92333, 2.18079)
 texture = ExtResource("2_cv2dm")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-position = Vector2(573, 269)
+position = Vector2(571, 314)
 rotation = -3.14159
-scale = Vector2(-0.443, -0.41)
-texture = ExtResource("3_det3b")
+scale = Vector2(-0.163, -0.151)
+texture = ExtResource("3_al6wf")
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(463, 194)
+position = Vector2(218, 372)
 script = ExtResource("2_wd1w7")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
@@ -69,10 +76,10 @@ position = Vector2(-4, 15.5)
 shape = SubResource("RectangleShape2D_0wuy6")
 
 [node name="Sonido1" type="AudioStreamPlayer" parent="Area2D"]
-stream = ExtResource("4_oplsi")
+stream = ExtResource("6_tr776")
 
 [node name="Area2D2" type="Area2D" parent="."]
-position = Vector2(642, 208)
+position = Vector2(945, 388)
 script = ExtResource("5_yg0k8")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D2"]
@@ -81,14 +88,14 @@ scale = Vector2(0.0708333, 0.0506263)
 texture = ExtResource("8_noour")
 
 [node name="Sonido2" type="AudioStreamPlayer" parent="Area2D2"]
-stream = ExtResource("6_ls1ib")
+stream = ExtResource("9_tkwke")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2(2, 0)
 shape = SubResource("RectangleShape2D_1mx21")
 
 [node name="Area2D3" type="Area2D" parent="."]
-position = Vector2(338, 308)
+position = Vector2(367, 447)
 script = ExtResource("7_88anx")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D3"]
@@ -97,14 +104,14 @@ scale = Vector2(0.0708333, 0.0495825)
 texture = ExtResource("11_eievw")
 
 [node name="Sonido3" type="AudioStreamPlayer" parent="Area2D3"]
-stream = ExtResource("8_h8c86")
+stream = ExtResource("12_k8fy1")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D3"]
 position = Vector2(-15, 6)
 shape = SubResource("RectangleShape2D_7bo0p")
 
 [node name="Area2D4" type="Area2D" parent="."]
-position = Vector2(463, 314)
+position = Vector2(489, 454)
 script = ExtResource("9_hkkph")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D4"]
@@ -117,10 +124,10 @@ position = Vector2(20, 0)
 shape = SubResource("RectangleShape2D_8ar5x")
 
 [node name="sonido4" type="AudioStreamPlayer" parent="Area2D4"]
-stream = ExtResource("10_07mdd")
+stream = ExtResource("15_bx8v8")
 
 [node name="Area2D5" type="Area2D" parent="."]
-position = Vector2(663, 298)
+position = Vector2(657, 442)
 script = ExtResource("11_luhoh")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D5"]
@@ -130,14 +137,14 @@ scale = Vector2(0.0699375, 0.0480167)
 texture = ExtResource("17_152cd")
 
 [node name="sonido5" type="AudioStreamPlayer" parent="Area2D5"]
-stream = ExtResource("11_teegx")
+stream = ExtResource("18_ruhfm")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D5"]
 position = Vector2(7, 10.5)
 shape = SubResource("RectangleShape2D_xpgbx")
 
 [node name="Area2D6" type="Area2D" parent="."]
-position = Vector2(854, 298)
+position = Vector2(807, 437)
 script = ExtResource("13_7kkj2")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D6"]
@@ -146,7 +153,7 @@ scale = Vector2(0.0704375, 0.0480167)
 texture = ExtResource("20_cupwf")
 
 [node name="sonido6" type="AudioStreamPlayer" parent="Area2D6"]
-stream = ExtResource("12_1p1k0")
+stream = ExtResource("21_diehf")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D6"]
 position = Vector2(2, 13.5)
@@ -154,18 +161,41 @@ shape = SubResource("RectangleShape2D_yi26r")
 
 [node name="Button" type="Button" parent="."]
 visible = false
-offset_right = 8.0
-offset_bottom = 8.0
+offset_left = 254.0
+offset_top = 447.0
+offset_right = 4432.0
+offset_bottom = 2503.0
+scale = Vector2(0.04, 0.04)
 text = "COrrecto
 "
+icon = ExtResource("22_y2f0r")
+flat = true
 
 [node name="Button2" type="Button" parent="."]
 visible = false
-offset_left = 727.0
-offset_top = 18.0
-offset_right = 818.0
-offset_bottom = 49.0
+offset_left = 670.0
+offset_top = 447.0
+offset_right = 4861.0
+offset_bottom = 2503.0
+scale = Vector2(0.04, 0.04)
 text = "INcorrecto"
+icon = ExtResource("23_wsfl8")
+flat = true
+
+[node name="AudioInicial" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("24_qhpbm")
+
+[node name="error" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("25_q8gtb")
+
+[node name="error2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("26_dmeqy")
+
+[node name="Correct" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("27_ewkwx")
+
+[node name="AudioReady" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_oplsi")
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
