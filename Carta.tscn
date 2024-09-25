@@ -1,7 +1,7 @@
 [gd_scene load_steps=10 format=3 uid="uid://ue6nvwc3k71h"]
 
 [ext_resource type="Script" path="res://CartasMenu.gd" id="1_jgxtx"]
-[ext_resource type="Texture2D" uid="uid://cb83ap3n76jjh" path="res://Assets/Imagenes/Fondos/Fondo-minijuegos.png" id="2_8rxib"]
+[ext_resource type="Texture2D" uid="uid://d2g1rcv5ycfga" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_w6u3l"]
 [ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="3_4fv7e"]
 [ext_resource type="FontFile" uid="uid://cboxbr3bx4363" path="res://Assets/Fuentes/Lemon Shake Shake.ttf" id="4_qdw1d"]
 [ext_resource type="Texture2D" uid="uid://kesqmidb2qry" path="res://Assets/Imagenes/estrella premio png.png" id="5_uoxnk"]
@@ -31,7 +31,7 @@ offset_left = -1.0
 offset_right = 1154.0
 offset_bottom = 651.0
 size_flags_vertical = 4
-texture = ExtResource("2_8rxib")
+texture = ExtResource("2_w6u3l")
 
 [node name="Fondo, cartas" type="TextureRect" parent="."]
 texture_filter = 1
