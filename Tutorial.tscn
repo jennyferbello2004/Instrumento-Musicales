@@ -105,7 +105,7 @@ autoplay = "Mouse-Click"
 frame_progress = 0.0648808
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
-position = Vector2(804.39, 380.902)
+position = Vector2(801.558, 389.397)
 scale = Vector2(0.07264, 0.07264)
 sprite_frames = SubResource("SpriteFrames_tbkve")
 animation = &"manito"
