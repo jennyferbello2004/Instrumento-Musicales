@@ -11,8 +11,8 @@
 [ext_resource type="Texture2D" uid="uid://bf4et46goncc5" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/13.png" id="10_u22u8"]
 [ext_resource type="Texture2D" uid="uid://cpm6vq0h3rjc0" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/23.png" id="11_ntv08"]
 [ext_resource type="Texture2D" uid="uid://d26xkuhura5dc" path="res://Assets/Imagenes/Guitarra.png" id="12_kodj6"]
+[ext_resource type="Texture2D" uid="uid://bpw2enr0e4lqa" path="res://Assets/Imagenes/palabra cuatro.png" id="13_ayilc"]
 [ext_resource type="AudioStream" uid="uid://diu3rthfs6nmm" path="res://Sonidos/Efectos-Sonidos/collect-points-190037.mp3" id="13_e7k7q"]
-[ext_resource type="Texture2D" uid="uid://drwgikfga1xci" path="res://Assets/Fuente Letras/Creado por mi/palabra cuatro png.png" id="14_poinr"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wdt0o"]
 
@@ -600,9 +600,9 @@ mouse_filter = 2
 [node name="Cuatro" type="TextureRect" parent="."]
 visible = false
 layout_mode = 0
-offset_left = 674.075
-offset_top = 248.522
-offset_right = 1009.07
-offset_bottom = 344.522
-texture = ExtResource("14_poinr")
+offset_left = 649.0
+offset_top = 225.0
+offset_right = 1073.0
+offset_bottom = 376.0
+texture = ExtResource("13_ayilc")
 expand_mode = 1
