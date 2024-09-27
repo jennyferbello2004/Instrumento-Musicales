@@ -1,9 +1,13 @@
-[gd_scene load_steps=13 format=3 uid="uid://0gtnsl5ngaht"]
+[gd_scene load_steps=16 format=3 uid="uid://0gtnsl5ngaht"]
 
 [ext_resource type="FontFile" uid="uid://2c7kwntw6toa" path="res://Assets/Fuentes/LuckiestGuy-Regular.ttf" id="1_dyf5p"]
 [ext_resource type="Script" path="res://Scripts/Script Del Menu Principal.gd" id="2_tr8ot"]
-[ext_resource type="Texture2D" uid="uid://cwqaedrhq7df5" path="res://Assets/Imagenes/Fondos/Fondo.jpg" id="3_3ms15"]
+[ext_resource type="Texture2D" uid="uid://cocbdq5xikrrk" path="res://Assets/Imagenes/Fondos/Fondo nubes Vfinal.png" id="3_idmr0"]
 [ext_resource type="Texture2D" uid="uid://cwpcboul0a3ou" path="res://Assets/Sprite sheets/Boton jugar-Sheet.png" id="4_br1lm"]
+[ext_resource type="FontFile" uid="uid://i3lx4kunmbyy" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="5_suvit"]
+[ext_resource type="Texture2D" uid="uid://cfqclmv0amrvj" path="res://Assets/Imagenes/bordeguitarra.png" id="6_ynu1t"]
+[ext_resource type="Texture2D" uid="uid://lak48qu3w700" path="res://Assets/Imagenes/bordemaracas.png" id="7_vftv2"]
+[ext_resource type="Texture2D" uid="uid://cpjpjslac0usp" path="res://Assets/Imagenes/bordearpa.png" id="8_qm48b"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lnsrl"]
 bg_color = Color(0.901961, 0.901961, 0.980392, 1)
@@ -28,19 +32,6 @@ shadow_size = 7
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xalt7"]
 bg_color = Color(0.788235, 0.921569, 0.968627, 1)
 
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_qa8nr"]
-bg_color = Color(0.729412, 0.909804, 1, 1)
-corner_radius_top_left = 9
-corner_radius_top_right = 7
-corner_radius_bottom_right = 22
-corner_radius_bottom_left = 9
-corner_detail = 4
-expand_margin_left = 10.0
-expand_margin_top = 21.0
-expand_margin_right = 10.0
-shadow_color = Color(0.752941, 0.74902, 0.94902, 1)
-shadow_size = 8
-
 [sub_resource type="Theme" id="Theme_xvtxd"]
 Button/colors/font_color = Color(0.52549, 0.768627, 0.839216, 1)
 Button/font_sizes/font_size = 25
@@ -48,15 +39,14 @@ Button/fonts/font = ExtResource("1_dyf5p")
 Button/styles/normal = SubResource("StyleBoxFlat_lnsrl")
 Button/styles/pressed = SubResource("StyleBoxFlat_xalt7")
 Label/colors/font_color = Color(0.901961, 0.901961, 0.980392, 1)
-Label/colors/font_outline_color = Color(0.168627, 0.105882, 0.447059, 1)
-Label/constants/line_spacing = 9
-Label/constants/outline_size = 5
-Label/constants/shadow_offset_x = 4
-Label/constants/shadow_offset_y = 3
-Label/constants/shadow_outline_size = 5
+Label/colors/font_outline_color = Color(0.0901961, 0.184314, 0.411765, 1)
+Label/constants/line_spacing = 0
+Label/constants/outline_size = 28
+Label/constants/shadow_offset_x = 0
+Label/constants/shadow_offset_y = 0
+Label/constants/shadow_outline_size = 0
 Label/font_sizes/font_size = 70
 Label/fonts/font = ExtResource("1_dyf5p")
-Label/styles/normal = SubResource("StyleBoxFlat_qa8nr")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_c1kru"]
 atlas = ExtResource("4_br1lm")
@@ -103,17 +93,19 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -54.0
+offset_bottom = 42.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_3ms15")
+texture = ExtResource("3_idmr0")
 expand_mode = 1
 
 [node name="TextureButton" type="TextureButton" parent="."]
 texture_filter = 1
 layout_mode = 1
-offset_left = 503.0
+offset_left = 490.0
 offset_top = 433.0
-offset_right = 566.0
+offset_right = 553.0
 offset_bottom = 465.0
 scale = Vector2(3.385, 3.385)
 
@@ -123,5 +115,44 @@ scale = Vector2(0.248846, 0.248846)
 sprite_frames = SubResource("SpriteFrames_ft8i1")
 autoplay = "default"
 frame_progress = 0.255617
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -442.0
+offset_top = -86.0
+offset_right = 442.0
+offset_bottom = 86.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_outline_color = Color(0.054902, 0.12549, 0.301961, 1)
+theme_override_constants/shadow_outline_size = 16
+theme_override_fonts/font = ExtResource("5_suvit")
+theme_override_font_sizes/font_size = 0
+text = "¡Arpa, Cuatro y Maracas!
+Una Aventura Musical"
+horizontal_alignment = 1
+
+[node name="Bordeguitarra" type="Sprite2D" parent="."]
+position = Vector2(366.478, 130.96)
+rotation = 0.327233
+scale = Vector2(0.130612, 0.130612)
+texture = ExtResource("6_ynu1t")
+
+[node name="Bordemaracas" type="Sprite2D" parent="."]
+position = Vector2(893, 135)
+rotation = 1.48585
+scale = Vector2(0.119076, 0.119076)
+texture = ExtResource("7_vftv2")
+
+[node name="Bordearpa" type="Sprite2D" parent="."]
+position = Vector2(190, 533)
+rotation = -0.287233
+scale = Vector2(0.111169, 0.111169)
+texture = ExtResource("8_qm48b")
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
