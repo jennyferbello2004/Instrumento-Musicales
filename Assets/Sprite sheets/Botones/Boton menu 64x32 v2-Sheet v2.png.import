@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxkedny3mpyy8"
-path="res://.godot/imported/pixil-frame-2.png-b5c34332542cfbe624f1abdb5b86f3e4.ctex"
+uid="uid://d35p5ogfm278u"
+path="res://.godot/imported/Boton menu 64x32 v2-Sheet v2.png-14ec734651a69ddca7d9bf113fcecab9.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mouse/pixil-frame-2.png"
-dest_files=["res://.godot/imported/pixil-frame-2.png-b5c34332542cfbe624f1abdb5b86f3e4.ctex"]
+source_file="res://Assets/Sprite sheets/Botones/Boton menu 64x32 v2-Sheet v2.png"
+dest_files=["res://.godot/imported/Boton menu 64x32 v2-Sheet v2.png-14ec734651a69ddca7d9bf113fcecab9.ctex"]
 
 [params]
 
