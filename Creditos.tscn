@@ -1,5 +1,6 @@
-[gd_scene load_steps=12 format=3 uid="uid://c2gdtql6586p0"]
+[gd_scene load_steps=18 format=3 uid="uid://c2gdtql6586p0"]
 
+[ext_resource type="Script" path="res://Creditos.gd" id="1_s5uwh"]
 [ext_resource type="Texture2D" uid="uid://crumdpnq6ppvx" path="res://Assets/Imagenes/Fondos/Créditos de Videojuego Aventura Musical 2.png" id="1_ud7wn"]
 [ext_resource type="FontFile" uid="uid://l3sg0c74mhe6" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="3_1lt82"]
 [ext_resource type="Texture2D" uid="uid://blrt1xud1rhgn" path="res://Assets/Imagenes/Logo Edúcate Blanco.png" id="4_2p8pl"]
@@ -11,6 +12,36 @@
 [ext_resource type="Texture2D" uid="uid://ifsuxmatlbfs" path="res://Assets/Imagenes/bordenotas.png" id="9_tmbxk"]
 [ext_resource type="Texture2D" uid="uid://b68gcnfs7t4oy" path="res://Assets/Imagenes/bordeflauta.png" id="10_qunrq"]
 [ext_resource type="Texture2D" uid="uid://bben20l45ntun" path="res://Assets/Imagenes/bordetambor.png" id="11_mg5ub"]
+[ext_resource type="Texture2D" uid="uid://dimom4o2lfag4" path="res://Assets/Imagenes/Boton menu 256x384 v2-Sheet v2.png" id="12_bik51"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ix6xk"]
+atlas = ExtResource("12_bik51")
+region = Rect2(0, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpagu"]
+atlas = ExtResource("12_bik51")
+region = Rect2(0, 128, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4sy0"]
+atlas = ExtResource("12_bik51")
+region = Rect2(0, 256, 256, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iad15"]
+animations = [{
+"frames": [{
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_ix6xk")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_xpagu")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_k4sy0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
 
 [node name="Control" type="Control"]
 layout_mode = 3
@@ -19,6 +50,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_s5uwh")
 
 [node name="fondo escenario" type="TextureRect" parent="."]
 layout_mode = 1
@@ -324,3 +356,19 @@ theme_override_fonts/font = ExtResource("4_y41rq")
 theme_override_font_sizes/font_size = 13
 text = "Jerson Rubín"
 horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 26.4183
+offset_top = 540.236
+offset_right = 191.418
+offset_bottom = 616.236
+
+[node name="animacion menu" type="AnimatedSprite2D" parent="TextureButton"]
+position = Vector2(82.131, 38.9585)
+scale = Vector2(0.6875, 0.6875)
+sprite_frames = SubResource("SpriteFrames_iad15")
+autoplay = "default"
+frame_progress = 0.926411
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_boton_de_menu_pressed"]
