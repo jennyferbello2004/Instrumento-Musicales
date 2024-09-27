@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cddwfsnu0ane"
-path="res://.godot/imported/pixil-frame-11.png-d030be8183d05de07906762c40d0adfa.ctex"
+uid="uid://bho5fbclg8vb"
+path="res://.godot/imported/pixil-frame-3.png-5b1ee93944eea7656f172914a4f15a82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Táctil/pixil-frame-11.png"
-dest_files=["res://.godot/imported/pixil-frame-11.png-d030be8183d05de07906762c40d0adfa.ctex"]
+source_file="res://Assets/Sprite sheets/Mouse/pixil-frame-3.png"
+dest_files=["res://.godot/imported/pixil-frame-3.png-5b1ee93944eea7656f172914a4f15a82.ctex"]
 
 [params]
 

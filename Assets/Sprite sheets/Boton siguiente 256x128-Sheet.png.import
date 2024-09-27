@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxiw0cb613agu"
-path="res://.godot/imported/pixil-frame-0.png-40891169296ab789ec37fea50bc08b57.ctex"
+uid="uid://db5ym4c1cy15i"
+path="res://.godot/imported/Boton siguiente 256x128-Sheet.png-ada16f3cf383b7533c321639ee3c5b29.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mouse/pixil-frame-0.png"
-dest_files=["res://.godot/imported/pixil-frame-0.png-40891169296ab789ec37fea50bc08b57.ctex"]
+source_file="res://Assets/Sprite sheets/Boton siguiente 256x128-Sheet.png"
+dest_files=["res://.godot/imported/Boton siguiente 256x128-Sheet.png-ada16f3cf383b7533c321639ee3c5b29.ctex"]
 
 [params]
 

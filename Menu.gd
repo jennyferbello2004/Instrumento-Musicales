@@ -17,8 +17,8 @@ func _on_arpa_pressed():
 
 
 func _on_guitarra_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Escenas/Escena_nivel_2.tscn")
 
 
 func _on_maraca_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://EscenaSonido1.tscn")

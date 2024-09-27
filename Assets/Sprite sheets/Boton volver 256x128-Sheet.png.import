@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cxkedny3mpyy8"
-path="res://.godot/imported/pixil-frame-2.png-b5c34332542cfbe624f1abdb5b86f3e4.ctex"
+uid="uid://dpn232p5laa0a"
+path="res://.godot/imported/Boton volver 256x128-Sheet.png-824a5d2c679dfd8c87e7915fb2ad4856.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mouse/pixil-frame-2.png"
-dest_files=["res://.godot/imported/pixil-frame-2.png-b5c34332542cfbe624f1abdb5b86f3e4.ctex"]
+source_file="res://Assets/Sprite sheets/Boton volver 256x128-Sheet.png"
+dest_files=["res://.godot/imported/Boton volver 256x128-Sheet.png-824a5d2c679dfd8c87e7915fb2ad4856.ctex"]
 
 [params]
 
