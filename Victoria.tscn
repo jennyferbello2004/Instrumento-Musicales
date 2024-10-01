@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://b2yshqayn0d6p"]
+
+[ext_resource type="Texture2D" uid="uid://dwhcddi4mjd5e" path="res://Assets/Imagenes/Fondos/ventana victoria.png" id="1_6236p"]
+[ext_resource type="Texture2D" uid="uid://ls1jljpyhigv" path="res://Assets/Fuente Letras/Lo lograste pngg.png" id="2_53gae"]
+[ext_resource type="Texture2D" uid="uid://cfj54lrtdo6ap" path="res://Assets/Imagenes/emoji victoria 2.png" id="3_78r70"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+layout_mode = 0
+offset_top = -40.433
+offset_right = 1153.0
+offset_bottom = 680.567
+texture = ExtResource("1_6236p")
+expand_mode = 1
+
+[node name="LoLograstePngg" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(624.345, 324.341)
+scale = Vector2(1.21839, 1.21839)
+texture = ExtResource("2_53gae")
+
+[node name="EmojiVictoria2" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(587.066, 463.323)
+scale = Vector2(0.386846, 0.386846)
+texture = ExtResource("3_78r70")
