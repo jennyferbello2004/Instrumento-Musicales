@@ -51,6 +51,7 @@ size = Vector2(130, 119)
 script = ExtResource("1_uu2ep")
 
 [node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
 offset_right = 1153.0
 offset_bottom = 648.0
 texture = ExtResource("2_girtv")
