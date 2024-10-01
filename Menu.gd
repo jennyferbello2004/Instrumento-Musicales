@@ -22,3 +22,7 @@ func _on_guitarra_pressed():
 
 func _on_maraca_pressed():
 	get_tree().change_scene_to_file("res://EscenaSonido1.tscn")
+
+
+func _on_boton_volver_pressed():
+	get_tree().change_scene_to_file("res://Escenas/EscenaPrincipal.tscn")

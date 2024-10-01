@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dpn232p5laa0a"
-path="res://.godot/imported/Boton volver 256x128-Sheet.png-824a5d2c679dfd8c87e7915fb2ad4856.ctex"
+uid="uid://4j506o1cfjk2"
+path="res://.godot/imported/bandera animacion.png-b45af986e6b159ba13cfc23318b0cf90.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprite sheets/Boton volver 256x128-Sheet.png"
-dest_files=["res://.godot/imported/Boton volver 256x128-Sheet.png-824a5d2c679dfd8c87e7915fb2ad4856.ctex"]
+source_file="res://Assets/Sprite sheets/bandera animacion.png"
+dest_files=["res://.godot/imported/bandera animacion.png-b45af986e6b159ba13cfc23318b0cf90.ctex"]
 
 [params]
 

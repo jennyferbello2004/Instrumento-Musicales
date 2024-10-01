@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2aenwgn2dfid"
-path="res://.godot/imported/Boton menu 256x384 v2-Sheet v2.png-fc5356dd218f08f74631b0af9383eeee.ctex"
+uid="uid://cjb484std8kst"
+path="res://.godot/imported/Fondo de teatro fuera 4.png-6605149dec2723c3094555f3c390a3bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Sprite sheets/Boton menu 256x384 v2-Sheet v2.png"
-dest_files=["res://.godot/imported/Boton menu 256x384 v2-Sheet v2.png-fc5356dd218f08f74631b0af9383eeee.ctex"]
+source_file="res://Assets/Imagenes/Fondos/Fondo de teatro fuera 4.png"
+dest_files=["res://.godot/imported/Fondo de teatro fuera 4.png-6605149dec2723c3094555f3c390a3bd.ctex"]
 
 [params]
 
