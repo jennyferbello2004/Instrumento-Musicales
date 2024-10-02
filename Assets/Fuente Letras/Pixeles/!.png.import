@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ls1jljpyhigv"
-path="res://.godot/imported/Lo lograste pngg.png-1686a974792b4b571199ec92a616e0e3.ctex"
+uid="uid://f530lbamrrei"
+path="res://.godot/imported/!.png-a1007ed70cfed17e3e3636b0c1597063.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Fuente Letras/Lo lograste pngg.png"
-dest_files=["res://.godot/imported/Lo lograste pngg.png-1686a974792b4b571199ec92a616e0e3.ctex"]
+source_file="res://Assets/Fuente Letras/Pixeles/!.png"
+dest_files=["res://.godot/imported/!.png-a1007ed70cfed17e3e3636b0c1597063.ctex"]
 
 [params]
 
