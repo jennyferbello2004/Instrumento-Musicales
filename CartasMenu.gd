@@ -90,7 +90,7 @@ func check_match():
 		if first_card.card_value == second_card.card_value:
 			match_found()
 		else:
-			await get_tree().create_timer(2.0).timeout
+			await get_tree().create_timer(1.5).timeout
 			first_card.flip_card()
 			second_card.flip_card()
 			reset_flip_state()
@@ -112,11 +112,11 @@ func match_found():
 	add_child(audio_player) 
 	audio_player.stream = first_card.card_sound
 	audio_player.play()
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(1.5).timeout
 	audio_player.stop()
 	audio_player.stream = second_card.card_sound
 	audio_player.play()
-	await get_tree().create_timer(2.0).timeout
+	await get_tree().create_timer(1.5).timeout
 	audio_player.stop()
 	score += 1  
 	update_score_label()  
