@@ -1,18 +1,14 @@
-[gd_scene load_steps=60 format=3 uid="uid://b2yshqayn0d6p"]
+[gd_scene load_steps=74 format=3 uid="uid://b2yshqayn0d6p"]
 
 [ext_resource type="Texture2D" uid="uid://yturhuau5wwa" path="res://Assets/Imagenes/Fondos/Fondo nubes Vfinall.png" id="1_fx4dm"]
-[ext_resource type="Texture2D" uid="uid://ls1jljpyhigv" path="res://Assets/Fuente Letras/Pixeles/Lo lograste pngg.png" id="2_53gae"]
-[ext_resource type="Texture2D" uid="uid://cfj54lrtdo6ap" path="res://Assets/Imagenes/emoji victoria 2.png" id="3_78r70"]
-[ext_resource type="Texture2D" uid="uid://eyg23ji6gmo8" path="res://Assets/Fuente Letras/Pixeles/Excelente.png" id="4_5tuph"]
-[ext_resource type="Texture2D" uid="uid://bk1nu42mnevyc" path="res://Assets/Fuente Letras/Pixeles/Excelente - copia.png" id="5_u5yd4"]
-[ext_resource type="Texture2D" uid="uid://f530lbamrrei" path="res://Assets/Fuente Letras/Pixeles/!.png" id="6_sngf4"]
-[ext_resource type="Texture2D" uid="uid://134mq84e75yl" path="res://Assets/Fuente Letras/Pixeles/¡.png" id="7_2ckkq"]
 [ext_resource type="Texture2D" uid="uid://b2bglvqbmb0f7" path="res://Assets/Sprite sheets/Notas musicales/nota musical naranja-Sheet.png" id="8_nbiq1"]
 [ext_resource type="Texture2D" uid="uid://cffk1q3pae5ir" path="res://Assets/Sprite sheets/Notas musicales/nota musical rosado-Sheet.png" id="9_5kdfq"]
 [ext_resource type="Texture2D" uid="uid://cqo2vky3cpm4" path="res://Assets/Sprite sheets/Notas musicales/nota musical amarillo-Sheet.png" id="10_qwglb"]
 [ext_resource type="Texture2D" uid="uid://c0ftbkim1by87" path="res://Assets/Sprite sheets/Notas musicales/nota musical morado-Sheet.png" id="11_n7wb4"]
 [ext_resource type="Texture2D" uid="uid://dfb4leggqh3ee" path="res://Assets/Sprite sheets/Notas musicales/nota musical verde-Sheet.png" id="12_e5cy6"]
 [ext_resource type="Texture2D" uid="uid://du8c80h85471u" path="res://Assets/Sprite sheets/Notas musicales/nota musical rojo-Sheet.png" id="13_nl8i8"]
+[ext_resource type="Texture2D" uid="uid://fcljcgu68b5l" path="res://Assets/Sprite sheets/emoji victoria -Sheet.png" id="14_paf7h"]
+[ext_resource type="Texture2D" uid="uid://bmdbji33lavr5" path="res://Assets/Sprite sheets/excelente spritesheet.png" id="15_hjs25"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6n3xo"]
 atlas = ExtResource("8_nbiq1")
@@ -342,6 +338,134 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_h4j0r"]
+atlas = ExtResource("14_paf7h")
+region = Rect2(0, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kgulv"]
+atlas = ExtResource("14_paf7h")
+region = Rect2(480, 0, 480, 480)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqua5"]
+atlas = ExtResource("14_paf7h")
+region = Rect2(960, 0, 480, 480)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u1yof"]
+animations = [{
+"frames": [{
+"duration": 2.0,
+"texture": SubResource("AtlasTexture_h4j0r")
+}, {
+"duration": 0.5,
+"texture": SubResource("AtlasTexture_kgulv")
+}, {
+"duration": 2.5,
+"texture": SubResource("AtlasTexture_kqua5")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gm72l"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(0, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_s63go"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(480, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_y3t3r"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(960, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rqmsk"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(1440, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_obac2"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(1920, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xf08j"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(2400, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_msk8q"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(2880, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yo3je"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(3360, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_i5khn"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(3840, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5tncq"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(4320, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_col7m"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(4800, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g6u0c"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(5280, 0, 480, 240)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gfqg7"]
+atlas = ExtResource("15_hjs25")
+region = Rect2(5760, 0, 480, 240)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_raflk"]
+animations = [{
+"frames": [{
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_gm72l")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_s63go")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_y3t3r")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_rqmsk")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_obac2")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_xf08j")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_msk8q")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_yo3je")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_i5khn")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_5tncq")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_col7m")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_g6u0c")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_gfqg7")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -358,43 +482,6 @@ offset_right = 1153.0
 offset_bottom = 680.567
 texture = ExtResource("1_fx4dm")
 expand_mode = 1
-
-[node name="LoLograstePngg" type="Sprite2D" parent="."]
-visible = false
-texture_filter = 1
-position = Vector2(624.345, 324.341)
-scale = Vector2(1.21839, 1.21839)
-texture = ExtResource("2_53gae")
-
-[node name="EmojiVictoria2" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(587.066, 463.323)
-scale = Vector2(0.386846, 0.386846)
-texture = ExtResource("3_78r70")
-
-[node name="Excelente" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(568, 317)
-scale = Vector2(0.720588, 0.720588)
-texture = ExtResource("4_5tuph")
-
-[node name="Excelente-Copia" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(875, 317)
-scale = Vector2(0.729358, 0.729358)
-texture = ExtResource("5_u5yd4")
-
-[node name="!" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(931, 317)
-scale = Vector2(0.71281, 0.71281)
-texture = ExtResource("6_sngf4")
-
-[node name="¡" type="Sprite2D" parent="."]
-texture_filter = 1
-position = Vector2(268, 318)
-scale = Vector2(0.733025, 0.733025)
-texture = ExtResource("7_2ckkq")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
@@ -439,3 +526,19 @@ scale = Vector2(0.61, 0.61)
 sprite_frames = SubResource("SpriteFrames_1qjkw")
 autoplay = "default"
 frame_progress = 0.21476
+
+[node name="emojihappy" type="AnimatedSprite2D" parent="."]
+position = Vector2(607, 492)
+scale = Vector2(0.470833, 0.470833)
+sprite_frames = SubResource("SpriteFrames_u1yof")
+autoplay = "default"
+frame_progress = 0.163454
+
+[node name="excelenteanimacion" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(606, 338)
+scale = Vector2(1.61667, 1.61667)
+sprite_frames = SubResource("SpriteFrames_raflk")
+autoplay = "default"
+frame_progress = 0.0756847
+speed_scale = 1.5
