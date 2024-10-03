@@ -1,11 +1,14 @@
-[gd_scene load_steps=74 format=3 uid="uid://b2yshqayn0d6p"]
+[gd_scene load_steps=80 format=3 uid="uid://b2yshqayn0d6p"]
 
 [ext_resource type="Texture2D" uid="uid://yturhuau5wwa" path="res://Assets/Imagenes/Fondos/Fondo nubes Vfinall.png" id="1_fx4dm"]
+[ext_resource type="Script" path="res://Victoria.gd" id="1_qp2s4"]
+[ext_resource type="AudioStream" uid="uid://cc537qoaibtjn" path="res://Sonidos/Audios/Excelente.mp3" id="2_yutjy"]
 [ext_resource type="Texture2D" uid="uid://b2bglvqbmb0f7" path="res://Assets/Sprite sheets/Notas musicales/nota musical naranja-Sheet.png" id="8_nbiq1"]
 [ext_resource type="Texture2D" uid="uid://cffk1q3pae5ir" path="res://Assets/Sprite sheets/Notas musicales/nota musical rosado-Sheet.png" id="9_5kdfq"]
 [ext_resource type="Texture2D" uid="uid://cqo2vky3cpm4" path="res://Assets/Sprite sheets/Notas musicales/nota musical amarillo-Sheet.png" id="10_qwglb"]
 [ext_resource type="Texture2D" uid="uid://c0ftbkim1by87" path="res://Assets/Sprite sheets/Notas musicales/nota musical morado-Sheet.png" id="11_n7wb4"]
 [ext_resource type="Texture2D" uid="uid://dfb4leggqh3ee" path="res://Assets/Sprite sheets/Notas musicales/nota musical verde-Sheet.png" id="12_e5cy6"]
+[ext_resource type="Texture2D" uid="uid://dogy4lulpbgwx" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="12_xkn0m"]
 [ext_resource type="Texture2D" uid="uid://du8c80h85471u" path="res://Assets/Sprite sheets/Notas musicales/nota musical rojo-Sheet.png" id="13_nl8i8"]
 [ext_resource type="Texture2D" uid="uid://fcljcgu68b5l" path="res://Assets/Sprite sheets/emoji victoria -Sheet.png" id="14_paf7h"]
 [ext_resource type="Texture2D" uid="uid://bmdbji33lavr5" path="res://Assets/Sprite sheets/excelente spritesheet.png" id="15_hjs25"]
@@ -466,6 +469,28 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_drhyk"]
+atlas = ExtResource("12_xkn0m")
+region = Rect2(0, 0, 60, 60)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5uney"]
+atlas = ExtResource("12_xkn0m")
+region = Rect2(60, 0, 60, 60)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_2rtpv"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_drhyk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5uney")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -473,6 +498,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_qp2s4")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 texture_filter = 1
@@ -483,7 +509,9 @@ offset_bottom = 680.567
 texture = ExtResource("1_fx4dm")
 expand_mode = 1
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+[node name="audioexcelente" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_yutjy")
+autoplay = true
 
 [node name="nota naranja" type="AnimatedSprite2D" parent="."]
 position = Vector2(420, 121)
@@ -528,11 +556,11 @@ autoplay = "default"
 frame_progress = 0.21476
 
 [node name="emojihappy" type="AnimatedSprite2D" parent="."]
-position = Vector2(607, 492)
-scale = Vector2(0.470833, 0.470833)
+position = Vector2(581, 168)
+scale = Vector2(0.3625, 0.3625)
 sprite_frames = SubResource("SpriteFrames_u1yof")
 autoplay = "default"
-frame_progress = 0.163454
+frame_progress = 0.0452436
 
 [node name="excelenteanimacion" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
@@ -540,5 +568,13 @@ position = Vector2(606, 338)
 scale = Vector2(1.61667, 1.61667)
 sprite_frames = SubResource("SpriteFrames_raflk")
 autoplay = "default"
-frame_progress = 0.0756847
+frame_progress = 0.748613
 speed_scale = 1.5
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+texture_filter = 1
+position = Vector2(586, 519)
+scale = Vector2(2.81667, 2.81667)
+sprite_frames = SubResource("SpriteFrames_2rtpv")
+autoplay = "default"
+frame_progress = 0.0938473
