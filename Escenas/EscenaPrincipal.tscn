@@ -402,6 +402,6 @@ rotation = -0.577159
 scale = Vector2(0.0846875, 0.0846875)
 sprite_frames = SubResource("SpriteFrames_nlmq2")
 autoplay = "default"
-frame_progress = 0.943372
+frame_progress = 0.574086
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
