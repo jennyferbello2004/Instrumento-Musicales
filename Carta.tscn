@@ -118,5 +118,6 @@ theme_override_font_sizes/font_size = 20
 text = "Movimientos"
 
 [node name="GPUParticles2D" type="GPUParticles2D" parent="."]
+visible = false
 position = Vector2(-335.139, 352.778)
 process_material = SubResource("ParticleProcessMaterial_aqg81")
