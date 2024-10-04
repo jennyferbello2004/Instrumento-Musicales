@@ -1,4 +1,4 @@
-[gd_scene load_steps=10 format=3 uid="uid://ue6nvwc3k71h"]
+[gd_scene load_steps=11 format=3 uid="uid://ue6nvwc3k71h"]
 
 [ext_resource type="Script" path="res://CartasMenu.gd" id="1_jgxtx"]
 [ext_resource type="Texture2D" uid="uid://d2g1rcv5ycfga" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_w6u3l"]
@@ -6,6 +6,7 @@
 [ext_resource type="FontFile" uid="uid://cboxbr3bx4363" path="res://Assets/Fuentes/Lemon Shake Shake.ttf" id="4_qdw1d"]
 [ext_resource type="Texture2D" uid="uid://kesqmidb2qry" path="res://Assets/Imagenes/estrella premio png.png" id="5_uoxnk"]
 [ext_resource type="FontFile" uid="uid://csigu2654ysbp" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="6_2fa1p"]
+[ext_resource type="AudioStream" uid="uid://csiv65nw6x2g5" path="res://Sonidos/Instrucciones memoria.mp3" id="7_f2umk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dxxs8"]
 
@@ -121,3 +122,8 @@ text = "Movimientos"
 visible = false
 position = Vector2(-335.139, 352.778)
 process_material = SubResource("ParticleProcessMaterial_aqg81")
+
+[node name="instructivo" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("7_f2umk")
+volume_db = -1.874
+autoplay = true
