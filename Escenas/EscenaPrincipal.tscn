@@ -1,4 +1,4 @@
-[gd_scene load_steps=45 format=3 uid="uid://0gtnsl5ngaht"]
+[gd_scene load_steps=49 format=3 uid="uid://0gtnsl5ngaht"]
 
 [ext_resource type="FontFile" uid="uid://2c7kwntw6toa" path="res://Assets/Fuentes/LuckiestGuy-Regular.ttf" id="1_dyf5p"]
 [ext_resource type="Script" path="res://Scripts/Script Del Menu Principal.gd" id="2_tr8ot"]
@@ -8,7 +8,10 @@
 [ext_resource type="Texture2D" uid="uid://cwwuo8w3p6yqk" path="res://Assets/Sprite sheets/Instrumentos/bordeguitarra-Sheet.png" id="9_aej6o"]
 [ext_resource type="Texture2D" uid="uid://bbfqnyv27ua87" path="res://Assets/Sprite sheets/Botones/sprite sheet creditos.png" id="9_vob5a"]
 [ext_resource type="Texture2D" uid="uid://mnr4r1ha021d" path="res://Assets/Sprite sheets/Instrumentos/bordearpa-Sheet.png" id="10_hsgwe"]
+[ext_resource type="AudioStream" uid="uid://cbncd5co0vaoc" path="res://Sonidos/Audios/Bienvenida.mp3" id="10_wfkjd"]
+[ext_resource type="Texture2D" uid="uid://cwmxyuisbagvl" path="res://Assets/Sprite sheets/Táctil/pixil-frame-00.png" id="11_8pfgg"]
 [ext_resource type="Texture2D" uid="uid://c74midasrs5s7" path="res://Assets/Sprite sheets/Instrumentos/bordemaracas-Sheet.png" id="11_r62sm"]
+[ext_resource type="Texture2D" uid="uid://cddwfsnu0ane" path="res://Assets/Sprite sheets/Táctil/pixil-frame-11.png" id="12_nyljm"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_lnsrl"]
 bg_color = Color(0.901961, 0.901961, 0.980392, 1)
@@ -278,6 +281,20 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_nlmq2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("11_8pfgg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nyljm")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -373,5 +390,18 @@ position = Vector2(75, 26.0001)
 scale = Vector2(0.71875, 0.71875)
 sprite_frames = SubResource("SpriteFrames_kk4nq")
 autoplay = "default"
+
+[node name="Bienvenida" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_wfkjd")
+volume_db = 8.914
+autoplay = true
+
+[node name="Manito" type="AnimatedSprite2D" parent="."]
+position = Vector2(695, 510)
+rotation = -0.577159
+scale = Vector2(0.0846875, 0.0846875)
+sprite_frames = SubResource("SpriteFrames_nlmq2")
+autoplay = "default"
+frame_progress = 0.943372
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

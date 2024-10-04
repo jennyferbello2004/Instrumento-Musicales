@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://c8enwkk4uv5tw"
+path="res://.godot/imported/Como jugar pc.mp3-653059fb1e4554dc7721e70fbbeaee8e.mp3str"
+
+[deps]
+
+source_file="res://Sonidos/Audios/Como jugar pc.mp3"
+dest_files=["res://.godot/imported/Como jugar pc.mp3-653059fb1e4554dc7721e70fbbeaee8e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

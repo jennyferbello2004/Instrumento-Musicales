@@ -1,13 +1,14 @@
-[gd_scene load_steps=73 format=3 uid="uid://d3v5kj13eg6ei"]
+[gd_scene load_steps=74 format=3 uid="uid://d3v5kj13eg6ei"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_or2g7"]
-[ext_resource type="Texture2D" uid="uid://cqvb3oht7e4i0" path="res://Assets/Imagenes/Arpa.png" id="2_bcldk"]
-[ext_resource type="Texture2D" uid="uid://d26xkuhura5dc" path="res://Assets/Imagenes/Guitarra.png" id="3_4740c"]
 [ext_resource type="Texture2D" uid="uid://cjb484std8kst" path="res://Assets/Imagenes/Fondos/Fondo de teatro fuera 4.png" id="3_iipoo"]
-[ext_resource type="Texture2D" uid="uid://dvu1cbm6cabq" path="res://Assets/Imagenes/Maracas.png" id="4_gy6qk"]
+[ext_resource type="Texture2D" uid="uid://cpjpjslac0usp" path="res://Assets/Imagenes/bordearpa.png" id="4_mqhcx"]
+[ext_resource type="Texture2D" uid="uid://cfqclmv0amrvj" path="res://Assets/Imagenes/bordeguitarra.png" id="5_d7pq7"]
+[ext_resource type="Texture2D" uid="uid://lak48qu3w700" path="res://Assets/Imagenes/bordemaracas.png" id="6_1px52"]
 [ext_resource type="Texture2D" uid="uid://dpn232p5laa0a" path="res://Assets/Sprite sheets/Botones/Boton volver 256x128-Sheet.png" id="6_bavxh"]
 [ext_resource type="Texture2D" uid="uid://dqce5kcxnubbn" path="res://Assets/Sprite sheets/nubes 600x300-Sheet.png" id="7_hxl1p"]
 [ext_resource type="Texture2D" uid="uid://4j506o1cfjk2" path="res://Assets/Sprite sheets/bandera animacion.png" id="8_gurix"]
+[ext_resource type="AudioStream" uid="uid://blw28scb7sj8" path="res://Sonidos/Audios/Menu puertas.mp3" id="9_ups73"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_sgftn"]
 atlas = ExtResource("7_hxl1p")
@@ -326,13 +327,13 @@ tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/path = NodePath("arpa:scale")
-tracks/0/interp = 2
+tracks/0/interp = 1
 tracks/0/loop_wrap = false
 tracks/0/keys = {
 "times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 2,
-"values": [Vector2(1, 1), Vector2(1.2, 1.2)]
+"values": [Vector2(0.06, 0.06), Vector2(0.075, 0.075)]
 }
 
 [sub_resource type="Animation" id="Animation_g4c5f"]
@@ -367,10 +368,10 @@ tracks/0/path = NodePath("Guitarra:scale")
 tracks/0/interp = 2
 tracks/0/loop_wrap = false
 tracks/0/keys = {
-"times": PackedFloat32Array(0.0100001, 1.5),
+"times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 2,
-"values": [Vector2(1, 1), Vector2(1.2, 1.2)]
+"values": [Vector2(0.06, 0.06), Vector2(0.08, 0.08)]
 }
 
 [sub_resource type="Animation" id="Animation_c17yy"]
@@ -423,7 +424,7 @@ tracks/0/keys = {
 "times": PackedFloat32Array(0, 1.5),
 "transitions": PackedFloat32Array(1, 1),
 "update": 2,
-"values": [Vector2(0.73, 0.73), Vector2(0.89, 0.89)]
+"values": [Vector2(0.06, 0.06), Vector2(0.07, 0.07)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2dgv7"]
@@ -541,38 +542,38 @@ expand_mode = 1
 [node name="arpa" type="TextureButton" parent="."]
 texture_filter = 1
 layout_mode = 0
-offset_left = 335.169
-offset_top = 451.296
-offset_right = 463.169
-offset_bottom = 579.296
-pivot_offset = Vector2(64, 64)
-texture_normal = ExtResource("2_bcldk")
+offset_left = -553.0
+offset_top = -437.0
+offset_right = 1367.0
+offset_bottom = 1479.0
+pivot_offset = Vector2(964, 964)
+texture_normal = ExtResource("4_mqhcx")
 
 [node name="Guitarra" type="TextureButton" parent="."]
 texture_filter = 1
 layout_mode = 0
-offset_left = 512.597
-offset_top = 451.296
-offset_right = 640.597
-offset_bottom = 579.296
-pivot_offset = Vector2(64, 64)
-texture_normal = ExtResource("3_4740c")
+offset_left = -387.0
+offset_top = -567.0
+offset_right = 1533.0
+offset_bottom = 1349.0
+pivot_offset = Vector2(958.449, 1097.34)
+texture_normal = ExtResource("5_d7pq7")
 
 [node name="Maraca" type="TextureButton" parent="."]
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.597
-anchor_top = 0.719
-anchor_right = 0.679
-anchor_bottom = 0.865
+anchor_left = -0.179418
+anchor_top = -0.581936
+anchor_right = 1.45814
+anchor_bottom = 2.32332
 offset_left = -17.3111
 offset_top = -16.9052
 offset_right = 16.2249
 offset_bottom = 16.4868
 scale = Vector2(0.73, 0.73)
-pivot_offset = Vector2(64.0001, 64)
-texture_normal = ExtResource("4_gy6qk")
+pivot_offset = Vector2(963.998, 913.999)
+texture_normal = ExtResource("6_1px52")
 metadata/_edit_use_anchors_ = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
@@ -612,6 +613,11 @@ scale = Vector2(2.0922, 2.0922)
 sprite_frames = SubResource("SpriteFrames_r30sw")
 autoplay = "default"
 frame_progress = 0.409163
+
+[node name="Puertas" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("9_ups73")
+volume_db = -1.811
+autoplay = true
 
 [connection signal="pressed" from="arpa" to="." method="_on_arpa_pressed"]
 [connection signal="pressed" from="Guitarra" to="." method="_on_guitarra_pressed"]

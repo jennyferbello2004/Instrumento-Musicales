@@ -1,4 +1,4 @@
-[gd_scene load_steps=21 format=3 uid="uid://cxnbq6fku74w8"]
+[gd_scene load_steps=23 format=3 uid="uid://cxnbq6fku74w8"]
 
 [ext_resource type="Script" path="res://Tutorial.gd" id="1_hisrh"]
 [ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="1_s1eow"]
@@ -13,6 +13,8 @@
 [ext_resource type="Texture2D" uid="uid://covd0nyk28ghm" path="res://Assets/Imagenes/computer.png" id="10_jhovl"]
 [ext_resource type="Texture2D" uid="uid://casweqg8uui5l" path="res://Assets/Imagenes/teléfono.png" id="11_7jlof"]
 [ext_resource type="Texture2D" uid="uid://b2aenwgn2dfid" path="res://Assets/Sprite sheets/Botones/Boton menu 256x384 v2-Sheet v2.png" id="12_32mct"]
+[ext_resource type="AudioStream" uid="uid://c8enwkk4uv5tw" path="res://Sonidos/Audios/Como jugar pc.mp3" id="14_lhl40"]
+[ext_resource type="AudioStream" uid="uid://ccbqpk1gfjyod" path="res://Sonidos/Audios/Como jugar tlf.mp3" id="15_1405i"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ac3uh"]
 animations = [{
@@ -167,41 +169,41 @@ vertical_alignment = 1
 
 [node name="tutomouse" type="Label" parent="."]
 layout_mode = 0
-offset_left = 218.986
-offset_top = 276.206
-offset_right = 542.986
-offset_bottom = 375.206
+offset_left = 209.0
+offset_top = 264.0
+offset_right = 569.0
+offset_bottom = 363.0
 theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("9_pfjbo")
 theme_override_font_sizes/font_size = 18
-text = "Presiona el click derecho de tu mouse para arrastar o seleccionar los objetos."
+text = "Si te encuentras en un ordenador o laptop, presiona el click derecho de tu mouse para seleccionar los objetos."
 horizontal_alignment = 3
 autowrap_mode = 3
 
 [node name="tutotactil" type="Label" parent="."]
 layout_mode = 0
-offset_left = 641.245
-offset_top = 281.266
-offset_right = 941.245
-offset_bottom = 349.266
+offset_left = 625.0
+offset_top = 264.0
+offset_right = 949.0
+offset_bottom = 365.0
 theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
 theme_override_constants/outline_size = 10
 theme_override_fonts/font = ExtResource("9_pfjbo")
 theme_override_font_sizes/font_size = 18
-text = "Presiona la pantalla para interactuar con los objetos."
+text = "Si te encuentras en un teléfono o tablet, presiona la pantalla para interactuar con los objetos."
 horizontal_alignment = 3
 autowrap_mode = 3
 
 [node name="Computer" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(380.674, 228.309)
+position = Vector2(383, 216)
 scale = Vector2(0.321335, 0.321335)
 texture = ExtResource("10_jhovl")
 
 [node name="Teléfono" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(794.002, 237.767)
+position = Vector2(794, 223)
 scale = Vector2(0.284054, 0.284054)
 texture = ExtResource("11_7jlof")
 
@@ -219,5 +221,14 @@ scale = Vector2(0.763916, 0.763916)
 sprite_frames = SubResource("SpriteFrames_4olbe")
 animation = &"Pressed"
 autoplay = "Pressed"
+
+[node name="Tutorialpc" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_lhl40")
+volume_db = 8.914
+autoplay = true
+
+[node name="tutorial2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_1405i")
+volume_db = 8.914
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

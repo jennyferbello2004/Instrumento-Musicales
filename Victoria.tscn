@@ -571,10 +571,19 @@ autoplay = "default"
 frame_progress = 0.748613
 speed_scale = 1.5
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Boton continuar" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 507.0
+offset_top = 440.0
+offset_right = 665.0
+offset_bottom = 586.0
+
+[node name="boton siguiente" type="AnimatedSprite2D" parent="Boton continuar"]
 texture_filter = 1
-position = Vector2(586, 519)
+position = Vector2(79, 79)
 scale = Vector2(2.81667, 2.81667)
 sprite_frames = SubResource("SpriteFrames_2rtpv")
 autoplay = "default"
 frame_progress = 0.0938473
+
+[connection signal="pressed" from="Boton continuar" to="." method="_on_texture_button_pressed"]
