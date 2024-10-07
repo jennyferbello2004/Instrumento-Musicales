@@ -15,10 +15,6 @@ run/main_scene="res://Escenas/EscenaPrincipal.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
 config/icon="res://Assets/Imagenes/icon.svg"
 
-[autoload]
-
-GlobalManage="*res://Scripts/GlobalManage.gd"
-
 [display]
 
 window/stretch/mode="viewport"
