@@ -1,7 +1,7 @@
 [gd_scene load_steps=34 format=3 uid="uid://vp0eca7rl4pe"]
 
 [ext_resource type="Script" path="res://Scripts/Escena-adivinarsonido1.gd" id="1_uu2ep"]
-[ext_resource type="Texture2D" uid="uid://50y5731h4ltm" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_girtv"]
+[ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_girtv"]
 [ext_resource type="Script" path="res://Scripts/Sonido1.gd" id="2_wd1w7"]
 [ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="3_al6wf"]
 [ext_resource type="AudioStream" uid="uid://c2srx45wgxx2" path="res://Sonidos/Instrumentos/Sonido Guitarra.mp3" id="4_oplsi"]
