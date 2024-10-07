@@ -1,7 +1,7 @@
 [gd_scene load_steps=11 format=3 uid="uid://ue6nvwc3k71h"]
 
 [ext_resource type="Script" path="res://CartasMenu.gd" id="1_jgxtx"]
-[ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_w6u3l"]
+[ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_w6u3l"]
 [ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="3_4fv7e"]
 [ext_resource type="FontFile" uid="uid://cboxbr3bx4363" path="res://Assets/Fuentes/Lemon Shake Shake.ttf" id="4_qdw1d"]
 [ext_resource type="Texture2D" uid="uid://kesqmidb2qry" path="res://Assets/Imagenes/estrella premio png.png" id="5_uoxnk"]

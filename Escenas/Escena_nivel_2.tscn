@@ -1,7 +1,7 @@
-[gd_scene load_steps=27 format=3 uid="uid://bpsebf7bxhg50"]
+[gd_scene load_steps=30 format=3 uid="uid://bpsebf7bxhg50"]
 
 [ext_resource type="Script" path="res://Scripts/Nivel-2.gd" id="1_tm8tf"]
-[ext_resource type="Texture2D" uid="uid://cb83ap3n76jjh" path="res://Assets/Imagenes/Fondos/Fondo-minijuegos.png" id="2_hqki0"]
+[ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_4j11t"]
 [ext_resource type="Texture2D" uid="uid://cn4wiq6qpdefk" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/10.png" id="4_6s0ht"]
 [ext_resource type="Texture2D" uid="uid://cgvx3bkbkvddl" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/11.png" id="5_g8uvi"]
 [ext_resource type="Texture2D" uid="uid://cy6hysxju5p2n" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/20.png" id="8_1ra4s"]
@@ -10,10 +10,19 @@
 [ext_resource type="Texture2D" uid="uid://c47jw7qfqmm56" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/22.png" id="10_6vm2p"]
 [ext_resource type="Texture2D" uid="uid://bf4et46goncc5" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/13.png" id="10_u22u8"]
 [ext_resource type="Texture2D" uid="uid://cpm6vq0h3rjc0" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/23.png" id="11_ntv08"]
-[ext_resource type="Texture2D" uid="uid://d26xkuhura5dc" path="res://Assets/Imagenes/Guitarra.png" id="12_kodj6"]
-[ext_resource type="AudioStream" uid="uid://diu3rthfs6nmm" path="res://Sonidos/Efectos-Sonidos/collect-points-190037.mp3" id="13_e7k7q"]
-[ext_resource type="Shader" path="res://Escenas/Letras-ola.gdshader" id="13_hpcnu"]
-[ext_resource type="FontFile" uid="uid://dkgggnsfq83cw" path="res://Assets/Fuente Letras/Lato-Bold.ttf" id="14_q04ho"]
+[ext_resource type="AudioStream" uid="uid://bqkjpub6pt3xq" path="res://Sonidos/pop-39222.mp3" id="11_v2ta2"]
+[ext_resource type="Texture2D" uid="uid://v2kiiqqr0btl" path="res://Assets/Imagenes/cuatro con borde blanco.png" id="12_tlos3"]
+[ext_resource type="Texture2D" uid="uid://bpw2enr0e4lqa" path="res://Assets/Imagenes/palabra cuatro.png" id="13_ayilc"]
+[ext_resource type="AudioStream" uid="uid://coa474eb43lv2" path="res://Sonidos/Instrucciones rompecabezas.mp3" id="14_kltit"]
+[ext_resource type="AudioStream" uid="uid://8nbb5g47ckyp" path="res://Sonidos/Victoria rompecabezas cuatro.mp3" id="15_iufnw"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wdt0o"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_h5tau"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_mg4ca"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_q262x"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x6dd3"]
 
@@ -23,7 +32,7 @@ length = 1.5
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Button/TextureRect2:scale")
+tracks/0/path = NodePath("Button/TextureRect:scale")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -62,34 +71,10 @@ tracks/1/keys = {
 tracks/2/type = "value"
 tracks/2/imported = false
 tracks/2/enabled = true
-tracks/2/path = NodePath("Label2:modulate")
+tracks/2/path = NodePath("Button/TextureRect:scale")
 tracks/2/interp = 1
 tracks/2/loop_wrap = true
 tracks/2/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Color(1, 1, 1, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("Label2:visible_ratio")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [0.0]
-}
-tracks/4/type = "value"
-tracks/4/imported = false
-tracks/4/enabled = true
-tracks/4/path = NodePath("Button/TextureRect2:scale")
-tracks/4/interp = 1
-tracks/4/loop_wrap = true
-tracks/4/keys = {
 "times": PackedFloat32Array(0),
 "transitions": PackedFloat32Array(1),
 "update": 0,
@@ -99,30 +84,6 @@ tracks/4/keys = {
 [sub_resource type="Animation" id="Animation_rrpb1"]
 resource_name = "Words"
 length = 1.5
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Label2:modulate")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 0), Color(1, 1, 1, 1)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("Label2:visible_ratio")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 1.5),
-"transitions": PackedFloat32Array(1, 1),
-"update": 0,
-"values": [0.0, 1.0]
-}
 
 [sub_resource type="Animation" id="Animation_3iuyn"]
 resource_name = "guitarra"
@@ -250,17 +211,6 @@ _data = {
 "RESET": SubResource("Animation_2cmdr")
 }
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_l24be"]
-shader = ExtResource("13_hpcnu")
-shader_parameter/height = 10.0
-shader_parameter/frequency = 20.0
-shader_parameter/speed = 3.0
-
-[sub_resource type="LabelSettings" id="LabelSettings_gvub2"]
-font = ExtResource("14_q04ho")
-font_size = 80
-font_color = Color(0, 0, 0, 1)
-
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -278,7 +228,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("2_hqki0")
+texture = ExtResource("2_4j11t")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 1
@@ -292,6 +242,7 @@ offset_top = 0.199982
 offset_right = 0.0719986
 offset_bottom = 0.143982
 pivot_offset = Vector2(9, 43.2437)
+theme_override_styles/focus = SubResource("StyleBoxEmpty_wdt0o")
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -314,10 +265,10 @@ metadata/_edit_use_anchors_ = true
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 465.0
-offset_top = -65.4223
-offset_right = 541.0
-offset_bottom = 10.5777
+offset_left = 460.397
+offset_top = -74.1919
+offset_right = 540.397
+offset_bottom = 5.80811
 texture = ExtResource("5_g8uvi")
 expand_mode = 1
 
@@ -332,6 +283,7 @@ offset_left = -0.160034
 offset_top = -0.248016
 offset_right = 0.104004
 offset_bottom = -0.176025
+theme_override_styles/focus = SubResource("StyleBoxEmpty_h5tau")
 flat = true
 
 [node name="TextureRect" type="TextureRect" parent="Button2"]
@@ -353,10 +305,10 @@ metadata/_edit_use_anchors_ = true
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -609.75
-offset_top = -287.5
-offset_right = -533.75
-offset_bottom = -210.5
+offset_left = -613.0
+offset_top = -301.0
+offset_right = -533.0
+offset_bottom = -220.0
 texture = ExtResource("4_6s0ht")
 
 [node name="Button3" type="Button" parent="."]
@@ -370,6 +322,7 @@ offset_left = 0.0863342
 offset_top = -0.151611
 offset_right = -0.569687
 offset_bottom = -0.111572
+theme_override_styles/focus = SubResource("StyleBoxEmpty_mg4ca")
 flat = true
 metadata/_edit_use_anchors_ = true
 
@@ -392,10 +345,10 @@ metadata/_edit_use_anchors_ = true
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 495.0
-offset_top = -302.243
-offset_right = 571.0
-offset_bottom = -226.243
+offset_left = 490.0
+offset_top = -306.743
+offset_right = 570.0
+offset_bottom = -225.743
 texture = ExtResource("8_h5qa3")
 
 [node name="Button4" type="Button" parent="."]
@@ -409,6 +362,7 @@ offset_left = 0.440002
 offset_top = 0.0879822
 offset_right = -0.512024
 offset_bottom = 0.0639648
+theme_override_styles/focus = SubResource("StyleBoxEmpty_q262x")
 flat = true
 
 [node name="TextureRect" type="TextureRect" parent="Button4"]
@@ -429,10 +383,10 @@ texture = ExtResource("10_u22u8")
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 169.0
-offset_top = -71.4008
-offset_right = 245.0
-offset_bottom = 4.59924
+offset_left = 164.0
+offset_top = -71.0
+offset_right = 244.0
+offset_bottom = 9.0
 texture = ExtResource("10_u22u8")
 expand_mode = 1
 
@@ -471,10 +425,10 @@ metadata/_edit_use_anchors_ = true
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -548.192
-offset_top = -535.64
-offset_right = -472.192
-offset_bottom = -459.64
+offset_left = -547.0
+offset_top = -549.0
+offset_right = -466.0
+offset_bottom = -468.0
 texture = ExtResource("8_1ra4s")
 
 [node name="Button6" type="Button" parent="."]
@@ -512,10 +466,10 @@ metadata/_edit_use_anchors_ = true
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -251.596
-offset_top = -272.139
-offset_right = -175.596
-offset_bottom = -196.139
+offset_left = -251.0
+offset_top = -280.0
+offset_right = -170.0
+offset_bottom = -196.0
 texture = ExtResource("9_74pkq")
 
 [node name="Button7" type="Button" parent="."]
@@ -552,10 +506,10 @@ texture = ExtResource("10_6vm2p")
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -479.86
-offset_top = 226.3
-offset_right = -413.86
-offset_bottom = 302.3
+offset_left = -481.0
+offset_top = 222.0
+offset_right = -400.0
+offset_bottom = 303.0
 texture = ExtResource("10_6vm2p")
 
 [node name="Button8" type="Button" parent="."]
@@ -591,10 +545,10 @@ metadata/_edit_use_anchors_ = true
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 541.0
-offset_top = 274.086
-offset_right = 617.0
-offset_bottom = 350.086
+offset_left = 539.0
+offset_top = 275.0
+offset_right = 622.0
+offset_bottom = 355.0
 texture = ExtResource("11_ntv08")
 
 [node name="Label" type="Label" parent="."]
@@ -603,20 +557,26 @@ offset_right = 40.0
 offset_bottom = 23.0
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("13_e7k7q")
-volume_db = 1.0
+stream = ExtResource("11_v2ta2")
+volume_db = -7.914
 
 [node name="Guitarra" type="TextureRect" parent="."]
-visible = false
 modulate = Color(1, 1, 1, 0)
 texture_filter = 1
-layout_mode = 0
-offset_left = 413.0
-offset_top = 106.0
-offset_right = 743.0
-offset_bottom = 373.0
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -148.0
+offset_top = -170.0
+offset_right = 157.0
+offset_bottom = 117.0
+grow_horizontal = 2
+grow_vertical = 2
 pivot_offset = Vector2(165, 137.157)
-texture = ExtResource("12_kodj6")
+texture = ExtResource("12_tlos3")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -631,23 +591,27 @@ libraries = {
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
 modulate = Color(0, 0, 0, 1)
-layout_mode = 0
-offset_right = 1152.0
-offset_bottom = 648.0
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
 mouse_filter = 2
 
-[node name="Label2" type="Label" parent="."]
+[node name="Cuatro" type="TextureRect" parent="."]
 visible = false
-modulate = Color(1, 1, 1, 0)
-material = SubResource("ShaderMaterial_l24be")
 layout_mode = 0
-offset_left = 401.209
-offset_top = 391.695
-offset_right = 725.209
-offset_bottom = 501.695
-pivot_offset = Vector2(158.58, 50.3044)
-text = "Guitarra"
-label_settings = SubResource("LabelSettings_gvub2")
-justification_flags = 131
-visible_characters = 0
-visible_ratio = 0.0
+offset_left = 649.0
+offset_top = 225.0
+offset_right = 1073.0
+offset_bottom = 376.0
+texture = ExtResource("13_ayilc")
+expand_mode = 1
+
+[node name="instrucciones" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_kltit")
+autoplay = true
+
+[node name="audiocuatro" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_iufnw")
