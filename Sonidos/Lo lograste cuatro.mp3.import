@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://mucjg5ys08g6"
+path="res://.godot/imported/Lo lograste cuatro.mp3-44f741e9a9008059069f4c1970a0780e.mp3str"
+
+[deps]
+
+source_file="res://Sonidos/Lo lograste cuatro.mp3"
+dest_files=["res://.godot/imported/Lo lograste cuatro.mp3-44f741e9a9008059069f4c1970a0780e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

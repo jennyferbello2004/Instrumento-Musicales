@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://biotuu6eslcka"
+path="res://.godot/imported/Click para continuar.mp3-fac4eabdc58eccd6ef8b28ef6098fa2f.mp3str"
+
+[deps]
+
+source_file="res://Sonidos/Click para continuar.mp3"
+dest_files=["res://.godot/imported/Click para continuar.mp3-fac4eabdc58eccd6ef8b28ef6098fa2f.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

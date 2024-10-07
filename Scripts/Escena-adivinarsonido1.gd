@@ -42,7 +42,7 @@ func _on_button_pressed():
 		print("Changing scene...")
 		$Correct.play()
 		await get_tree().create_timer(2.0).timeout
-		get_tree().change_scene_to_file("res://Escenas/EscenaPrincipal.tscn")
+		get_tree().change_scene_to_file("res://victoria2.tscn")
 	else:
 		print("Incorrect Area2D pressed")
 		$error2.play()
