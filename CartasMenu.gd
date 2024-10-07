@@ -124,7 +124,7 @@ func match_found():
 	timer.connect("timeout", _on_match_timeout)
 	if score >= 6:
 		await get_tree().create_timer(2.0).timeout
-		get_tree().change_scene_to_file("res://EscenaSonido1.tscn")
+		get_tree().change_scene_to_file("res://Victoria.tscn")
 
 func _on_match_timeout():
 	set_cards_interactive(true) 

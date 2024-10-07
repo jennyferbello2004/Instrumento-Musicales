@@ -1,11 +1,11 @@
 [gd_scene load_steps=11 format=3 uid="uid://ue6nvwc3k71h"]
 
 [ext_resource type="Script" path="res://CartasMenu.gd" id="1_jgxtx"]
-[ext_resource type="Texture2D" uid="uid://d2g1rcv5ycfga" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_w6u3l"]
+[ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_w6u3l"]
 [ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="3_4fv7e"]
 [ext_resource type="FontFile" uid="uid://cboxbr3bx4363" path="res://Assets/Fuentes/Lemon Shake Shake.ttf" id="4_qdw1d"]
 [ext_resource type="Texture2D" uid="uid://kesqmidb2qry" path="res://Assets/Imagenes/estrella premio png.png" id="5_uoxnk"]
-[ext_resource type="FontFile" uid="uid://csigu2654ysbp" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="6_2fa1p"]
+[ext_resource type="FontFile" uid="uid://l3sg0c74mhe6" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="6_2fa1p"]
 [ext_resource type="AudioStream" uid="uid://csiv65nw6x2g5" path="res://Sonidos/Instrucciones memoria.mp3" id="7_f2umk"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dxxs8"]
