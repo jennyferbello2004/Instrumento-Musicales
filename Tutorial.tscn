@@ -1,14 +1,20 @@
-[gd_scene load_steps=13 format=3 uid="uid://cxnbq6fku74w8"]
+[gd_scene load_steps=23 format=3 uid="uid://cxnbq6fku74w8"]
 
-[ext_resource type="Texture2D" uid="uid://cb83ap3n76jjh" path="res://Assets/Imagenes/Fondos/Fondo-minijuegos.png" id="1_00eoa"]
+[ext_resource type="Script" path="res://Tutorial.gd" id="1_hisrh"]
+[ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="1_s1eow"]
 [ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="2_chwml"]
-[ext_resource type="Texture2D" uid="uid://bxiw0cb613agu" path="res://Assets/Mouse/pixil-frame-0.png" id="3_gc758"]
-[ext_resource type="Texture2D" uid="uid://nyuqkgqwxtkr" path="res://Assets/Mouse/pixil-frame-1.png" id="4_voaxp"]
-[ext_resource type="Texture2D" uid="uid://cxkedny3mpyy8" path="res://Assets/Mouse/pixil-frame-2.png" id="5_rrdxo"]
-[ext_resource type="Texture2D" uid="uid://bho5fbclg8vb" path="res://Assets/Mouse/pixil-frame-3.png" id="6_8w5pf"]
-[ext_resource type="Texture2D" uid="uid://cwmxyuisbagvl" path="res://Assets/Táctil/pixil-frame-00.png" id="7_2wn5t"]
-[ext_resource type="Texture2D" uid="uid://cddwfsnu0ane" path="res://Assets/Táctil/pixil-frame-11.png" id="8_721xe"]
-[ext_resource type="FontFile" uid="uid://dkgggnsfq83cw" path="res://Assets/Fuente Letras/Lato-Bold.ttf" id="9_fsadf"]
+[ext_resource type="Texture2D" uid="uid://bxiw0cb613agu" path="res://Assets/Sprite sheets/Mouse/pixil-frame-0.png" id="3_gc758"]
+[ext_resource type="Texture2D" uid="uid://nyuqkgqwxtkr" path="res://Assets/Sprite sheets/Mouse/pixil-frame-1.png" id="4_voaxp"]
+[ext_resource type="Texture2D" uid="uid://cxkedny3mpyy8" path="res://Assets/Sprite sheets/Mouse/pixil-frame-2.png" id="5_rrdxo"]
+[ext_resource type="Texture2D" uid="uid://bho5fbclg8vb" path="res://Assets/Sprite sheets/Mouse/pixil-frame-3.png" id="6_8w5pf"]
+[ext_resource type="Texture2D" uid="uid://cwmxyuisbagvl" path="res://Assets/Sprite sheets/Táctil/pixil-frame-00.png" id="7_2wn5t"]
+[ext_resource type="Texture2D" uid="uid://cddwfsnu0ane" path="res://Assets/Sprite sheets/Táctil/pixil-frame-11.png" id="8_721xe"]
+[ext_resource type="FontFile" uid="uid://i3lx4kunmbyy" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="9_pfjbo"]
+[ext_resource type="Texture2D" uid="uid://covd0nyk28ghm" path="res://Assets/Imagenes/computer.png" id="10_jhovl"]
+[ext_resource type="Texture2D" uid="uid://casweqg8uui5l" path="res://Assets/Imagenes/teléfono.png" id="11_7jlof"]
+[ext_resource type="Texture2D" uid="uid://b2aenwgn2dfid" path="res://Assets/Sprite sheets/Botones/Boton menu 256x384 v2-Sheet v2.png" id="12_32mct"]
+[ext_resource type="AudioStream" uid="uid://c8enwkk4uv5tw" path="res://Sonidos/Audios/Como jugar pc.mp3" id="14_lhl40"]
+[ext_resource type="AudioStream" uid="uid://ccbqpk1gfjyod" path="res://Sonidos/Audios/Como jugar tlf.mp3" id="15_1405i"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_ac3uh"]
 animations = [{
@@ -52,6 +58,35 @@ animations = [{
 "speed": 5.0
 }]
 
+[sub_resource type="AtlasTexture" id="AtlasTexture_mb8ef"]
+atlas = ExtResource("12_32mct")
+region = Rect2(0, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_oelud"]
+atlas = ExtResource("12_32mct")
+region = Rect2(0, 128, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_we8fr"]
+atlas = ExtResource("12_32mct")
+region = Rect2(0, 256, 256, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_4olbe"]
+animations = [{
+"frames": [{
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_mb8ef")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_oelud")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_we8fr")
+}],
+"loop": true,
+"name": &"Pressed",
+"speed": 5.0
+}]
+
 [node name="Control" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -59,6 +94,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_hisrh")
 
 [node name="Fondo1" type="TextureRect" parent="."]
 texture_filter = 1
@@ -68,7 +104,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("1_00eoa")
+texture = ExtResource("1_s1eow")
 
 [node name="Pizarra" type="TextureRect" parent="."]
 layout_mode = 1
@@ -87,24 +123,27 @@ texture = ExtResource("2_chwml")
 expand_mode = 2
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
-position = Vector2(302.026, 381.511)
-scale = Vector2(0.128, 0.1)
+texture_filter = 1
+position = Vector2(317.027, 409.108)
+scale = Vector2(0.0743647, 0.0668918)
 sprite_frames = SubResource("SpriteFrames_ac3uh")
 animation = &"Mouse"
 autoplay = "Mouse"
 frame_progress = 0.468809
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
-position = Vector2(412.185, 360.533)
-scale = Vector2(0.101, 0.1)
+texture_filter = 1
+position = Vector2(405.539, 393.764)
+scale = Vector2(0.0672296, 0.0665639)
 sprite_frames = SubResource("SpriteFrames_ba0cy")
 animation = &"Mouse-Click"
 autoplay = "Mouse-Click"
 frame_progress = 0.0648808
 
 [node name="AnimatedSprite2D3" type="AnimatedSprite2D" parent="."]
-position = Vector2(808.319, 356.769)
-scale = Vector2(0.1, 0.1)
+texture_filter = 1
+position = Vector2(801.558, 389.397)
+scale = Vector2(0.07264, 0.07264)
 sprite_frames = SubResource("SpriteFrames_tbkve")
 animation = &"manito"
 autoplay = "manito"
@@ -122,7 +161,7 @@ offset_bottom = 195.634
 grow_horizontal = 2
 theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
 theme_override_constants/outline_size = 16
-theme_override_fonts/font = ExtResource("9_fsadf")
+theme_override_fonts/font = ExtResource("9_pfjbo")
 theme_override_font_sizes/font_size = 40
 text = "¿Cómo jugar?"
 horizontal_alignment = 1
@@ -130,24 +169,66 @@ vertical_alignment = 1
 
 [node name="tutomouse" type="Label" parent="."]
 layout_mode = 0
-offset_left = 215.436
-offset_top = 205.402
-offset_right = 553.436
-offset_bottom = 295.402
+offset_left = 209.0
+offset_top = 264.0
+offset_right = 569.0
+offset_bottom = 363.0
 theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
 theme_override_constants/outline_size = 10
-theme_override_font_sizes/font_size = 20
-text = "Presiona el click derecho de tu mouse para arrastar o seleccionar los objetos."
+theme_override_fonts/font = ExtResource("9_pfjbo")
+theme_override_font_sizes/font_size = 18
+text = "Si te encuentras en un ordenador o laptop, presiona el click derecho de tu mouse para seleccionar los objetos."
+horizontal_alignment = 3
 autowrap_mode = 3
 
 [node name="tutotactil" type="Label" parent="."]
 layout_mode = 0
-offset_left = 658.0
-offset_top = 208.0
-offset_right = 930.0
-offset_bottom = 298.0
+offset_left = 625.0
+offset_top = 264.0
+offset_right = 949.0
+offset_bottom = 365.0
 theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
 theme_override_constants/outline_size = 10
-theme_override_font_sizes/font_size = 20
-text = "Presiona la pantalla para interactuar con los objetos"
+theme_override_fonts/font = ExtResource("9_pfjbo")
+theme_override_font_sizes/font_size = 18
+text = "Si te encuentras en un teléfono o tablet, presiona la pantalla para interactuar con los objetos."
+horizontal_alignment = 3
 autowrap_mode = 3
+
+[node name="Computer" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(383, 216)
+scale = Vector2(0.321335, 0.321335)
+texture = ExtResource("10_jhovl")
+
+[node name="Teléfono" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(794, 223)
+scale = Vector2(0.284054, 0.284054)
+texture = ExtResource("11_7jlof")
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 487.774
+offset_top = 514.572
+offset_right = 667.774
+offset_bottom = 593.572
+
+[node name="BotonMenu" type="AnimatedSprite2D" parent="TextureButton"]
+texture_filter = 1
+position = Vector2(90.6006, 36.7209)
+scale = Vector2(0.763916, 0.763916)
+sprite_frames = SubResource("SpriteFrames_4olbe")
+animation = &"Pressed"
+autoplay = "Pressed"
+
+[node name="Tutorialpc" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_lhl40")
+volume_db = 8.914
+autoplay = true
+
+[node name="tutorial2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("15_1405i")
+volume_db = 8.914
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

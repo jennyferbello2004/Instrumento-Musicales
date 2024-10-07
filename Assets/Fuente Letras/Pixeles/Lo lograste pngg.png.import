@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bho5fbclg8vb"
-path="res://.godot/imported/pixil-frame-3.png-e52f8e8497d00587265d8303376b3eae.ctex"
+uid="uid://ls1jljpyhigv"
+path="res://.godot/imported/Lo lograste pngg.png-b28098161d6422e00557e3668e0c31dc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Mouse/pixil-frame-3.png"
-dest_files=["res://.godot/imported/pixil-frame-3.png-e52f8e8497d00587265d8303376b3eae.ctex"]
+source_file="res://Assets/Fuente Letras/Pixeles/Lo lograste pngg.png"
+dest_files=["res://.godot/imported/Lo lograste pngg.png-b28098161d6422e00557e3668e0c31dc.ctex"]
 
 [params]
 

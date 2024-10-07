@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cddwfsnu0ane"
-path="res://.godot/imported/pixil-frame-11.png-d030be8183d05de07906762c40d0adfa.ctex"
+uid="uid://cocbdq5xikrrk"
+path="res://.godot/imported/Fondo nubes Vfinal.png-dc3a3c6e7e4f9f52ce97ceb12a16b184.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Táctil/pixil-frame-11.png"
-dest_files=["res://.godot/imported/pixil-frame-11.png-d030be8183d05de07906762c40d0adfa.ctex"]
+source_file="res://Assets/Imagenes/Fondos/Fondo nubes Vfinal.png"
+dest_files=["res://.godot/imported/Fondo nubes Vfinal.png-dc3a3c6e7e4f9f52ce97ceb12a16b184.ctex"]
 
 [params]
 

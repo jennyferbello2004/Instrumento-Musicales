@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://ccbqpk1gfjyod"
+path="res://.godot/imported/Como jugar tlf.mp3-7d546ed6d6d5fe74f8d62702a842f3fc.mp3str"
+
+[deps]
+
+source_file="res://Sonidos/Audios/Como jugar tlf.mp3"
+dest_files=["res://.godot/imported/Como jugar tlf.mp3-7d546ed6d6d5fe74f8d62702a842f3fc.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

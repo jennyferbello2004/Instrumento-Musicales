@@ -1,6 +1,6 @@
 extends Control
 
-
+var hola = preload("res://Escenas/EscenaPrincipal.tscn")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	$AnimationPlayer.play("Arpa")
@@ -17,8 +17,12 @@ func _on_arpa_pressed():
 
 
 func _on_guitarra_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://Escenas/Escena_nivel_2.tscn")
 
 
 func _on_maraca_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://EscenaSonido1.tscn")
+
+
+func _on_boton_volver_pressed():
+	get_tree().change_scene_to_packed(hola)
