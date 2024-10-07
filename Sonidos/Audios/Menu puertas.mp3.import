@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://blw28scb7sj8"
+path="res://.godot/imported/Menu puertas.mp3-e68f08465d7268d4530afef1f4cb59a1.mp3str"
+
+[deps]
+
+source_file="res://Sonidos/Audios/Menu puertas.mp3"
+dest_files=["res://.godot/imported/Menu puertas.mp3-e68f08465d7268d4530afef1f4cb59a1.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

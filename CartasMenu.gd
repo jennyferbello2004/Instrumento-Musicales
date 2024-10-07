@@ -73,9 +73,6 @@ func _ready():
 		card_grid.add_child(card)
 		card.connect("card_flipped", _on_card_flipped)
 
-func _process(delta):
-	$FPSlabel.text = "FPS: " + str(Engine.get_frames_per_second())
-
 func _on_card_flipped(card):
 	if can_flip and card not in matched_cards:
 		if first_card == null:
@@ -93,7 +90,7 @@ func check_match():
 		if first_card.card_value == second_card.card_value:
 			match_found()
 		else:
-			await get_tree().create_timer(2.0).timeout
+			await get_tree().create_timer(1.5).timeout
 			first_card.flip_card()
 			second_card.flip_card()
 			reset_flip_state()
@@ -115,12 +112,6 @@ func match_found():
 	add_child(audio_player) 
 	audio_player.stream = first_card.card_sound
 	audio_player.play()
-	await get_tree().create_timer(2.0).timeout
-	audio_player.stop()
-	audio_player.stream = second_card.card_sound
-	audio_player.play()
-	await get_tree().create_timer(2.0).timeout
-	audio_player.stop()
 	score += 1  
 	update_score_label()  
 	await get_tree().create_timer(1.0).timeout
@@ -132,7 +123,8 @@ func match_found():
 		sprites[score - 1].visible = true
 	timer.connect("timeout", _on_match_timeout)
 	if score >= 6:
-		get_tree().change_scene_to_file("res://EscenaSonido1.tscn")
+		await get_tree().create_timer(2.0).timeout
+		get_tree().change_scene_to_file("res://Victoria.tscn")
 
 func _on_match_timeout():
 	set_cards_interactive(true) 
@@ -142,6 +134,6 @@ func set_cards_interactive(active):
 		card.set_process_input(active) 
 	can_flip = true
 func update_action_label():
-	action_label.text = "Acciones: %d" % action_counter
+	action_label.text = "Movimientos: %d" % action_counter
 func update_score_label():
 	score_label.text = "Puntaje: %d"

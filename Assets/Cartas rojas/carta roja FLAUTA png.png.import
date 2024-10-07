@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bhr1oma5khxs2"
-path="res://.godot/imported/Fondo-inicio.png-c3f76dab5eb09020828af2a3063d7d63.ctex"
+uid="uid://be866lxt20tkk"
+path="res://.godot/imported/carta roja FLAUTA png.png-9889c6b8efce6105661f5482d19b977e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Fondos/Fondo-inicio.png"
-dest_files=["res://.godot/imported/Fondo-inicio.png-c3f76dab5eb09020828af2a3063d7d63.ctex"]
+source_file="res://Assets/Cartas rojas/carta roja FLAUTA png.png"
+dest_files=["res://.godot/imported/carta roja FLAUTA png.png-9889c6b8efce6105661f5482d19b977e.ctex"]
 
 [params]
 
