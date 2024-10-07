@@ -3,4 +3,8 @@ extends Control
 
 
 func _on_texture_button_pressed():
-		get_tree().change_scene_to_file("res://Tutorial.tscn")
+	get_tree().change_scene_to_file("res://Tutorial.tscn")
+
+
+func _on_creditos_pressed():
+	get_tree().change_scene_to_file("res://Creditos.tscn")

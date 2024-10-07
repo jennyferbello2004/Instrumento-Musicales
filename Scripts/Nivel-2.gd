@@ -49,3 +49,7 @@ func _ready():
 		var callable = Callable(self, "_on_button_pressed").bind(button)
 		button_node.connect("pressed", callable)
 
+
+
+func _on_rutaboton_3_pressed():
+	get_tree().change_scene_to_file("res://Menu2.tscn")

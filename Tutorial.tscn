@@ -224,11 +224,9 @@ autoplay = "Pressed"
 
 [node name="Tutorialpc" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("14_lhl40")
-volume_db = 8.914
 autoplay = true
 
 [node name="tutorial2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_1405i")
-volume_db = 8.914
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]

@@ -25,4 +25,4 @@ func _on_maraca_pressed():
 
 
 func _on_boton_volver_pressed():
-	get_tree().change_scene_to_packed(hola)
+	get_tree().change_scene_to_file("res://Escenas/EscenaPrincipal.tscn")

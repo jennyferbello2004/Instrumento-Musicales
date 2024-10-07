@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=3 uid="uid://c2gdtql6586p0"]
+[gd_scene load_steps=19 format=3 uid="uid://bthluu85du1da"]
 
 [ext_resource type="Script" path="res://Creditos.gd" id="1_s5uwh"]
 [ext_resource type="Texture2D" uid="uid://crumdpnq6ppvx" path="res://Assets/Imagenes/Fondos/Créditos de Videojuego Aventura Musical 2.png" id="1_ud7wn"]
@@ -12,31 +12,32 @@
 [ext_resource type="Texture2D" uid="uid://ifsuxmatlbfs" path="res://Assets/Imagenes/bordenotas.png" id="9_tmbxk"]
 [ext_resource type="Texture2D" uid="uid://b68gcnfs7t4oy" path="res://Assets/Imagenes/bordeflauta.png" id="10_qunrq"]
 [ext_resource type="Texture2D" uid="uid://bben20l45ntun" path="res://Assets/Imagenes/bordetambor.png" id="11_mg5ub"]
-[ext_resource type="Texture2D" uid="uid://dimom4o2lfag4" path="res://Assets/Imagenes/Boton menu 256x384 v2-Sheet v2.png" id="12_bik51"]
+[ext_resource type="Texture2D" uid="uid://dpn232p5laa0a" path="res://Assets/Sprite sheets/Botones/Boton volver 256x128-Sheet.png" id="13_tevwf"]
+[ext_resource type="AudioStream" uid="uid://dcoodg2rkhe0x" path="res://Sonidos/creditos.mp3" id="14_cpght"]
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ix6xk"]
-atlas = ExtResource("12_bik51")
+[sub_resource type="AtlasTexture" id="AtlasTexture_08olq"]
+atlas = ExtResource("13_tevwf")
 region = Rect2(0, 0, 256, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_xpagu"]
-atlas = ExtResource("12_bik51")
-region = Rect2(0, 128, 256, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_kfrlq"]
+atlas = ExtResource("13_tevwf")
+region = Rect2(256, 0, 256, 128)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_k4sy0"]
-atlas = ExtResource("12_bik51")
-region = Rect2(0, 256, 256, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_qfmy1"]
+atlas = ExtResource("13_tevwf")
+region = Rect2(512, 0, 256, 128)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_iad15"]
 animations = [{
 "frames": [{
 "duration": 0.7,
-"texture": SubResource("AtlasTexture_ix6xk")
+"texture": SubResource("AtlasTexture_08olq")
 }, {
 "duration": 0.7,
-"texture": SubResource("AtlasTexture_xpagu")
+"texture": SubResource("AtlasTexture_kfrlq")
 }, {
 "duration": 0.7,
-"texture": SubResource("AtlasTexture_k4sy0")
+"texture": SubResource("AtlasTexture_qfmy1")
 }],
 "loop": true,
 "name": &"default",
@@ -365,10 +366,16 @@ offset_right = 191.418
 offset_bottom = 616.236
 
 [node name="animacion menu" type="AnimatedSprite2D" parent="TextureButton"]
+texture_filter = 1
 position = Vector2(82.131, 38.9585)
 scale = Vector2(0.6875, 0.6875)
 sprite_frames = SubResource("SpriteFrames_iad15")
 autoplay = "default"
-frame_progress = 0.926411
+frame_progress = 0.869201
+
+[node name="audiocreditos" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("14_cpght")
+volume_db = 3.748
+autoplay = true
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_boton_de_menu_pressed"]

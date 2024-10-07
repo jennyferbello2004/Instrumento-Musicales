@@ -1,6 +1,6 @@
-[gd_scene load_steps=80 format=3 uid="uid://b2yshqayn0d6p"]
+[gd_scene load_steps=80 format=3 uid="uid://j110knalyk3f"]
 
-[ext_resource type="Texture2D" uid="uid://yturhuau5wwa" path="res://Assets/Imagenes/Fondos/Fondo nubes Vfinall.png" id="1_fx4dm"]
+[ext_resource type="Texture2D" uid="uid://ddufj8jid2ohx" path="res://Assets/Imagenes/Fondos/Fondo nubes Vfinall.png" id="1_fx4dm"]
 [ext_resource type="Script" path="res://Victoria.gd" id="1_qp2s4"]
 [ext_resource type="AudioStream" uid="uid://cc537qoaibtjn" path="res://Sonidos/Audios/Excelente.mp3" id="2_yutjy"]
 [ext_resource type="Texture2D" uid="uid://b2bglvqbmb0f7" path="res://Assets/Sprite sheets/Notas musicales/nota musical naranja-Sheet.png" id="8_nbiq1"]
@@ -8,9 +8,9 @@
 [ext_resource type="Texture2D" uid="uid://cqo2vky3cpm4" path="res://Assets/Sprite sheets/Notas musicales/nota musical amarillo-Sheet.png" id="10_qwglb"]
 [ext_resource type="Texture2D" uid="uid://c0ftbkim1by87" path="res://Assets/Sprite sheets/Notas musicales/nota musical morado-Sheet.png" id="11_n7wb4"]
 [ext_resource type="Texture2D" uid="uid://dfb4leggqh3ee" path="res://Assets/Sprite sheets/Notas musicales/nota musical verde-Sheet.png" id="12_e5cy6"]
-[ext_resource type="Texture2D" uid="uid://dogy4lulpbgwx" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="12_xkn0m"]
+[ext_resource type="Texture2D" uid="uid://bgq1o7fxxrtmw" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="12_xkn0m"]
 [ext_resource type="Texture2D" uid="uid://du8c80h85471u" path="res://Assets/Sprite sheets/Notas musicales/nota musical rojo-Sheet.png" id="13_nl8i8"]
-[ext_resource type="Texture2D" uid="uid://fcljcgu68b5l" path="res://Assets/Sprite sheets/emoji victoria -Sheet.png" id="14_paf7h"]
+[ext_resource type="Texture2D" uid="uid://cu7qweqryptd0" path="res://Assets/Sprite sheets/emoji victoria -Sheet.png" id="14_paf7h"]
 [ext_resource type="Texture2D" uid="uid://bmdbji33lavr5" path="res://Assets/Sprite sheets/excelente spritesheet.png" id="15_hjs25"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_6n3xo"]
@@ -511,6 +511,7 @@ expand_mode = 1
 
 [node name="audioexcelente" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("2_yutjy")
+volume_db = -7.923
 autoplay = true
 
 [node name="nota naranja" type="AnimatedSprite2D" parent="."]

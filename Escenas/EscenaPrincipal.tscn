@@ -393,7 +393,7 @@ autoplay = "default"
 
 [node name="Bienvenida" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("10_wfkjd")
-volume_db = 8.914
+volume_db = 0.481
 autoplay = true
 
 [node name="Manito" type="AnimatedSprite2D" parent="."]
@@ -405,3 +405,4 @@ autoplay = "default"
 frame_progress = 0.574086
 
 [connection signal="pressed" from="TextureButton" to="." method="_on_texture_button_pressed"]
+[connection signal="pressed" from="Creditos" to="." method="_on_creditos_pressed"]

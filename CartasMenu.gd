@@ -137,3 +137,7 @@ func update_action_label():
 	action_label.text = "Movimientos: %d" % action_counter
 func update_score_label():
 	score_label.text = "Puntaje: %d"
+
+
+func _on_botonruta_pressed():
+	get_tree().change_scene_to_file("res://Menu2.tscn")
