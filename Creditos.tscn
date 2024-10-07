@@ -1,0 +1,374 @@
+[gd_scene load_steps=18 format=3 uid="uid://c2gdtql6586p0"]
+
+[ext_resource type="Script" path="res://Creditos.gd" id="1_s5uwh"]
+[ext_resource type="Texture2D" uid="uid://crumdpnq6ppvx" path="res://Assets/Imagenes/Fondos/Créditos de Videojuego Aventura Musical 2.png" id="1_ud7wn"]
+[ext_resource type="FontFile" uid="uid://l3sg0c74mhe6" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="3_1lt82"]
+[ext_resource type="Texture2D" uid="uid://blrt1xud1rhgn" path="res://Assets/Imagenes/Logo Edúcate Blanco.png" id="4_2p8pl"]
+[ext_resource type="FontFile" uid="uid://dgv0bqqgsj3hi" path="res://Assets/Fuente Letras/Montserrat-Medium.ttf" id="4_y41rq"]
+[ext_resource type="Texture2D" uid="uid://cidxiegesof7u" path="res://Assets/Imagenes/Licencia Copyrigh 4.png" id="5_3fvw0"]
+[ext_resource type="Texture2D" uid="uid://cpjpjslac0usp" path="res://Assets/Imagenes/bordearpa.png" id="6_e0bmy"]
+[ext_resource type="Texture2D" uid="uid://cfqclmv0amrvj" path="res://Assets/Imagenes/bordeguitarra.png" id="7_rnv33"]
+[ext_resource type="Texture2D" uid="uid://lak48qu3w700" path="res://Assets/Imagenes/bordemaracas.png" id="8_jw5v1"]
+[ext_resource type="Texture2D" uid="uid://ifsuxmatlbfs" path="res://Assets/Imagenes/bordenotas.png" id="9_tmbxk"]
+[ext_resource type="Texture2D" uid="uid://b68gcnfs7t4oy" path="res://Assets/Imagenes/bordeflauta.png" id="10_qunrq"]
+[ext_resource type="Texture2D" uid="uid://bben20l45ntun" path="res://Assets/Imagenes/bordetambor.png" id="11_mg5ub"]
+[ext_resource type="Texture2D" uid="uid://dimom4o2lfag4" path="res://Assets/Imagenes/Boton menu 256x384 v2-Sheet v2.png" id="12_bik51"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ix6xk"]
+atlas = ExtResource("12_bik51")
+region = Rect2(0, 0, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xpagu"]
+atlas = ExtResource("12_bik51")
+region = Rect2(0, 128, 256, 128)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k4sy0"]
+atlas = ExtResource("12_bik51")
+region = Rect2(0, 256, 256, 128)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_iad15"]
+animations = [{
+"frames": [{
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_ix6xk")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_xpagu")
+}, {
+"duration": 0.7,
+"texture": SubResource("AtlasTexture_k4sy0")
+}],
+"loop": true,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_s5uwh")
+
+[node name="fondo escenario" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -24.0
+offset_right = 24.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ud7wn")
+
+[node name="creditos titulo" type="Label" parent="."]
+layout_mode = 2
+offset_left = 505.083
+offset_top = 36.2378
+offset_right = 690.083
+offset_bottom = 98.2378
+size_flags_horizontal = 4
+size_flags_vertical = 0
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 16
+theme_override_fonts/font = ExtResource("3_1lt82")
+theme_override_font_sizes/font_size = 40
+text = "Créditos"
+
+[node name="nombres" type="Label" parent="."]
+layout_mode = 2
+offset_left = 463.0
+offset_top = 97.0
+offset_right = 726.0
+offset_bottom = 387.0
+size_flags_horizontal = 4
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 10
+theme_override_fonts/font = ExtResource("3_1lt82")
+theme_override_font_sizes/font_size = 18
+text = "Yelitze Santaella Hernández
+
+Vicente Carvajal
+
+Ligia Elena Molina
+
+Dubraska Rivas
+
+Víctor García
+
+Glorena Contreras"
+horizontal_alignment = 1
+
+[node name="ministro" type="Label" parent="."]
+layout_mode = 2
+offset_left = 418.818
+offset_top = 118.955
+offset_right = 766.818
+offset_bottom = 141.955
+size_flags_horizontal = 4
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Ministro del Poder Popular para la Educación"
+horizontal_alignment = 1
+
+[node name="viceministro" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -150.046
+offset_top = -153.17
+offset_right = 176.954
+offset_bottom = -130.17
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Viceministro del Poder Popular para la Educación"
+horizontal_alignment = 1
+
+[node name="directora" type="Label" parent="."]
+layout_mode = 0
+offset_left = 424.257
+offset_top = 223.856
+offset_right = 758.257
+offset_bottom = 246.856
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Directora General de Edúcate en Venezuela"
+horizontal_alignment = 1
+
+[node name="productora" type="Label" parent="."]
+layout_mode = 0
+offset_left = 407.957
+offset_top = 275.469
+offset_right = 779.957
+offset_bottom = 298.469
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Productora General de Edúcate en Venezuela "
+horizontal_alignment = 1
+
+[node name="coordinador" type="Label" parent="."]
+layout_mode = 0
+offset_left = 428.608
+offset_top = 327.099
+offset_right = 756.608
+offset_bottom = 350.099
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Coordinador de Tecnología de Edúcate en Venezuela"
+horizontal_alignment = 1
+
+[node name="coordinadora" type="Label" parent="."]
+layout_mode = 0
+offset_left = 432.179
+offset_top = 379.425
+offset_right = 760.179
+offset_bottom = 402.425
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Coordinadora de Proyectos Digitales e Innovación"
+horizontal_alignment = 1
+
+[node name="desarrollo" type="Label" parent="."]
+layout_mode = 0
+offset_left = 502.048
+offset_top = 462.725
+offset_right = 700.048
+offset_bottom = 485.725
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 13
+theme_override_fonts/font = ExtResource("3_1lt82")
+theme_override_font_sizes/font_size = 18
+text = "Equipo de Desarrollo"
+horizontal_alignment = 1
+
+[node name="nombres programadores" type="Label" parent="."]
+layout_mode = 0
+offset_left = 332.593
+offset_top = 544.15
+offset_right = 505.593
+offset_bottom = 593.15
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Samuel Zambrano
+Jennyfer Bello"
+horizontal_alignment = 1
+
+[node name="programadores" type="Label" parent="."]
+layout_mode = 0
+offset_left = 357.714
+offset_top = 580.858
+offset_right = 483.714
+offset_bottom = 603.858
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Programadores"
+horizontal_alignment = 1
+
+[node name="nombre de diseñadora" type="Label" parent="."]
+layout_mode = 0
+offset_left = 539.825
+offset_top = 547.571
+offset_right = 675.825
+offset_bottom = 570.571
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Jennyfer Bello"
+horizontal_alignment = 1
+
+[node name="diseñadora" type="Label" parent="."]
+layout_mode = 0
+offset_left = 568.705
+offset_top = 566.046
+offset_right = 644.705
+offset_bottom = 589.046
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Diseñadora"
+horizontal_alignment = 1
+
+[node name="nombre guionista" type="Label" parent="."]
+layout_mode = 0
+offset_left = 725.781
+offset_top = 545.919
+offset_right = 845.781
+offset_bottom = 568.919
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Anggi Durán"
+horizontal_alignment = 1
+
+[node name="guionista" type="Label" parent="."]
+layout_mode = 0
+offset_left = 755.31
+offset_top = 563.142
+offset_right = 818.31
+offset_bottom = 586.142
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Guionista"
+horizontal_alignment = 1
+
+[node name="LogoEducate" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 26.1913
+offset_top = 31.4863
+offset_right = 255.191
+offset_bottom = 91.4863
+texture = ExtResource("4_2p8pl")
+expand_mode = 1
+
+[node name="licencia" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = 961.0
+offset_top = 556.0
+offset_right = 1128.0
+offset_bottom = 630.0
+texture = ExtResource("5_3fvw0")
+expand_mode = 1
+
+[node name="Bordeguitarra" type="Sprite2D" parent="."]
+position = Vector2(455.986, 67.0245)
+rotation = 0.6238
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("7_rnv33")
+
+[node name="Bordeguitarra2" type="Sprite2D" parent="."]
+position = Vector2(736.524, 67.5172)
+rotation = -0.51281
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("7_rnv33")
+
+[node name="Bordenotas" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.243137)
+position = Vector2(115.45, 297.784)
+scale = Vector2(0.0568174, 0.0568174)
+texture = ExtResource("9_tmbxk")
+
+[node name="Bordearpa" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.243137)
+position = Vector2(1065.47, 90.6604)
+rotation = -0.43226
+scale = Vector2(0.0732439, 0.0732439)
+texture = ExtResource("6_e0bmy")
+
+[node name="Bordemaracas" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.243137)
+position = Vector2(940.706, 97.485)
+rotation = 1.4201
+scale = Vector2(0.063459, 0.063459)
+texture = ExtResource("8_jw5v1")
+
+[node name="Bordeflauta" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.243137)
+position = Vector2(189.866, 396.013)
+rotation = -1.33455
+scale = Vector2(0.0468851, 0.0468851)
+texture = ExtResource("10_qunrq")
+
+[node name="Bordetambor" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.243137)
+position = Vector2(82.6299, 394.13)
+rotation = 0.290557
+scale = Vector2(0.0605037, 0.0605037)
+texture = ExtResource("11_mg5ub")
+
+[node name="Bordeguitarra3" type="Sprite2D" parent="."]
+self_modulate = Color(1, 1, 1, 0.243137)
+position = Vector2(997.713, 179.648)
+rotation = 0.293531
+scale = Vector2(0.0696971, 0.0696971)
+texture = ExtResource("7_rnv33")
+
+[node name="coordinador2" type="Label" parent="."]
+layout_mode = 0
+offset_left = 469.895
+offset_top = 508.387
+offset_right = 749.895
+offset_bottom = 531.387
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Coordinador de Desarrollo de Videojuegos"
+horizontal_alignment = 1
+
+[node name="nombrecoordinador" type="Label" parent="."]
+layout_mode = 0
+offset_left = 544.882
+offset_top = 490.981
+offset_right = 668.882
+offset_bottom = 513.981
+theme_override_colors/font_outline_color = Color(0.0235294, 0.0666667, 0.184314, 1)
+theme_override_constants/outline_size = 0
+theme_override_constants/shadow_outline_size = 0
+theme_override_fonts/font = ExtResource("4_y41rq")
+theme_override_font_sizes/font_size = 13
+text = "Jerson Rubín"
+horizontal_alignment = 1
+
+[node name="TextureButton" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 26.4183
+offset_top = 540.236
+offset_right = 191.418
+offset_bottom = 616.236
+
+[node name="animacion menu" type="AnimatedSprite2D" parent="TextureButton"]
+position = Vector2(82.131, 38.9585)
+scale = Vector2(0.6875, 0.6875)
+sprite_frames = SubResource("SpriteFrames_iad15")
+autoplay = "default"
+frame_progress = 0.926411
+
+[connection signal="pressed" from="TextureButton" to="." method="_on_boton_de_menu_pressed"]
