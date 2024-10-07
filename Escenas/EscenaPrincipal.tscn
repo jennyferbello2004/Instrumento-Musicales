@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Scripts/Script Del Menu Principal.gd" id="2_tr8ot"]
 [ext_resource type="Texture2D" uid="uid://cocbdq5xikrrk" path="res://Assets/Imagenes/Fondos/Fondo nubes Vfinal.png" id="3_idmr0"]
 [ext_resource type="Texture2D" uid="uid://cwpcboul0a3ou" path="res://Assets/Sprite sheets/Botones/Boton jugar-Sheet.png" id="4_br1lm"]
-[ext_resource type="FontFile" uid="uid://i3lx4kunmbyy" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="5_suvit"]
+[ext_resource type="FontFile" uid="uid://l3sg0c74mhe6" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="5_suvit"]
 [ext_resource type="Texture2D" uid="uid://cwwuo8w3p6yqk" path="res://Assets/Sprite sheets/Instrumentos/bordeguitarra-Sheet.png" id="9_aej6o"]
 [ext_resource type="Texture2D" uid="uid://bbfqnyv27ua87" path="res://Assets/Sprite sheets/Botones/sprite sheet creditos.png" id="9_vob5a"]
 [ext_resource type="Texture2D" uid="uid://mnr4r1ha021d" path="res://Assets/Sprite sheets/Instrumentos/bordearpa-Sheet.png" id="10_hsgwe"]

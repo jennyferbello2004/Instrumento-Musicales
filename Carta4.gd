@@ -3,8 +3,8 @@ signal card_flipped
 var face_up = false
 var card_value = "o"
 var empty_card_texture = preload("res://Assets/Imagenes/Textura-Vacia.png")
-var card_back_texture = preload("res://Assets/Imagenes/Parte trasera carta.png")
-var card_front_texture = preload("res://Assets/Imagenes/Carta Guitarra.png")
+var card_back_texture = preload("res://Assets/Cartas rojas/carta roja trasera 2.2.png")
+var card_front_texture = preload("res://Assets/Cartas rojas/carta roja guitarra 2.2.png")
 var can_flip = true  
 var card_sound = null  
 func _ready():
