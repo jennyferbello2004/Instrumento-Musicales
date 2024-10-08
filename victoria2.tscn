@@ -10,8 +10,8 @@
 [ext_resource type="Texture2D" uid="uid://0dlgh4xfu34o" path="res://Assets/Sprite sheets/notasmusicales/nota musical verde-Sheet.png" id="7_cvsqe"]
 [ext_resource type="Texture2D" uid="uid://bujaxcl7jwgnn" path="res://Assets/Sprite sheets/notasmusicales/nota musical rojo-Sheet.png" id="8_k650m"]
 [ext_resource type="Texture2D" uid="uid://cu7qweqryptd0" path="res://Assets/Sprite sheets/emoji victoria -Sheet.png" id="9_n1x2c"]
-[ext_resource type="AudioStream" uid="uid://mucjg5ys08g6" path="res://Sonidos/Lo lograste cuatro.mp3" id="10_jc71q"]
 [ext_resource type="Texture2D" uid="uid://bgq1o7fxxrtmw" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="11_llg2y"]
+[ext_resource type="AudioStream" uid="uid://cdereeoeigrf2" path="res://Sonidos/victoriaviolin2.mp3" id="11_wl7jk"]
 [ext_resource type="AudioStream" uid="uid://biotuu6eslcka" path="res://Sonidos/Click para continuar.mp3" id="13_iyk5q"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1kaq0"]
@@ -576,8 +576,7 @@ autoplay = "default"
 frame_progress = 0.152237
 
 [node name="audiovictoria" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("10_jc71q")
-volume_db = 1.874
+stream = ExtResource("11_wl7jk")
 autoplay = true
 
 [node name="audiocontinuaruwu" type="AudioStreamPlayer" parent="."]

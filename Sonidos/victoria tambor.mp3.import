@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://d18aes57jt2bd"
+path="res://.godot/imported/victoria tambor.mp3-711f612193dfa7ea6021ee40b3639426.mp3str"
+
+[deps]
+
+source_file="res://Sonidos/victoria tambor.mp3"
+dest_files=["res://.godot/imported/victoria tambor.mp3-711f612193dfa7ea6021ee40b3639426.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

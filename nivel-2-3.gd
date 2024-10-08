@@ -19,7 +19,7 @@ func Presentation():
 		await get_tree().create_timer(2.5).timeout
 		$Cuatro.visible = true
 		$audiocuatro.play()
-		await get_tree().create_timer(17).timeout
+		await get_tree().create_timer(20).timeout
 		get_tree().change_scene_to_file("res://victoria2.tscn")
 
 func hide_all_buttons():
@@ -52,4 +52,4 @@ func _ready():
 
 
 func _on_rutaboton_3_pressed():
-	get_tree().change_scene_to_file("res://victoria_2.2.3.tscn")
+	get_tree().change_scene_to_file("res://escena_nivel_2-2.tscn")

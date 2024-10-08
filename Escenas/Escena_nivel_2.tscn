@@ -612,6 +612,23 @@ libraries = {
 "": SubResource("AnimationLibrary_r1hvt")
 }
 
+[node name="rutaboton3" type="TextureButton" parent="."]
+layout_mode = 0
+offset_left = 25.0
+offset_top = 554.0
+offset_right = 105.0
+offset_bottom = 629.0
+
+[node name="botonvolver3" type="AnimatedSprite2D" parent="rutaboton3"]
+texture_filter = 1
+position = Vector2(39, 40)
+rotation = 3.14159
+scale = Vector2(1.40933, 1.40933)
+sprite_frames = SubResource("SpriteFrames_uub75")
+autoplay = "default"
+frame_progress = 0.868689
+flip_v = true
+
 [node name="ColorRect" type="ColorRect" parent="."]
 visible = false
 modulate = Color(0, 0, 0, 1)
@@ -641,22 +658,5 @@ autoplay = true
 [node name="audiocuatro" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("15_iufnw")
 volume_db = -7.495
-
-[node name="rutaboton3" type="TextureButton" parent="."]
-layout_mode = 0
-offset_left = 25.0
-offset_top = 554.0
-offset_right = 105.0
-offset_bottom = 629.0
-
-[node name="botonvolver3" type="AnimatedSprite2D" parent="rutaboton3"]
-texture_filter = 1
-position = Vector2(39, 40)
-rotation = 3.14159
-scale = Vector2(1.40933, 1.40933)
-sprite_frames = SubResource("SpriteFrames_uub75")
-autoplay = "default"
-frame_progress = 0.823557
-flip_v = true
 
 [connection signal="pressed" from="rutaboton3" to="." method="_on_rutaboton_3_pressed"]
