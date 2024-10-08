@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://bpsebf7bxhg50"]
+[gd_scene load_steps=34 format=3 uid="uid://bpsebf7bxhg50"]
 
 [ext_resource type="Script" path="res://Scripts/Nivel-2.gd" id="1_tm8tf"]
 [ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_4j11t"]
@@ -11,11 +11,11 @@
 [ext_resource type="Texture2D" uid="uid://bf4et46goncc5" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/13.png" id="10_u22u8"]
 [ext_resource type="Texture2D" uid="uid://cpm6vq0h3rjc0" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/23.png" id="11_ntv08"]
 [ext_resource type="AudioStream" uid="uid://bqkjpub6pt3xq" path="res://Sonidos/pop-39222.mp3" id="11_v2ta2"]
-[ext_resource type="Texture2D" uid="uid://v2kiiqqr0btl" path="res://Assets/Imagenes/cuatro con borde blanco.png" id="12_tlos3"]
+[ext_resource type="Texture2D" uid="uid://cfqclmv0amrvj" path="res://Assets/Imagenes/bordeguitarra.png" id="12_u45ga"]
 [ext_resource type="Texture2D" uid="uid://bpw2enr0e4lqa" path="res://Assets/Imagenes/palabra cuatro.png" id="13_ayilc"]
 [ext_resource type="AudioStream" uid="uid://coa474eb43lv2" path="res://Sonidos/Instrucciones rompecabezas.mp3" id="14_kltit"]
 [ext_resource type="AudioStream" uid="uid://8nbb5g47ckyp" path="res://Sonidos/Victoria rompecabezas cuatro.mp3" id="15_iufnw"]
-[ext_resource type="Texture2D" uid="uid://dpn232p5laa0a" path="res://Assets/Sprite sheets/Botones/Boton volver 256x128-Sheet.png" id="16_bb7sr"]
+[ext_resource type="Texture2D" uid="uid://bgq1o7fxxrtmw" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="16_nanhl"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wdt0o"]
 
@@ -212,29 +212,22 @@ _data = {
 "RESET": SubResource("Animation_2cmdr")
 }
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_i1hpx"]
-atlas = ExtResource("16_bb7sr")
-region = Rect2(0, 0, 256, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_14yi3"]
+atlas = ExtResource("16_nanhl")
+region = Rect2(0, 0, 60, 60)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_f6yh8"]
-atlas = ExtResource("16_bb7sr")
-region = Rect2(256, 0, 256, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ldehe"]
+atlas = ExtResource("16_nanhl")
+region = Rect2(60, 0, 60, 60)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_1pru3"]
-atlas = ExtResource("16_bb7sr")
-region = Rect2(512, 0, 256, 128)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_mf372"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_uub75"]
 animations = [{
 "frames": [{
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_i1hpx")
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_14yi3")
 }, {
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_f6yh8")
-}, {
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_1pru3")
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_ldehe")
 }],
 "loop": true,
 "name": &"default",
@@ -599,14 +592,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -148.0
-offset_top = -170.0
-offset_right = 157.0
-offset_bottom = 117.0
+offset_left = -132.0
+offset_top = -174.0
+offset_right = 148.0
+offset_bottom = 105.0
 grow_horizontal = 2
 grow_vertical = 2
-pivot_offset = Vector2(165, 137.157)
-texture = ExtResource("12_tlos3")
+pivot_offset = Vector2(143, 144)
+texture = ExtResource("12_u45ga")
+expand_mode = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -630,6 +624,7 @@ grow_vertical = 2
 mouse_filter = 2
 
 [node name="Cuatro" type="TextureRect" parent="."]
+visible = false
 layout_mode = 0
 offset_left = 649.0
 offset_top = 225.0
@@ -650,16 +645,18 @@ volume_db = -7.495
 [node name="rutaboton3" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 25.0
-offset_top = 567.0
-offset_right = 193.0
+offset_top = 554.0
+offset_right = 105.0
 offset_bottom = 629.0
 
 [node name="botonvolver3" type="AnimatedSprite2D" parent="rutaboton3"]
 texture_filter = 1
-position = Vector2(84, 32.0001)
-scale = Vector2(0.664063, 0.664063)
-sprite_frames = SubResource("SpriteFrames_mf372")
+position = Vector2(39, 40)
+rotation = 3.14159
+scale = Vector2(1.40933, 1.40933)
+sprite_frames = SubResource("SpriteFrames_uub75")
 autoplay = "default"
-frame_progress = 0.669449
+frame_progress = 0.823557
+flip_v = true
 
 [connection signal="pressed" from="rutaboton3" to="." method="_on_rutaboton_3_pressed"]

@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=3 uid="uid://dj2kd1w52d1n8"]
+[gd_scene load_steps=34 format=3 uid="uid://dj2kd1w52d1n8"]
 
 [ext_resource type="Script" path="res://nivel2-2.gd" id="1_pv2rx"]
 [ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_yl6jk"]
@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://cgjx0j66bwunj" path="res://Assets/Imagenes/palabra tambor.png" id="13_e55l3"]
 [ext_resource type="AudioStream" uid="uid://coa474eb43lv2" path="res://Sonidos/Instrucciones rompecabezas.mp3" id="14_0rkkv"]
 [ext_resource type="AudioStream" uid="uid://8nbb5g47ckyp" path="res://Sonidos/Victoria rompecabezas cuatro.mp3" id="15_j5raf"]
-[ext_resource type="Texture2D" uid="uid://dpn232p5laa0a" path="res://Assets/Sprite sheets/Botones/Boton volver 256x128-Sheet.png" id="16_f5ay7"]
+[ext_resource type="Texture2D" uid="uid://bgq1o7fxxrtmw" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="16_ogr3k"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wdt0o"]
 
@@ -212,29 +212,22 @@ _data = {
 "RESET": SubResource("Animation_2cmdr")
 }
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_i1hpx"]
-atlas = ExtResource("16_f5ay7")
-region = Rect2(0, 0, 256, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_14yi3"]
+atlas = ExtResource("16_ogr3k")
+region = Rect2(0, 0, 60, 60)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_f6yh8"]
-atlas = ExtResource("16_f5ay7")
-region = Rect2(256, 0, 256, 128)
-
-[sub_resource type="AtlasTexture" id="AtlasTexture_1pru3"]
-atlas = ExtResource("16_f5ay7")
-region = Rect2(512, 0, 256, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ldehe"]
+atlas = ExtResource("16_ogr3k")
+region = Rect2(60, 0, 60, 60)
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_mf372"]
 animations = [{
 "frames": [{
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_i1hpx")
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_14yi3")
 }, {
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_f6yh8")
-}, {
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_1pru3")
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_ldehe")
 }],
 "loop": true,
 "name": &"default",
@@ -618,7 +611,7 @@ offset_right = 133.0
 offset_bottom = 106.0
 grow_horizontal = 2
 grow_vertical = 2
-pivot_offset = Vector2(165, 137.157)
+pivot_offset = Vector2(130, 143)
 texture = ExtResource("12_1i8mo")
 expand_mode = 1
 
@@ -665,17 +658,19 @@ volume_db = -7.495
 
 [node name="rutaboton3" type="TextureButton" parent="."]
 layout_mode = 0
-offset_left = 25.0
-offset_top = 567.0
-offset_right = 193.0
+offset_left = 14.0
+offset_top = 553.0
+offset_right = 95.0
 offset_bottom = 629.0
 
 [node name="botonvolver3" type="AnimatedSprite2D" parent="rutaboton3"]
 texture_filter = 1
-position = Vector2(84, 32.0001)
-scale = Vector2(0.664063, 0.664063)
+position = Vector2(40.25, 40.75)
+rotation = 3.14159
+scale = Vector2(1.40933, 1.40933)
 sprite_frames = SubResource("SpriteFrames_mf372")
 autoplay = "default"
-frame_progress = 0.669449
+frame_progress = 0.595489
+flip_v = true
 
 [connection signal="pressed" from="rutaboton3" to="." method="_on_rutaboton_3_pressed"]
