@@ -12,4 +12,4 @@ func jennyfer_lopez():
 
 
 func _on_texture_button_pressed():
-	get_tree().change_scene_to_file("res://escena_nivel_2-2.tscn")
+	get_tree().change_scene_to_file("res://escena_nivel_2-3.tscn")
