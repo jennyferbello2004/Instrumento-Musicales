@@ -2,14 +2,14 @@
 
 [ext_resource type="Script" path="res://nivel-2-3.gd" id="1_520ex"]
 [ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_asmhp"]
-[ext_resource type="Texture2D" uid="uid://cgvx3bkbkvddl" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/11.png" id="3_60whl"]
-[ext_resource type="Texture2D" uid="uid://cn4wiq6qpdefk" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/10.png" id="4_mvyq1"]
-[ext_resource type="Texture2D" uid="uid://ghot67asr1ht" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/12.png" id="5_oykqp"]
-[ext_resource type="Texture2D" uid="uid://bf4et46goncc5" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/13.png" id="6_cxosd"]
-[ext_resource type="Texture2D" uid="uid://cy6hysxju5p2n" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/20.png" id="7_tsw1w"]
-[ext_resource type="Texture2D" uid="uid://r1y0obfcdga8" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/21.png" id="8_et3aj"]
-[ext_resource type="Texture2D" uid="uid://c47jw7qfqmm56" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/22.png" id="9_0uxyb"]
-[ext_resource type="Texture2D" uid="uid://cpm6vq0h3rjc0" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/23.png" id="10_bfjmf"]
+[ext_resource type="Texture2D" uid="uid://bor81lfsterf" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-1-columna-1.png" id="3_8fak7"]
+[ext_resource type="Texture2D" uid="uid://lff8eytgbh7q" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-1-columna-2.png" id="4_mgxke"]
+[ext_resource type="Texture2D" uid="uid://buc543cahkuv5" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-2-columna-1.png" id="5_416u3"]
+[ext_resource type="Texture2D" uid="uid://r5mj1dgv5n4u" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-2-columna-2.png" id="6_oykui"]
+[ext_resource type="Texture2D" uid="uid://ujqddn5st20i" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-3-columna-1.png" id="7_yb1ev"]
+[ext_resource type="Texture2D" uid="uid://cg8dvyi8vrdab" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-3-columna-2.png" id="8_bfmt0"]
+[ext_resource type="Texture2D" uid="uid://debxesgk33qml" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-4-columna-1.png" id="9_nnohi"]
+[ext_resource type="Texture2D" uid="uid://dc1hi17owq1hu" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-4-columna-2.png" id="10_xe7gs"]
 [ext_resource type="AudioStream" uid="uid://bqkjpub6pt3xq" path="res://Sonidos/pop-39222.mp3" id="11_kglqs"]
 [ext_resource type="Texture2D" uid="uid://v2kiiqqr0btl" path="res://Assets/Imagenes/cuatro con borde blanco.png" id="12_ih15j"]
 [ext_resource type="Texture2D" uid="uid://bpw2enr0e4lqa" path="res://Assets/Imagenes/palabra cuatro.png" id="13_h431k"]
@@ -280,14 +280,14 @@ metadata/_edit_use_anchors_ = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.717495
-anchor_top = 0.217179
-anchor_right = 0.586625
-anchor_bottom = 1.15718
+anchor_left = 57.5007
+anchor_top = -0.329114
+anchor_right = 60.6667
+anchor_bottom = 0.607595
 offset_left = -0.0119972
 offset_top = -1.0
 offset_right = -4.0
-texture = ExtResource("3_60whl")
+texture = ExtResource("3_8fak7")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -295,11 +295,11 @@ metadata/_edit_use_anchors_ = true
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 460.397
-offset_top = -74.1919
-offset_right = 540.397
-offset_bottom = 5.80811
-texture = ExtResource("3_60whl")
+offset_left = 319.0
+offset_top = -127.0
+offset_right = 491.0
+offset_bottom = -41.0
+texture = ExtResource("3_8fak7")
 expand_mode = 1
 
 [node name="Button2" type="Button" parent="."]
@@ -320,26 +320,28 @@ flat = true
 texture_filter = 2
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -1.19295
-anchor_top = 0.347223
-anchor_right = 0.336188
-anchor_bottom = 0.92747
+anchor_left = -44.5739
+anchor_top = -4.70833
+anchor_right = -43.0448
+anchor_bottom = -4.12809
 offset_left = 0.0519829
 offset_top = -1.0
 offset_right = -0.0599365
 offset_bottom = -2.0
-texture = ExtResource("4_mvyq1")
+texture = ExtResource("4_mgxke")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Button2"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -613.0
-offset_top = -301.0
-offset_right = -533.0
-offset_bottom = -220.0
-texture = ExtResource("4_mvyq1")
+offset_left = -582.0
+offset_top = -273.0
+offset_right = -410.0
+offset_bottom = -187.0
+texture = ExtResource("4_mgxke")
+expand_mode = 1
 
 [node name="Button3" type="Button" parent="."]
 layout_mode = 1
@@ -360,26 +362,28 @@ metadata/_edit_use_anchors_ = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 1.89413
-anchor_top = -1.10594
-anchor_right = 2.57519
-anchor_bottom = -0.580646
+anchor_left = 11.6388
+anchor_top = -1.50916
+anchor_right = 12.9794
+anchor_bottom = -0.983873
 offset_left = -0.0240059
 offset_top = -13.432
 offset_right = -0.0339813
 offset_bottom = -5.99997
-texture = ExtResource("5_oykqp")
+texture = ExtResource("5_416u3")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Button3"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 490.0
-offset_top = -306.743
-offset_right = 570.0
-offset_bottom = -225.743
-texture = ExtResource("5_oykqp")
+offset_left = 349.0
+offset_top = -354.0
+offset_right = 521.0
+offset_bottom = -270.0
+texture = ExtResource("5_416u3")
+expand_mode = 1
 
 [node name="Button4" type="Button" parent="."]
 layout_mode = 1
@@ -401,23 +405,24 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -0.585083
-offset_top = -0.085907
-offset_right = 2.41492
-offset_bottom = 10.9141
+offset_left = -21.0
+offset_top = 116.0
+offset_right = 27.0
+offset_bottom = 158.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("6_cxosd")
+texture = ExtResource("6_oykui")
+expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="Button4"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 164.0
-offset_top = -71.0
-offset_right = 244.0
-offset_bottom = 9.0
-texture = ExtResource("6_cxosd")
+offset_left = 195.0
+offset_top = -199.0
+offset_right = 367.0
+offset_bottom = -115.0
+texture = ExtResource("6_oykui")
 expand_mode = 1
 
 [node name="Button5" type="Button" parent="."]
@@ -439,27 +444,29 @@ metadata/_edit_use_anchors_ = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -2.24124
-anchor_top = -1.88772
-anchor_right = -1.36022
-anchor_bottom = -0.504714
+anchor_left = -15.1807
+anchor_top = -25.3567
+anchor_right = -14.0996
+anchor_bottom = -22.7128
 offset_left = 30.3155
 offset_top = -1.80074
 offset_right = 31.4805
 offset_bottom = -1.60974
 rotation = 1.51947
-texture = ExtResource("7_tsw1w")
+texture = ExtResource("7_yb1ev")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Button5"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -547.0
-offset_top = -549.0
-offset_right = -466.0
-offset_bottom = -468.0
-texture = ExtResource("7_tsw1w")
+offset_left = -768.0
+offset_top = -351.0
+offset_right = -596.0
+offset_bottom = -267.0
+texture = ExtResource("7_yb1ev")
+expand_mode = 1
 
 [node name="Button6" type="Button" parent="."]
 layout_mode = 1
@@ -480,27 +487,29 @@ metadata/_edit_use_anchors_ = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.249
-anchor_top = 0.45
-anchor_right = 1.021
-anchor_bottom = 2.042
+anchor_left = -12.1047
+anchor_top = 1.6073
+anchor_right = -11.2068
+anchor_bottom = 3.72983
 offset_left = 44.2879
 offset_top = -2.36077
 offset_right = 35.4169
 offset_bottom = 6.94324
 rotation = 1.51728
-texture = ExtResource("8_et3aj")
+texture = ExtResource("8_bfmt0")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Button6"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -251.0
-offset_top = -280.0
-offset_right = -170.0
-offset_bottom = -196.0
-texture = ExtResource("8_et3aj")
+offset_left = -300.0
+offset_top = -163.0
+offset_right = -128.0
+offset_bottom = -79.0
+texture = ExtResource("8_bfmt0")
+expand_mode = 1
 
 [node name="Button7" type="Button" parent="."]
 layout_mode = 1
@@ -525,22 +534,24 @@ anchor_left = 2.968
 anchor_top = -4.558
 anchor_right = 3.693
 anchor_bottom = -3.792
-offset_left = -214.202
-offset_top = 342.193
-offset_right = -225.977
-offset_bottom = 354.509
+offset_left = -351.504
+offset_top = 355.993
+offset_right = -363.279
+offset_bottom = 368.309
 rotation = 1.52335
-texture = ExtResource("9_0uxyb")
+texture = ExtResource("9_nnohi")
+expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="Button7"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -481.0
-offset_top = 222.0
-offset_right = -400.0
-offset_bottom = 303.0
-texture = ExtResource("9_0uxyb")
+offset_left = -702.0
+offset_top = 343.0
+offset_right = -530.0
+offset_bottom = 428.0
+texture = ExtResource("9_nnohi")
+expand_mode = 1
 
 [node name="Button8" type="Button" parent="."]
 layout_mode = 1
@@ -560,26 +571,28 @@ flat = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0105698
-anchor_top = -0.0296837
-anchor_right = 0.552688
-anchor_bottom = 0.630436
+anchor_left = 0.332879
+anchor_top = 5.53106
+anchor_right = 0.874997
+anchor_bottom = 6.19118
 offset_left = 0.0149956
 offset_top = 0.00600433
 offset_right = 0.03
 offset_bottom = -1.0
-texture = ExtResource("10_bfjmf")
+texture = ExtResource("10_xe7gs")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Button8"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 539.0
-offset_top = 275.0
-offset_right = 622.0
-offset_bottom = 355.0
-texture = ExtResource("10_bfjmf")
+offset_left = 491.0
+offset_top = 315.0
+offset_right = 663.0
+offset_bottom = 400.0
+texture = ExtResource("10_xe7gs")
+expand_mode = 1
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0

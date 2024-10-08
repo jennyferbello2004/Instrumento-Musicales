@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg7bcyrefnn7n"
-path="res://.godot/imported/Icono tambor .png-59c4cb6e8120f34b1abb87be9cce2496.ctex"
+uid="uid://cgjx0j66bwunj"
+path="res://.godot/imported/palabra tambor.png-05ea5a90dc11358723f5e747fbbaf381.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Icono tambor .png"
-dest_files=["res://.godot/imported/Icono tambor .png-59c4cb6e8120f34b1abb87be9cce2496.ctex"]
+source_file="res://Assets/Imagenes/palabra tambor.png"
+dest_files=["res://.godot/imported/palabra tambor.png-05ea5a90dc11358723f5e747fbbaf381.ctex"]
 
 [params]
 

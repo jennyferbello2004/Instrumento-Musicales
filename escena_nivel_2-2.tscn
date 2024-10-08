@@ -2,17 +2,17 @@
 
 [ext_resource type="Script" path="res://nivel2-2.gd" id="1_pv2rx"]
 [ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_yl6jk"]
-[ext_resource type="Texture2D" uid="uid://cgvx3bkbkvddl" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/11.png" id="3_8dgy5"]
-[ext_resource type="Texture2D" uid="uid://cn4wiq6qpdefk" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/10.png" id="4_4m6t3"]
-[ext_resource type="Texture2D" uid="uid://ghot67asr1ht" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/12.png" id="5_aowdk"]
-[ext_resource type="Texture2D" uid="uid://bf4et46goncc5" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/13.png" id="6_1dxmv"]
-[ext_resource type="Texture2D" uid="uid://cy6hysxju5p2n" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/20.png" id="7_k8q5o"]
-[ext_resource type="Texture2D" uid="uid://r1y0obfcdga8" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/21.png" id="8_um8je"]
-[ext_resource type="Texture2D" uid="uid://c47jw7qfqmm56" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/22.png" id="9_ycjlk"]
-[ext_resource type="Texture2D" uid="uid://cpm6vq0h3rjc0" path="res://Assets/Imagenes/Imagenes-separadas/imageonline/23.png" id="10_bejhb"]
+[ext_resource type="Texture2D" uid="uid://bx543a7dcbsyd" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-1-columna-1.png" id="3_rgbdx"]
+[ext_resource type="Texture2D" uid="uid://b8ddip7lgsy61" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-1-columna-2.png" id="4_fk7nf"]
+[ext_resource type="Texture2D" uid="uid://cdp73j5pep0iw" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-2-columna-1.png" id="5_if4h0"]
+[ext_resource type="Texture2D" uid="uid://iue3sd4k8x47" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-2-columna-2.png" id="6_nrnlq"]
+[ext_resource type="Texture2D" uid="uid://553t0f1rdhxl" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-3-columna-1.png" id="7_iggrq"]
+[ext_resource type="Texture2D" uid="uid://m0yl8h6b0oyo" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-3-columna-2.png" id="8_ejjd3"]
+[ext_resource type="Texture2D" uid="uid://dklv1muhit68b" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-4-columna-1.png" id="9_e03mf"]
+[ext_resource type="Texture2D" uid="uid://ditphbtt82cs7" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-4-columna-2.png" id="10_a0k2p"]
 [ext_resource type="AudioStream" uid="uid://bqkjpub6pt3xq" path="res://Sonidos/pop-39222.mp3" id="11_4ha4l"]
-[ext_resource type="Texture2D" uid="uid://v2kiiqqr0btl" path="res://Assets/Imagenes/cuatro con borde blanco.png" id="12_krxp2"]
-[ext_resource type="Texture2D" uid="uid://bpw2enr0e4lqa" path="res://Assets/Imagenes/palabra cuatro.png" id="13_bid8s"]
+[ext_resource type="Texture2D" uid="uid://bben20l45ntun" path="res://Assets/Imagenes/bordetambor.png" id="12_1i8mo"]
+[ext_resource type="Texture2D" uid="uid://cgjx0j66bwunj" path="res://Assets/Imagenes/palabra tambor.png" id="13_e55l3"]
 [ext_resource type="AudioStream" uid="uid://coa474eb43lv2" path="res://Sonidos/Instrucciones rompecabezas.mp3" id="14_0rkkv"]
 [ext_resource type="AudioStream" uid="uid://8nbb5g47ckyp" path="res://Sonidos/Victoria rompecabezas cuatro.mp3" id="15_j5raf"]
 [ext_resource type="Texture2D" uid="uid://dpn232p5laa0a" path="res://Assets/Sprite sheets/Botones/Boton volver 256x128-Sheet.png" id="16_f5ay7"]
@@ -280,14 +280,14 @@ metadata/_edit_use_anchors_ = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -0.717495
-anchor_top = 0.217179
-anchor_right = 0.586625
-anchor_bottom = 1.15718
+anchor_left = 56.2784
+anchor_top = 3.05063
+anchor_right = 59.2778
+anchor_bottom = 3.98734
 offset_left = -0.0119972
 offset_top = -1.0
 offset_right = -4.0
-texture = ExtResource("3_8dgy5")
+texture = ExtResource("3_rgbdx")
 expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
@@ -295,11 +295,11 @@ metadata/_edit_use_anchors_ = true
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 460.397
-offset_top = -74.1919
-offset_right = 540.397
-offset_bottom = 5.80811
-texture = ExtResource("3_8dgy5")
+offset_left = 397.0
+offset_top = -93.0
+offset_right = 551.0
+offset_bottom = -16.0
+texture = ExtResource("3_rgbdx")
 expand_mode = 1
 
 [node name="Button2" type="Button" parent="."]
@@ -320,26 +320,28 @@ flat = true
 texture_filter = 2
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -1.19295
-anchor_top = 0.347223
-anchor_right = 0.336188
-anchor_bottom = 0.92747
+anchor_left = -45.5739
+anchor_top = 1.41667
+anchor_right = -41.9971
+anchor_bottom = 2.26389
 offset_left = 0.0519829
 offset_top = -1.0
 offset_right = -0.0599365
 offset_bottom = -2.0
-texture = ExtResource("4_4m6t3")
+texture = ExtResource("4_fk7nf")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Button2"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -613.0
-offset_top = -301.0
-offset_right = -533.0
-offset_bottom = -220.0
-texture = ExtResource("4_4m6t3")
+offset_left = -522.0
+offset_top = -239.0
+offset_right = -368.0
+offset_bottom = -162.0
+texture = ExtResource("4_fk7nf")
+expand_mode = 1
 
 [node name="Button3" type="Button" parent="."]
 layout_mode = 1
@@ -360,26 +362,28 @@ metadata/_edit_use_anchors_ = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 1.89413
-anchor_top = -1.10594
-anchor_right = 2.57519
-anchor_bottom = -0.580646
+anchor_left = 23.043
+anchor_top = -4.96078
+anchor_right = 23.7241
+anchor_bottom = -4.43549
 offset_left = -0.0240059
 offset_top = -13.432
 offset_right = -0.0339813
 offset_bottom = -5.99997
-texture = ExtResource("5_aowdk")
+texture = ExtResource("5_if4h0")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Button3"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 490.0
-offset_top = -306.743
-offset_right = 570.0
-offset_bottom = -225.743
-texture = ExtResource("5_aowdk")
+offset_left = 427.0
+offset_top = -329.0
+offset_right = 581.0
+offset_bottom = -252.0
+texture = ExtResource("5_if4h0")
+expand_mode = 1
 
 [node name="Button4" type="Button" parent="."]
 layout_mode = 1
@@ -401,23 +405,24 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -0.585083
-offset_top = -0.085907
-offset_right = 2.41492
-offset_bottom = 10.9141
+offset_left = -252.0
+offset_top = -102.0
+offset_right = -249.0
+offset_bottom = -91.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("6_1dxmv")
+texture = ExtResource("6_nrnlq")
+expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="Button4"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 164.0
-offset_top = -71.0
-offset_right = 244.0
-offset_bottom = 9.0
-texture = ExtResource("6_1dxmv")
+offset_left = 255.0
+offset_top = -174.0
+offset_right = 409.0
+offset_bottom = -97.0
+texture = ExtResource("6_nrnlq")
 expand_mode = 1
 
 [node name="Button5" type="Button" parent="."]
@@ -439,27 +444,29 @@ metadata/_edit_use_anchors_ = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = -2.24124
-anchor_top = -1.88772
-anchor_right = -1.36022
-anchor_bottom = -0.504714
+anchor_left = -28.3559
+anchor_top = -24.8879
+anchor_right = -27.4749
+anchor_bottom = -23.5049
 offset_left = 30.3155
 offset_top = -1.80074
 offset_right = 31.4805
 offset_bottom = -1.60974
 rotation = 1.51947
-texture = ExtResource("7_k8q5o")
+texture = ExtResource("7_iggrq")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Button5"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -547.0
-offset_top = -549.0
-offset_right = -466.0
-offset_bottom = -468.0
-texture = ExtResource("7_k8q5o")
+offset_left = -690.127
+offset_top = -333.218
+offset_right = -536.127
+offset_bottom = -256.218
+texture = ExtResource("7_iggrq")
+expand_mode = 1
 
 [node name="Button6" type="Button" parent="."]
 layout_mode = 1
@@ -480,27 +487,29 @@ metadata/_edit_use_anchors_ = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.249
-anchor_top = 0.45
-anchor_right = 1.021
-anchor_bottom = 2.042
+anchor_left = -0.321458
+anchor_top = -5.07444
+anchor_right = 0.450542
+anchor_bottom = -3.48244
 offset_left = 44.2879
 offset_top = -2.36077
 offset_right = 35.4169
 offset_bottom = 6.94324
 rotation = 1.51728
-texture = ExtResource("8_um8je")
+texture = ExtResource("8_ejjd3")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Button6"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -251.0
-offset_top = -280.0
-offset_right = -170.0
-offset_bottom = -196.0
-texture = ExtResource("8_um8je")
+offset_left = -240.0
+offset_top = -145.0
+offset_right = -85.9998
+offset_bottom = -67.9997
+texture = ExtResource("8_ejjd3")
+expand_mode = 1
 
 [node name="Button7" type="Button" parent="."]
 layout_mode = 1
@@ -525,22 +534,24 @@ anchor_left = 2.968
 anchor_top = -4.558
 anchor_right = 3.693
 anchor_bottom = -3.792
-offset_left = -214.202
-offset_top = 342.193
-offset_right = -225.977
-offset_bottom = 354.509
-rotation = 1.52335
-texture = ExtResource("9_ycjlk")
+offset_left = -466.504
+offset_top = 336.992
+offset_right = -513.28
+offset_bottom = 375.308
+rotation = 0.0340655
+texture = ExtResource("9_e03mf")
+expand_mode = 1
 
 [node name="TextureRect2" type="TextureRect" parent="Button7"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = -481.0
-offset_top = 222.0
-offset_right = -400.0
-offset_bottom = 303.0
-texture = ExtResource("9_ycjlk")
+offset_left = -623.669
+offset_top = 353.7
+offset_right = -469.669
+offset_bottom = 430.7
+texture = ExtResource("9_e03mf")
+expand_mode = 1
 
 [node name="Button8" type="Button" parent="."]
 layout_mode = 1
@@ -560,26 +571,28 @@ flat = true
 texture_filter = 1
 layout_mode = 1
 anchors_preset = -1
-anchor_left = 0.0105698
-anchor_top = -0.0296837
-anchor_right = 0.552688
-anchor_bottom = 0.630436
+anchor_left = 28.9086
+anchor_top = 12.9686
+anchor_right = 29.4508
+anchor_bottom = 13.6287
 offset_left = 0.0149956
 offset_top = 0.00600433
 offset_right = 0.03
 offset_bottom = -1.0
-texture = ExtResource("10_bejhb")
+texture = ExtResource("10_a0k2p")
+expand_mode = 1
 metadata/_edit_use_anchors_ = true
 
 [node name="TextureRect2" type="TextureRect" parent="Button8"]
 visible = false
 texture_filter = 1
 layout_mode = 0
-offset_left = 539.0
-offset_top = 275.0
-offset_right = 622.0
-offset_bottom = 355.0
-texture = ExtResource("10_bejhb")
+offset_left = 551.0
+offset_top = 326.0
+offset_right = 705.0
+offset_bottom = 403.0
+texture = ExtResource("10_a0k2p")
+expand_mode = 1
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 0
@@ -599,14 +612,15 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -148.0
-offset_top = -170.0
-offset_right = 157.0
-offset_bottom = 117.0
+offset_left = -123.0
+offset_top = -149.0
+offset_right = 133.0
+offset_bottom = 106.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(165, 137.157)
-texture = ExtResource("12_krxp2")
+texture = ExtResource("12_1i8mo")
+expand_mode = 1
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -631,12 +645,13 @@ mouse_filter = 2
 
 [node name="Cuatro" type="TextureRect" parent="."]
 visible = false
+texture_filter = 1
 layout_mode = 0
-offset_left = 649.0
-offset_top = 225.0
-offset_right = 1073.0
-offset_bottom = 376.0
-texture = ExtResource("13_bid8s")
+offset_left = 716.0
+offset_top = 188.0
+offset_right = 1085.0
+offset_bottom = 448.0
+texture = ExtResource("13_e55l3")
 expand_mode = 1
 
 [node name="instrucciones" type="AudioStreamPlayer" parent="."]

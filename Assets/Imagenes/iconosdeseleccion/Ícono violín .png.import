@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bq82d51txan36"
-path="res://.godot/imported/Icono cuatro.png-906acf666a05aa6647562eca60f9cca7.ctex"
+uid="uid://bsi8l43dfgfhd"
+path="res://.godot/imported/Ícono violín .png-fb9b456634962a1dad718856db4c7c9a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Icono cuatro.png"
-dest_files=["res://.godot/imported/Icono cuatro.png-906acf666a05aa6647562eca60f9cca7.ctex"]
+source_file="res://Assets/Imagenes/iconosdeseleccion/Ícono violín .png"
+dest_files=["res://.godot/imported/Ícono violín .png-fb9b456634962a1dad718856db4c7c9a.ctex"]
 
 [params]
 

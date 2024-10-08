@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xbtr0axu5j8q"
-path="res://.godot/imported/Ícono flauta.png-c3ec39501d60f5a0a8925b0f5e10f1ce.ctex"
+uid="uid://cdp73j5pep0iw"
+path="res://.godot/imported/fila-2-columna-1.png-5350d3d9f54760ccd62ae17e32699c8a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Ícono flauta.png"
-dest_files=["res://.godot/imported/Ícono flauta.png-c3ec39501d60f5a0a8925b0f5e10f1ce.ctex"]
+source_file="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-2-columna-1.png"
+dest_files=["res://.godot/imported/fila-2-columna-1.png-5350d3d9f54760ccd62ae17e32699c8a.ctex"]
 
 [params]
 

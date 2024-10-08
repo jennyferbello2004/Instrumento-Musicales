@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://yv0il1ravuh"
-path="res://.godot/imported/Icono violin.png-45b978cce3db8e6e0ae8e7b67fb1eb85.ctex"
+uid="uid://buc543cahkuv5"
+path="res://.godot/imported/fila-2-columna-1.png-c41794c8b7923820d54bf5fe9c6af03b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Icono violin.png"
-dest_files=["res://.godot/imported/Icono violin.png-45b978cce3db8e6e0ae8e7b67fb1eb85.ctex"]
+source_file="res://Assets/Imagenes/Imagenes-separadas/violin/fila-2-columna-1.png"
+dest_files=["res://.godot/imported/fila-2-columna-1.png-c41794c8b7923820d54bf5fe9c6af03b.ctex"]
 
 [params]
 

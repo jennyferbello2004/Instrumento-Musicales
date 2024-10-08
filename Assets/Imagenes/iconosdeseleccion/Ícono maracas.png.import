@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://cv6eng42rr4vy"
-path="res://.godot/imported/Icono Tambor.png-cce40312f4c1559fa5fa0affb2096d94.ctex"
+uid="uid://c47vkmwgvdft3"
+path="res://.godot/imported/Ícono maracas.png-fc8df796ead635335a0a96263cbbecfc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Icono Tambor.png"
-dest_files=["res://.godot/imported/Icono Tambor.png-cce40312f4c1559fa5fa0affb2096d94.ctex"]
+source_file="res://Assets/Imagenes/iconosdeseleccion/Ícono maracas.png"
+dest_files=["res://.godot/imported/Ícono maracas.png-fc8df796ead635335a0a96263cbbecfc.ctex"]
 
 [params]
 

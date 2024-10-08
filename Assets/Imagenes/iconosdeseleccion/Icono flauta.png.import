@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bxc7gr1skfijq"
-path="res://.godot/imported/Ícono arpa.png-7746c719337581a5149f1368f240220a.ctex"
+uid="uid://biye1qlhlcnw2"
+path="res://.godot/imported/Icono flauta.png-a6951edffc9ff1d51e4b9cc781dded5b.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Ícono arpa.png"
-dest_files=["res://.godot/imported/Ícono arpa.png-7746c719337581a5149f1368f240220a.ctex"]
+source_file="res://Assets/Imagenes/iconosdeseleccion/Icono flauta.png"
+dest_files=["res://.godot/imported/Icono flauta.png-a6951edffc9ff1d51e4b9cc781dded5b.ctex"]
 
 [params]
 

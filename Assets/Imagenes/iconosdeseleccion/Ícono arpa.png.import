@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bcjnu2yr7xdj8"
-path="res://.godot/imported/Icono maraca.png-addecd8c661b80b5023fe174dc5b4225.ctex"
+uid="uid://bxc7gr1skfijq"
+path="res://.godot/imported/Ícono arpa.png-164782934a7061cdc158291e04377ff5.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Icono maraca.png"
-dest_files=["res://.godot/imported/Icono maraca.png-addecd8c661b80b5023fe174dc5b4225.ctex"]
+source_file="res://Assets/Imagenes/iconosdeseleccion/Ícono arpa.png"
+dest_files=["res://.godot/imported/Ícono arpa.png-164782934a7061cdc158291e04377ff5.ctex"]
 
 [params]
 

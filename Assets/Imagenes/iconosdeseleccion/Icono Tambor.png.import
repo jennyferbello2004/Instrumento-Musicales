@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dg2rongcqiq8k"
-path="res://.godot/imported/Icono arpa.png-9d27e58e57a2dc1ff4e93e5292c4d272.ctex"
+uid="uid://cv6eng42rr4vy"
+path="res://.godot/imported/Icono Tambor.png-a6a9bd3d54dd1309f7445df31fcd37f1.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Icono arpa.png"
-dest_files=["res://.godot/imported/Icono arpa.png-9d27e58e57a2dc1ff4e93e5292c4d272.ctex"]
+source_file="res://Assets/Imagenes/iconosdeseleccion/Icono Tambor.png"
+dest_files=["res://.godot/imported/Icono Tambor.png-a6a9bd3d54dd1309f7445df31fcd37f1.ctex"]
 
 [params]
 

@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c2c2sn7mfbk64"
-path="res://.godot/imported/Icono cuatro .png-c0320cc1d6acbb9e3577fc611084d6ad.ctex"
+uid="uid://bx543a7dcbsyd"
+path="res://.godot/imported/fila-1-columna-1.png-5b6c0037ec2b425d7df899e478f237ad.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/Imagenes/Icono cuatro .png"
-dest_files=["res://.godot/imported/Icono cuatro .png-c0320cc1d6acbb9e3577fc611084d6ad.ctex"]
+source_file="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-1-columna-1.png"
+dest_files=["res://.godot/imported/fila-1-columna-1.png-5b6c0037ec2b425d7df899e478f237ad.ctex"]
 
 [params]
 
