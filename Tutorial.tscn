@@ -1,7 +1,7 @@
 [gd_scene load_steps=23 format=3 uid="uid://cxnbq6fku74w8"]
 
 [ext_resource type="Script" path="res://Tutorial.gd" id="1_hisrh"]
-[ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="1_s1eow"]
+[ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="1_s1eow"]
 [ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="2_chwml"]
 [ext_resource type="Texture2D" uid="uid://bxiw0cb613agu" path="res://Assets/Sprite sheets/Mouse/pixil-frame-0.png" id="3_gc758"]
 [ext_resource type="Texture2D" uid="uid://nyuqkgqwxtkr" path="res://Assets/Sprite sheets/Mouse/pixil-frame-1.png" id="4_voaxp"]

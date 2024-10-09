@@ -1,7 +1,7 @@
 [gd_scene load_steps=39 format=3 uid="uid://vp0eca7rl4pe"]
 
 [ext_resource type="Script" path="res://Scripts/Escena-adivinarsonido1.gd" id="1_uu2ep"]
-[ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_girtv"]
+[ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_girtv"]
 [ext_resource type="Script" path="res://Scripts/Sonido1.gd" id="2_wd1w7"]
 [ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="3_al6wf"]
 [ext_resource type="AudioStream" uid="uid://c2srx45wgxx2" path="res://Sonidos/Instrumentos/Sonido Guitarra.mp3" id="4_oplsi"]
@@ -22,11 +22,11 @@
 [ext_resource type="AudioStream" uid="uid://bbfm50yxm7764" path="res://Sonidos/Voces/5.mp3" id="18_ruhfm"]
 [ext_resource type="Texture2D" uid="uid://dg2rongcqiq8k" path="res://Assets/Imagenes/iconosdeseleccion/Icono arpa.png" id="20_verdg"]
 [ext_resource type="AudioStream" uid="uid://cbql2usfjyl8l" path="res://Sonidos/Voces/2.mp3" id="21_diehf"]
-[ext_resource type="Texture2D" uid="uid://r2245426f47g" path="res://Assets/Imagenes/boton correcto png.png" id="22_y2f0r"]
-[ext_resource type="Texture2D" uid="uid://cl68shjhu7dkw" path="res://Assets/Imagenes/boton incorrecto png.png" id="23_wsfl8"]
+[ext_resource type="Texture2D" path="res://Assets/Imagenes/boton correcto png.png" id="22_y2f0r"]
+[ext_resource type="Texture2D" path="res://Assets/Imagenes/boton incorrecto png.png" id="23_wsfl8"]
 [ext_resource type="AudioStream" uid="uid://duf06wfmj571i" path="res://Sonidos/Voces/Instruccion.mp3" id="24_qhpbm"]
 [ext_resource type="AudioStream" uid="uid://nk7rhbvs131t" path="res://Sonidos/Voces/Intentaconotroinstrumento.mp3" id="26_dmeqy"]
-[ext_resource type="AudioStream" uid="uid://dn8l6708cw3go" path="res://Sonidos/Efectos-Sonidos/new-level-142995.mp3" id="27_ewkwx"]
+[ext_resource type="AudioStream" path="res://Sonidos/Efectos-Sonidos/new-level-142995.mp3" id="27_ewkwx"]
 [ext_resource type="Texture2D" uid="uid://dpn232p5laa0a" path="res://Assets/Sprite sheets/Botones/Boton volver 256x128-Sheet.png" id="28_cc71t"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wuy6"]

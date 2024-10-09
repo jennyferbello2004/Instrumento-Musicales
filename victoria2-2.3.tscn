@@ -1,7 +1,7 @@
-[gd_scene load_steps=82 format=3 uid="uid://dvj41t5qnv4fo"]
+[gd_scene load_steps=82 format=3 uid="uid://0yrxqcsncvsh"]
 
 [ext_resource type="Script" path="res://victoria2-2-3.gd" id="1_2pnbk"]
-[ext_resource type="Texture2D" uid="uid://ddufj8jid2ohx" path="res://Assets/Imagenes/Fondos/Fondo nubes Vfinall.png" id="2_ogg1w"]
+[ext_resource type="Texture2D" uid="uid://yturhuau5wwa" path="res://Assets/Imagenes/Fondos/Fondo nubes Vfinall.png" id="2_ogg1w"]
 [ext_resource type="Texture2D" uid="uid://dulxt5fexgcdu" path="res://Assets/Sprite sheets/frames lo lograste (1).png" id="3_jlbgt"]
 [ext_resource type="Texture2D" uid="uid://dmv7imi4x7qdo" path="res://Assets/Sprite sheets/notasmusicales/nota musical naranja-Sheet.png" id="4_vi6ok"]
 [ext_resource type="Texture2D" uid="uid://dhlri2lknqwbt" path="res://Assets/Sprite sheets/notasmusicales/nota musical rosado-Sheet.png" id="5_87tob"]
@@ -9,10 +9,10 @@
 [ext_resource type="Texture2D" uid="uid://ddhxqn107brc" path="res://Assets/Sprite sheets/notasmusicales/nota musical morado-Sheet.png" id="7_w8rm8"]
 [ext_resource type="Texture2D" uid="uid://0dlgh4xfu34o" path="res://Assets/Sprite sheets/notasmusicales/nota musical verde-Sheet.png" id="8_8w7h2"]
 [ext_resource type="Texture2D" uid="uid://bujaxcl7jwgnn" path="res://Assets/Sprite sheets/notasmusicales/nota musical rojo-Sheet.png" id="9_xt7ny"]
-[ext_resource type="Texture2D" uid="uid://cu7qweqryptd0" path="res://Assets/Sprite sheets/emoji victoria -Sheet.png" id="10_15mwx"]
+[ext_resource type="Texture2D" uid="uid://fcljcgu68b5l" path="res://Assets/Sprite sheets/emoji victoria -Sheet.png" id="10_15mwx"]
 [ext_resource type="AudioStream" uid="uid://mucjg5ys08g6" path="res://Sonidos/Lo lograste cuatro.mp3" id="11_4flua"]
 [ext_resource type="AudioStream" uid="uid://biotuu6eslcka" path="res://Sonidos/Click para continuar.mp3" id="12_btqh5"]
-[ext_resource type="Texture2D" uid="uid://bgq1o7fxxrtmw" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="13_7ui26"]
+[ext_resource type="Texture2D" uid="uid://dogy4lulpbgwx" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="13_7ui26"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1kaq0"]
 atlas = ExtResource("3_jlbgt")
