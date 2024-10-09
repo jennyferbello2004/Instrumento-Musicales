@@ -23,9 +23,9 @@ func _on_ready():
 		if child is Area2D:
 			child.input_pickable = false
 	audioInicial.play() 
-	await audioInicial.finished  
+	await get_tree().create_timer(5).timeout
 	audioReady.play() 
-	await audioReady.finished
+	await get_tree().create_timer(5.5).timeout
 	for child in get_children():
 		if child is Area2D:
 			child.input_pickable = true 

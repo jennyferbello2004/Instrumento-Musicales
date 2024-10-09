@@ -1,7 +1,7 @@
 [gd_scene load_steps=34 format=3 uid="uid://ca60kja6tewur"]
 
 [ext_resource type="Script" path="res://nivel2-2.gd" id="1_pv2rx"]
-[ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_yl6jk"]
+[ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_yl6jk"]
 [ext_resource type="Texture2D" uid="uid://bx543a7dcbsyd" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-1-columna-1.png" id="3_rgbdx"]
 [ext_resource type="Texture2D" uid="uid://b8ddip7lgsy61" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-1-columna-2.png" id="4_fk7nf"]
 [ext_resource type="Texture2D" uid="uid://cdp73j5pep0iw" path="res://Assets/Imagenes/Imagenes-separadas/tambor/fila-2-columna-1.png" id="5_if4h0"]
@@ -15,7 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://cgjx0j66bwunj" path="res://Assets/Imagenes/palabra tambor.png" id="13_e55l3"]
 [ext_resource type="AudioStream" uid="uid://uv5opcx5y6mb" path="res://Sonidos/tambor.mp3" id="14_f6rck"]
 [ext_resource type="AudioStream" uid="uid://coa474eb43lv2" path="res://Sonidos/Instrucciones rompecabezas.mp3" id="16_n84cs"]
-[ext_resource type="Texture2D" uid="uid://bgq1o7fxxrtmw" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="16_ogr3k"]
+[ext_resource type="Texture2D" uid="uid://dogy4lulpbgwx" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="16_ogr3k"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wdt0o"]
 
@@ -234,7 +234,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Control" type="Control"]
+[node name="Control3" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

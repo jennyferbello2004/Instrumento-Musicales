@@ -141,3 +141,7 @@ func update_score_label():
 
 func _on_botonruta_pressed():
 	get_tree().change_scene_to_file("res://Menu2.tscn")
+
+
+func _on_rutaboton_3_pressed():
+	get_tree().change_scene_to_file("res://Menu2.tscn")

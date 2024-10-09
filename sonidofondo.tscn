@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://xnjhp44t0k1v"]
+
+[ext_resource type="AudioStream" uid="uid://dbt2dbn4ggs3v" path="res://Sonidos/Audios/Musica fondo.mp3" id="1_fbn06"]
+[ext_resource type="Script" path="res://sonidofondo.gd" id="2_1n115"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_fbn06")
+volume_db = -30.255
+autoplay = true
+script = ExtResource("2_1n115")

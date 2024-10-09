@@ -23,9 +23,9 @@ func _on_ready():
 		if child is Area2D:
 			child.input_pickable = false
 	audioInicial.play() 
-	await audioInicial.finished  
+	await get_tree().create_timer(5).timeout
 	audioReady.play() 
-	await audioReady.finished
+	await get_tree().create_timer(5.5).timeout
 	$manitainstrucciones.play("default")
 	$manitainstrucciones.visible = true
 	for child in get_children():
@@ -41,7 +41,6 @@ func _on_node_pressed():
 	correctAreaPressed = false
 
 func _on_button_pressed():
-
 	if correctAreaPressed:  
 		print("Changing scene...")
 		$Correct.play()

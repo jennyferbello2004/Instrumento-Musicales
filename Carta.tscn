@@ -1,13 +1,13 @@
-[gd_scene load_steps=15 format=3 uid="uid://ue6nvwc3k71h"]
+[gd_scene load_steps=14 format=3 uid="uid://ue6nvwc3k71h"]
 
 [ext_resource type="Script" path="res://CartasMenu.gd" id="1_jgxtx"]
 [ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_w6u3l"]
 [ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="3_4fv7e"]
 [ext_resource type="FontFile" uid="uid://cboxbr3bx4363" path="res://Assets/Fuentes/Lemon Shake Shake.ttf" id="4_qdw1d"]
-[ext_resource type="Texture2D" path="res://Assets/Imagenes/estrella premio png.png" id="5_uoxnk"]
+[ext_resource type="Texture2D" uid="uid://kesqmidb2qry" path="res://Assets/Imagenes/estrella premio png.png" id="5_uoxnk"]
 [ext_resource type="FontFile" uid="uid://l3sg0c74mhe6" path="res://Assets/Fuente Letras/Montserrat-Bold.ttf" id="6_2fa1p"]
-[ext_resource type="AudioStream" path="res://Sonidos/Instrucciones memoria.mp3" id="7_f2umk"]
-[ext_resource type="Texture2D" uid="uid://dpn232p5laa0a" path="res://Assets/Sprite sheets/Botones/Boton volver 256x128-Sheet.png" id="8_scaho"]
+[ext_resource type="AudioStream" uid="uid://csiv65nw6x2g5" path="res://Sonidos/Instrucciones memoria.mp3" id="7_f2umk"]
+[ext_resource type="Texture2D" uid="uid://dogy4lulpbgwx" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="8_suhoe"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_dxxs8"]
 
@@ -20,29 +20,22 @@ Label/font_sizes/font_size = 39
 Label/fonts/font = ExtResource("4_qdw1d")
 Label/styles/normal = SubResource("StyleBoxEmpty_dxxs8")
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_28fvl"]
-atlas = ExtResource("8_scaho")
-region = Rect2(0, 0, 256, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_14yi3"]
+atlas = ExtResource("8_suhoe")
+region = Rect2(0, 0, 60, 60)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_2v4ss"]
-atlas = ExtResource("8_scaho")
-region = Rect2(256, 0, 256, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ldehe"]
+atlas = ExtResource("8_suhoe")
+region = Rect2(60, 0, 60, 60)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_dtya6"]
-atlas = ExtResource("8_scaho")
-region = Rect2(512, 0, 256, 128)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_31do7"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_b2coq"]
 animations = [{
 "frames": [{
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_28fvl")
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_14yi3")
 }, {
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_2v4ss")
-}, {
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_dtya6")
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_ldehe")
 }],
 "loop": true,
 "name": &"default",
@@ -99,37 +92,37 @@ columns = 4
 
 [node name="Manzana" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(109.61, 30.9294)
+position = Vector2(137.328, 30.9294)
 scale = Vector2(0.118232, 0.110646)
 texture = ExtResource("5_uoxnk")
 
 [node name="Manzana2" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(169.062, 30.8422)
+position = Vector2(199.147, 30.8422)
 scale = Vector2(0.120266, 0.111)
 texture = ExtResource("5_uoxnk")
 
 [node name="Manzana3" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(230.25, 30.6639)
+position = Vector2(261.699, 30.6639)
 scale = Vector2(0.125182, 0.11021)
 texture = ExtResource("5_uoxnk")
 
 [node name="Manzana4" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(293.65, 30.4126)
+position = Vector2(325.839, 30.4126)
 scale = Vector2(0.128, 0.111)
 texture = ExtResource("5_uoxnk")
 
 [node name="Manzana5" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(357.443, 30.3315)
+position = Vector2(391.518, 30.3315)
 scale = Vector2(0.128, 0.111)
 texture = ExtResource("5_uoxnk")
 
 [node name="Manzana6" type="Sprite2D" parent="."]
 texture_filter = 1
-position = Vector2(423.558, 30.6464)
+position = Vector2(457.862, 30.6464)
 scale = Vector2(0.132957, 0.111)
 texture = ExtResource("5_uoxnk")
 
@@ -148,17 +141,19 @@ text = "Movimientos"
 stream = ExtResource("7_f2umk")
 autoplay = true
 
-[node name="botonruta" type="TextureButton" parent="."]
-offset_left = 29.0
-offset_top = 559.0
-offset_right = 190.0
-offset_bottom = 617.0
+[node name="rutaboton3" type="TextureButton" parent="."]
+offset_left = 26.0
+offset_top = 29.0
+offset_right = 105.0
+offset_bottom = 104.0
 
-[node name="botonvolver1" type="AnimatedSprite2D" parent="botonruta"]
+[node name="botonvolver3" type="AnimatedSprite2D" parent="rutaboton3"]
 texture_filter = 1
-position = Vector2(81, 30)
-scale = Vector2(0.640625, 0.640625)
-sprite_frames = SubResource("SpriteFrames_31do7")
+position = Vector2(39, 40)
+rotation = 3.14159
+scale = Vector2(1.40933, 1.40933)
+sprite_frames = SubResource("SpriteFrames_b2coq")
 autoplay = "default"
+flip_v = true
 
-[connection signal="pressed" from="botonruta" to="." method="_on_botonruta_pressed"]
+[connection signal="pressed" from="rutaboton3" to="." method="_on_rutaboton_3_pressed"]

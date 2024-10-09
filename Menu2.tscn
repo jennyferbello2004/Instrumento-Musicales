@@ -1,4 +1,4 @@
-[gd_scene load_steps=73 format=3 uid="uid://dweevxtd5c7i6"]
+[gd_scene load_steps=73 format=3 uid="uid://6a00kxwuknyh"]
 
 [ext_resource type="Script" path="res://Menu.gd" id="1_r8yky"]
 [ext_resource type="Texture2D" uid="uid://dqce5kcxnubbn" path="res://Assets/Sprite sheets/nubes 600x300-Sheet.png" id="2_pi0th"]

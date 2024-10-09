@@ -1,7 +1,7 @@
 [gd_scene load_steps=82 format=3 uid="uid://gyef32fsgsss"]
 
 [ext_resource type="Script" path="res://victoria2.gd" id="1_bu0ee"]
-[ext_resource type="Texture2D" uid="uid://ddufj8jid2ohx" path="res://Assets/Imagenes/Fondos/Fondo nubes Vfinall.png" id="1_p1jwl"]
+[ext_resource type="Texture2D" uid="uid://yturhuau5wwa" path="res://Assets/Imagenes/Fondos/Fondo nubes Vfinall.png" id="1_p1jwl"]
 [ext_resource type="Texture2D" uid="uid://dulxt5fexgcdu" path="res://Assets/Sprite sheets/frames lo lograste (1).png" id="2_8lytm"]
 [ext_resource type="Texture2D" uid="uid://dmv7imi4x7qdo" path="res://Assets/Sprite sheets/notasmusicales/nota musical naranja-Sheet.png" id="3_lybw3"]
 [ext_resource type="Texture2D" uid="uid://dhlri2lknqwbt" path="res://Assets/Sprite sheets/notasmusicales/nota musical rosado-Sheet.png" id="4_fso2a"]
@@ -9,8 +9,8 @@
 [ext_resource type="Texture2D" uid="uid://ddhxqn107brc" path="res://Assets/Sprite sheets/notasmusicales/nota musical morado-Sheet.png" id="6_i7wob"]
 [ext_resource type="Texture2D" uid="uid://0dlgh4xfu34o" path="res://Assets/Sprite sheets/notasmusicales/nota musical verde-Sheet.png" id="7_cvsqe"]
 [ext_resource type="Texture2D" uid="uid://bujaxcl7jwgnn" path="res://Assets/Sprite sheets/notasmusicales/nota musical rojo-Sheet.png" id="8_k650m"]
-[ext_resource type="Texture2D" uid="uid://cu7qweqryptd0" path="res://Assets/Sprite sheets/emoji victoria -Sheet.png" id="9_n1x2c"]
-[ext_resource type="Texture2D" uid="uid://bgq1o7fxxrtmw" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="11_llg2y"]
+[ext_resource type="Texture2D" uid="uid://fcljcgu68b5l" path="res://Assets/Sprite sheets/emoji victoria -Sheet.png" id="9_n1x2c"]
+[ext_resource type="Texture2D" uid="uid://dogy4lulpbgwx" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="11_llg2y"]
 [ext_resource type="AudioStream" uid="uid://cdereeoeigrf2" path="res://Sonidos/victoriaviolin2.mp3" id="11_wl7jk"]
 [ext_resource type="AudioStream" uid="uid://biotuu6eslcka" path="res://Sonidos/Click para continuar.mp3" id="13_iyk5q"]
 
@@ -499,7 +499,7 @@ animations = [{
 "speed": 5.0
 }]
 
-[node name="Control" type="Control"]
+[node name="Control3" type="Control"]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0

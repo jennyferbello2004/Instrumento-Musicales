@@ -1,7 +1,7 @@
 [gd_scene load_steps=38 format=3 uid="uid://cgid2qfvmv8li"]
 
 [ext_resource type="Script" path="res://esce.gd" id="1_cqrlc"]
-[ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_qaqnr"]
+[ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_qaqnr"]
 [ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="3_q3114"]
 [ext_resource type="Script" path="res://sonido1fake.gd" id="4_nehcm"]
 [ext_resource type="Texture2D" uid="uid://bq82d51txan36" path="res://Assets/Imagenes/iconosdeseleccion/Icono cuatro.png" id="5_8866k"]
@@ -27,7 +27,7 @@
 [ext_resource type="AudioStream" uid="uid://2qsbckclgdla" path="res://Sonidos/Instrumentos/ARpa.mp3" id="24_wjnus"]
 [ext_resource type="AudioStream" uid="uid://nk7rhbvs131t" path="res://Sonidos/Voces/Intentaconotroinstrumento.mp3" id="25_sll04"]
 [ext_resource type="AudioStream" uid="uid://dn8l6708cw3go" path="res://Sonidos/Efectos-Sonidos/new-level-142995.mp3" id="26_h3fdf"]
-[ext_resource type="Texture2D" uid="uid://bgq1o7fxxrtmw" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="28_7bjgg"]
+[ext_resource type="Texture2D" uid="uid://dogy4lulpbgwx" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="28_7bjgg"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wuy6"]
 size = Vector2(132, 119)

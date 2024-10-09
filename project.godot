@@ -13,7 +13,12 @@ config_version=5
 config/name="Instrumentos Musicales"
 run/main_scene="res://Escenas/EscenaPrincipal.tscn"
 config/features=PackedStringArray("4.2", "GL Compatibility")
-config/icon="res://Assets/Imagenes/icon.svg"
+boot_splash/image="res://Assets/Imagenes/Fondo_carga.png"
+config/icon="res://Assets/Imagenes/Logo_Arpa_Cuatro_y_Maracas.png"
+
+[autoload]
+
+Sonidofondo="*res://sonidofondo.tscn"
 
 [display]
 
@@ -23,3 +28,4 @@ window/stretch/mode="viewport"
 
 renderer/rendering_method="gl_compatibility"
 renderer/rendering_method.mobile="gl_compatibility"
+textures/vram_compression/import_etc2_astc=true
