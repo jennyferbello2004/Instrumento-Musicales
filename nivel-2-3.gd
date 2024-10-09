@@ -20,7 +20,7 @@ func Presentation():
 		$Cuatro.visible = true
 		$audiocuatro.play()
 		await get_tree().create_timer(20).timeout
-		get_tree().change_scene_to_file("res://victoria-2-2-2.tscn")
+		get_tree().change_scene_to_file("res://victoria2.tscn")
 
 func hide_all_buttons():
 	var buttons = ["Button", "Button2", "Button3", "Button4", "Button5", "Button6", "Button7", "Button8"]

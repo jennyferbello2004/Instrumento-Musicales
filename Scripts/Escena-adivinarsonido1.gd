@@ -26,6 +26,8 @@ func _on_ready():
 	await audioInicial.finished  
 	audioReady.play() 
 	await audioReady.finished
+	$manitainstrucciones.play("default")
+	$manitainstrucciones.visible = true
 	for child in get_children():
 		if child is Area2D:
 			child.input_pickable = true 
@@ -35,9 +37,11 @@ func _on_node_pressed():
 		if child is Area2D:
 			child.input_pickable = false 
 			audioReady.stop() 
+			$manitainstrucciones.visible = false
 	correctAreaPressed = false
 
 func _on_button_pressed():
+
 	if correctAreaPressed:  
 		print("Changing scene...")
 		$Correct.play()
@@ -64,5 +68,6 @@ func _on_correct_area_pressed():
 	correctAreaPressed = true 
 
 
-func _on_botonruta_2_pressed():
+
+func _on_rutaboton_3_pressed():
 	get_tree().change_scene_to_file("res://Menu2.tscn")

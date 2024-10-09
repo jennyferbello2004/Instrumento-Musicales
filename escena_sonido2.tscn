@@ -1,7 +1,7 @@
-[gd_scene load_steps=39 format=3 uid="uid://b7hf4kvhcqs1m"]
+[gd_scene load_steps=38 format=3 uid="uid://b7hf4kvhcqs1m"]
 
 [ext_resource type="Script" path="res://escena_adivinarsonido2.gd" id="1_4ikk6"]
-[ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_qnsvf"]
+[ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_qnsvf"]
 [ext_resource type="Texture2D" uid="uid://bo5sp1el2iihr" path="res://Assets/Imagenes/Fondos/Marco Horizontal Rojo.png" id="3_8o8od"]
 [ext_resource type="Script" path="res://sonido1fake.gd" id="4_xsulq"]
 [ext_resource type="Texture2D" uid="uid://bq82d51txan36" path="res://Assets/Imagenes/iconosdeseleccion/Icono cuatro.png" id="5_4no48"]
@@ -21,13 +21,13 @@
 [ext_resource type="Script" path="res://Sonido6.gd" id="19_koywf"]
 [ext_resource type="Texture2D" uid="uid://dg2rongcqiq8k" path="res://Assets/Imagenes/iconosdeseleccion/Icono arpa.png" id="20_y44gg"]
 [ext_resource type="AudioStream" uid="uid://cbql2usfjyl8l" path="res://Sonidos/Voces/2.mp3" id="21_pe1si"]
-[ext_resource type="Texture2D" path="res://Assets/Imagenes/boton correcto png.png" id="22_8u3v8"]
-[ext_resource type="Texture2D" path="res://Assets/Imagenes/boton incorrecto png.png" id="23_t140j"]
+[ext_resource type="Texture2D" uid="uid://r2245426f47g" path="res://Assets/Imagenes/boton correcto png.png" id="22_8u3v8"]
+[ext_resource type="Texture2D" uid="uid://cl68shjhu7dkw" path="res://Assets/Imagenes/boton incorrecto png.png" id="23_t140j"]
 [ext_resource type="AudioStream" uid="uid://duf06wfmj571i" path="res://Sonidos/Voces/Instruccion.mp3" id="24_v8v7e"]
 [ext_resource type="AudioStream" uid="uid://nk7rhbvs131t" path="res://Sonidos/Voces/Intentaconotroinstrumento.mp3" id="25_gsctq"]
-[ext_resource type="AudioStream" path="res://Sonidos/Efectos-Sonidos/new-level-142995.mp3" id="26_svl5e"]
+[ext_resource type="AudioStream" uid="uid://dn8l6708cw3go" path="res://Sonidos/Efectos-Sonidos/new-level-142995.mp3" id="26_svl5e"]
 [ext_resource type="AudioStream" uid="uid://crxj6gcc7pagh" path="res://Sonidos/Instrumentos/Maraca.mp3" id="27_godjd"]
-[ext_resource type="Texture2D" uid="uid://dpn232p5laa0a" path="res://Assets/Sprite sheets/Botones/Boton volver 256x128-Sheet.png" id="28_ik5b4"]
+[ext_resource type="Texture2D" uid="uid://bgq1o7fxxrtmw" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="28_0g47a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0wuy6"]
 size = Vector2(132, 119)
@@ -47,29 +47,22 @@ size = Vector2(130, 118)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yi26r"]
 size = Vector2(130, 119)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_lctqw"]
-atlas = ExtResource("28_ik5b4")
-region = Rect2(0, 0, 256, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_14yi3"]
+atlas = ExtResource("28_0g47a")
+region = Rect2(0, 0, 60, 60)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_vrq8u"]
-atlas = ExtResource("28_ik5b4")
-region = Rect2(256, 0, 256, 128)
+[sub_resource type="AtlasTexture" id="AtlasTexture_ldehe"]
+atlas = ExtResource("28_0g47a")
+region = Rect2(60, 0, 60, 60)
 
-[sub_resource type="AtlasTexture" id="AtlasTexture_ep8ka"]
-atlas = ExtResource("28_ik5b4")
-region = Rect2(512, 0, 256, 128)
-
-[sub_resource type="SpriteFrames" id="SpriteFrames_t4532"]
+[sub_resource type="SpriteFrames" id="SpriteFrames_bb7i7"]
 animations = [{
 "frames": [{
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_lctqw")
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_14yi3")
 }, {
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_vrq8u")
-}, {
-"duration": 0.7,
-"texture": SubResource("AtlasTexture_ep8ka")
+"duration": 1.5,
+"texture": SubResource("AtlasTexture_ldehe")
 }],
 "loop": true,
 "name": &"default",
@@ -93,7 +86,7 @@ scale = Vector2(-0.150022, -0.140903)
 texture = ExtResource("3_8o8od")
 
 [node name="Area2D" type="Area2D" parent="."]
-position = Vector2(286, 172)
+position = Vector2(854, 178)
 script = ExtResource("4_xsulq")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D"]
@@ -111,7 +104,7 @@ stream = ExtResource("6_h4c08")
 volume_db = -7.495
 
 [node name="Area2D2" type="Area2D" parent="."]
-position = Vector2(854, 181)
+position = Vector2(482, 187)
 script = ExtResource("7_lu17h")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D2"]
@@ -128,7 +121,7 @@ position = Vector2(2, 0.5)
 shape = SubResource("RectangleShape2D_1mx21")
 
 [node name="Area2D3" type="Area2D" parent="."]
-position = Vector2(488, 178)
+position = Vector2(414, 332)
 script = ExtResource("10_xdi13")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D3"]
@@ -145,7 +138,7 @@ position = Vector2(-18, 8)
 shape = SubResource("RectangleShape2D_7bo0p")
 
 [node name="Area2D4" type="Area2D" parent="."]
-position = Vector2(635, 183)
+position = Vector2(287, 186)
 script = ExtResource("13_enbeq")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D4"]
@@ -162,7 +155,7 @@ stream = ExtResource("15_w8ckb")
 volume_db = -7.495
 
 [node name="Area2D5" type="Area2D" parent="."]
-position = Vector2(379, 289)
+position = Vector2(665, 156)
 script = ExtResource("16_ss5jb")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D5"]
@@ -180,7 +173,7 @@ position = Vector2(0, 32)
 shape = SubResource("RectangleShape2D_xpgbx")
 
 [node name="Area2D6" type="Area2D" parent="."]
-position = Vector2(755, 284)
+position = Vector2(750, 312)
 script = ExtResource("19_koywf")
 
 [node name="Sprite2D" type="Sprite2D" parent="Area2D6"]
@@ -238,21 +231,21 @@ stream = ExtResource("26_svl5e")
 stream = ExtResource("27_godjd")
 volume_db = -1.874
 
-[node name="botonruta2" type="TextureButton" parent="."]
-visible = false
-offset_left = 27.0
-offset_top = 569.0
-offset_right = 203.0
-offset_bottom = 633.0
+[node name="rutaboton3" type="TextureButton" parent="."]
+offset_left = 26.0
+offset_top = 29.0
+offset_right = 105.0
+offset_bottom = 104.0
 
-[node name="botonvolver2" type="AnimatedSprite2D" parent="botonruta2"]
+[node name="botonvolver3" type="AnimatedSprite2D" parent="rutaboton3"]
 texture_filter = 1
-position = Vector2(88, 33)
-scale = Vector2(0.695313, 0.695313)
-sprite_frames = SubResource("SpriteFrames_t4532")
+position = Vector2(39, 40)
+rotation = 3.14159
+scale = Vector2(1.40933, 1.40933)
+sprite_frames = SubResource("SpriteFrames_bb7i7")
 autoplay = "default"
-frame_progress = 0.24508
+flip_v = true
 
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="Button2" to="." method="_on_button_2_pressed"]
-[connection signal="pressed" from="botonruta2" to="." method="_on_botonruta_2_pressed"]
+[connection signal="pressed" from="rutaboton3" to="." method="_on_rutaboton_3_pressed"]

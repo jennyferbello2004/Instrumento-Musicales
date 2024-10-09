@@ -1,7 +1,7 @@
-[gd_scene load_steps=33 format=3 uid="uid://dtq5hewrpf55l"]
+[gd_scene load_steps=34 format=3 uid="uid://dtq5hewrpf55l"]
 
 [ext_resource type="Script" path="res://nivel-2-3.gd" id="1_520ex"]
-[ext_resource type="Texture2D" uid="uid://o6kj6lieeg80" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_asmhp"]
+[ext_resource type="Texture2D" uid="uid://dogm4nmm61qq0" path="res://Assets/Imagenes/Fondos/Fondo dentro teatro.png" id="2_asmhp"]
 [ext_resource type="Texture2D" uid="uid://bor81lfsterf" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-1-columna-1.png" id="3_8fak7"]
 [ext_resource type="Texture2D" uid="uid://lff8eytgbh7q" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-1-columna-2.png" id="4_mgxke"]
 [ext_resource type="Texture2D" uid="uid://buc543cahkuv5" path="res://Assets/Imagenes/Imagenes-separadas/violin/fila-2-columna-1.png" id="5_416u3"]
@@ -14,7 +14,8 @@
 [ext_resource type="Texture2D" uid="uid://b4jg6ful6t00t" path="res://Assets/Imagenes/bordeviolin.png" id="12_6f6el"]
 [ext_resource type="Texture2D" uid="uid://4d380jsg3bre" path="res://Assets/Imagenes/palabra violin.png" id="13_si1pn"]
 [ext_resource type="AudioStream" uid="uid://b8k0nkrbatsqa" path="res://Sonidos/victoriaviolin.mp3" id="14_7dgd2"]
-[ext_resource type="Texture2D" uid="uid://dogy4lulpbgwx" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="16_yooak"]
+[ext_resource type="AudioStream" uid="uid://coa474eb43lv2" path="res://Sonidos/Instrucciones rompecabezas.mp3" id="16_d5bhm"]
+[ext_resource type="Texture2D" uid="uid://bgq1o7fxxrtmw" path="res://Assets/Sprite sheets/Botones/boton flecha.png" id="16_yooak"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_wdt0o"]
 
@@ -627,9 +628,9 @@ libraries = {
 [node name="rutaboton3" type="TextureButton" parent="."]
 layout_mode = 0
 offset_left = 26.0
-offset_top = 554.0
+offset_top = 29.0
 offset_right = 105.0
-offset_bottom = 629.0
+offset_bottom = 104.0
 
 [node name="botonvolver3" type="AnimatedSprite2D" parent="rutaboton3"]
 texture_filter = 1
@@ -664,5 +665,10 @@ expand_mode = 1
 
 [node name="audiocuatro" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("14_7dgd2")
+
+[node name="instrucciones" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("16_d5bhm")
+volume_db = -7.495
+autoplay = true
 
 [connection signal="pressed" from="rutaboton3" to="." method="_on_rutaboton_3_pressed"]

@@ -64,5 +64,7 @@ func _on_correct_area_pressed():
 	correctAreaPressed = true 
 
 
-func _on_botonruta_2_pressed():
-	get_tree().change_scene_to_file("res://Menu2.tscn")
+
+
+func _on_rutaboton_3_pressed():
+	get_tree().change_scene_to_file("res://EscenaSonido1.tscn")
