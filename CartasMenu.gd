@@ -9,7 +9,8 @@ signal card_flipped
 	$Manzana5,
 	$Manzana6,
 ]
-
+@onready var musica = preload("res://sonidofondo.tscn")
+@onready var music = get_node("/root/Sonidofondo")
 var card_scene1 = preload("res://Carta1.tscn")
 var card_scene2 = preload("res://Carta2.tscn")
 var card_scene3 = preload("res://Carta3.tscn")
@@ -27,6 +28,7 @@ var action_counter = 0
 var action_label = null
 
 func _ready():
+	music.stop()
 	var card_grid = $GridContainer
 	score_label = $Label  
 	update_score_label()  
@@ -124,7 +126,9 @@ func match_found():
 	timer.connect("timeout", _on_match_timeout)
 	if score >= 6:
 		await get_tree().create_timer(2.0).timeout
+		
 		get_tree().change_scene_to_file("res://Victoria.tscn")
+		music.play()
 
 func _on_match_timeout():
 	set_cards_interactive(true) 
