@@ -1,0 +1,229 @@
+[gd_scene load_steps=3 format=3 uid="uid://4okmj3tsmsxa"]
+
+[ext_resource type="Script" path="res://Sonidos-piano.gd" id="1_kclbu"]
+[ext_resource type="Texture2D" uid="uid://dfcf5fn4p5kn2" path="res://Assets/Imagenes/Fondos/Piano.png" id="2_cdcts"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_kclbu")
+
+[node name="Piano" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_cdcts")
+expand_mode = 1
+
+[node name="Teclas" type="Node" parent="."]
+
+[node name="TeclaDo" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.207
+anchor_top = 0.222
+anchor_right = 0.258
+anchor_bottom = 0.711
+offset_left = 0.53598
+offset_top = 0.143982
+offset_right = -0.216003
+offset_bottom = 0.271973
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/TeclaDo"]
+
+[node name="TeclaRe" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.269
+anchor_top = 0.222
+anchor_right = 0.32
+anchor_bottom = 0.711
+offset_left = 0.111969
+offset_top = 0.143982
+offset_right = 0.359985
+offset_bottom = 0.271973
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/TeclaRe"]
+
+[node name="TeclaMi" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.326389
+anchor_top = 0.226852
+anchor_right = 0.379618
+anchor_bottom = 0.719407
+offset_right = -0.320007
+offset_bottom = -0.175995
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/TeclaMi"]
+
+[node name="TeclaFa" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.388
+anchor_top = 0.228
+anchor_right = 0.442
+anchor_bottom = 0.713
+offset_left = 0.0239868
+offset_top = 0.255997
+offset_right = -0.184021
+offset_bottom = -0.0240479
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/TeclaFa"]
+
+[node name="Teclasol" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.452257
+anchor_top = 0.225309
+anchor_right = 0.506354
+anchor_bottom = 0.719407
+offset_right = -0.320007
+offset_bottom = -0.175995
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/Teclasol"]
+
+[node name="TeclaLa" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.512153
+anchor_top = 0.222222
+anchor_right = 0.563646
+anchor_bottom = 0.710148
+offset_right = -0.320007
+offset_bottom = -0.175995
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/TeclaLa"]
+
+[node name="TeclaSi" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.572917
+anchor_top = 0.223765
+anchor_right = 0.620938
+anchor_bottom = 0.711691
+offset_right = -0.320007
+offset_bottom = -0.175995
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/TeclaSi"]
+
+[node name="TeclaDo2" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.632
+anchor_top = 0.222
+anchor_right = 0.684
+anchor_bottom = 0.711
+offset_left = -0.0640259
+offset_top = 0.143982
+offset_right = 0.0319824
+offset_bottom = 0.271973
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/TeclaDo2"]
+
+[node name="TeclaRe2" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.695313
+anchor_top = 0.223765
+anchor_right = 0.742465
+anchor_bottom = 0.710148
+offset_right = -0.320007
+offset_bottom = -0.175995
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/TeclaRe2"]
+
+[node name="TeclaMi2" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.75434
+anchor_top = 0.223765
+anchor_right = 0.807569
+anchor_bottom = 0.710148
+offset_right = -0.320007
+offset_bottom = -0.175995
+metadata/_edit_use_anchors_ = true
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/TeclaMi2"]
+
+[node name="TeclaNegra1" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.245
+anchor_top = 0.225
+anchor_right = 0.28
+anchor_bottom = 0.491
+offset_left = -0.23999
+offset_top = 0.199997
+offset_right = -0.559998
+offset_bottom = -0.16803
+ignore_texture_size = true
+metadata/_edit_use_anchors_ = true
+
+[node name="TeclaNegra2" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.305
+anchor_top = 0.225
+anchor_right = 0.339
+anchor_bottom = 0.488
+offset_left = -0.360016
+offset_top = 0.199997
+offset_right = 0.471985
+offset_bottom = -0.22403
+metadata/_edit_use_anchors_ = true
+
+[node name="TeclaNegra3" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_right = 0.035
+anchor_bottom = 0.062
+offset_left = 495.0
+offset_top = 145.0
+offset_right = 494.68
+offset_bottom = 275.824
+
+[node name="TeclaNegra4" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.49
+anchor_top = 0.225
+anchor_right = 0.525
+anchor_bottom = 0.488
+offset_left = 0.52002
+offset_top = 0.199997
+offset_right = 0.199951
+offset_bottom = -0.22403
+metadata/_edit_use_anchors_ = true
+
+[node name="TeclaNegra5" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.551
+anchor_top = 0.219
+anchor_right = 0.586
+anchor_bottom = 0.488
+offset_left = 0.247986
+offset_top = 0.0879974
+offset_right = -0.0720215
+offset_bottom = -0.22403
+
+[node name="TeclaNegra6" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.67234
+anchor_top = 0.221741
+anchor_right = 0.706
+anchor_bottom = 0.5
+offset_left = -0.536072
+offset_top = 0.311996
+offset_right = -0.312012
+offset_bottom = -8.0
+metadata/_edit_use_anchors_ = true
+
+[node name="TeclaNegra7" type="TextureButton" parent="Teclas"]
+anchors_preset = -1
+anchor_left = 0.729
+anchor_top = 0.216
+anchor_right = 0.764
+anchor_bottom = 0.486
+offset_left = 0.191956
+offset_top = 0.0319977
+offset_right = -0.128052
+offset_bottom = 0.071991
+metadata/_edit_use_anchors_ = true
