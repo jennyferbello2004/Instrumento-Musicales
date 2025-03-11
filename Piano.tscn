@@ -1,9 +1,10 @@
-[gd_scene load_steps=10 format=3 uid="uid://4okmj3tsmsxa"]
+[gd_scene load_steps=11 format=3 uid="uid://4okmj3tsmsxa"]
 
 [ext_resource type="Script" path="res://Sonidos-piano.gd" id="1_kclbu"]
 [ext_resource type="Texture2D" uid="uid://dfcf5fn4p5kn2" path="res://Assets/Imagenes/Fondos/Piano.png" id="2_cdcts"]
 [ext_resource type="Texture2D" uid="uid://iqv7e3kx8fhw" path="res://Assets/notas piano/pixil-frame-0 (8).png" id="3_tnvfn"]
 [ext_resource type="Texture2D" uid="uid://i3vroxxbjj2g" path="res://Assets/notas piano/pixil-frame-0 (7).png" id="4_17oj2"]
+[ext_resource type="AudioStream" uid="uid://dl8efimwcpbgf" path="res://Sonidos/AudioDO1.mp3" id="4_bry5n"]
 [ext_resource type="Texture2D" uid="uid://dqgscyyi531j8" path="res://Assets/notas piano/pixil-frame-0 (9).png" id="5_q0wux"]
 [ext_resource type="Texture2D" uid="uid://bxsn0ujs8vo5a" path="res://Assets/notas piano/pixil-frame-0 (10).png" id="6_7mvb2"]
 [ext_resource type="Texture2D" uid="uid://defhou0ufubc3" path="res://Assets/notas piano/pixil-frame-0 (11).png" id="7_sswlb"]
@@ -50,6 +51,8 @@ ignore_texture_size = true
 stretch_mode = 6
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Teclas/TeclaDo"]
+stream = ExtResource("4_bry5n")
+volume_db = 3.135
 
 [node name="TeclaRe" type="TextureButton" parent="Teclas"]
 custom_minimum_size = Vector2(1, 0)
@@ -287,3 +290,5 @@ offset_top = 0.0319977
 offset_right = -0.128052
 offset_bottom = 0.071991
 metadata/_edit_use_anchors_ = true
+
+[connection signal="pressed" from="Teclas/TeclaDo" to="." method="_on_tecla_do_pressed"]
